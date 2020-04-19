@@ -1,0 +1,5 @@
+TextCrypt, TextDecrypt, TextCompare v1.0
+(c) 1996 Black Lotus Software
+
+This project is a group of three command line utilities.  If you are not familliar using a command line you will not be able to use these.  The three executables are CRYPT.EXE, DECRYPT.EXE and COMPARE.EXE.  The default install location for these files is Program Files/Black Lotus Console/Text Crypt.  Execute one of these for command line options and syntax.  It is also suggested you copy these three files to a folder in your system path, ie. WINDOWS/SYSTEM.
+ 

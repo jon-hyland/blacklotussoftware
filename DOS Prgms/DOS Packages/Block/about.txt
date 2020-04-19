@@ -1,0 +1,1 @@
+Block Cruncher v1.2.  A colorful and perfectly written "Tetris-like" game.  Includes every possible option you would ever want.  (c) 1997 Black Lotus Software.

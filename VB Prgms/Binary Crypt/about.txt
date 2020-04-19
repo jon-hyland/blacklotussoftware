@@ -1,0 +1,1 @@
+Black Lotus Binary Crypt v1.21.  A very powerful and well-written program that enables you to encrypt binary files.  Incorporates a very impressive scheme and offers optional password protection for encrypted files.  (c) 2000 Black Lotus Software.

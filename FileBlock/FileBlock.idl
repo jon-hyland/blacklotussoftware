@@ -1,0 +1,20 @@
+// FileBlock.idl : IDL source for FileBlock.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (FileBlock.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(7D2A78D8-0158-40F8-BD39-A672633F85E5),
+	version(1.0),
+	helpstring("FileBlock 1.0 Type Library")
+]
+library FILEBLOCKLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+};

@@ -1,0 +1,1 @@
+Text Crypt Package v1.0 - A set of command line utilities you should use to encrypt standard text files.  Useful for sending confidential email.

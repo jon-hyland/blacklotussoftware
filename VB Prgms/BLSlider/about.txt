@@ -1,0 +1,1 @@
+Black Lotus Slider 1.0 Beta.  A simple but useful application that allows .JPG, .BMP and .GIF files to be displayed in a slideshow fashion.  Includes sample pictures.  (c) 1999 Black Lotus Software.

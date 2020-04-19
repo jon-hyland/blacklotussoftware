@@ -1,0 +1,912 @@
+JRNL 07/18/95
+Painted walls at WCC alone. Chris was at D.Q.
+Finished v1.0 of Journal.
+It's 95 degrees in here. (It was 8pm when I wrote this)
+Tried to call Mr Mellema for drivers ed certificate but he
+ wasn't home.
+Fixed TextCode and made it better. Now it codes/decodes
+ automatically. No /c or /d switches.
+Started Journal 1.1. You can press Esc and BckSp in AskDate
+ now. Had to make a second array with [1..8] of Char for
+ it to work.
+My right wrist hurts from typing. I won't make work on
+ J v1.1 anymore tonight (its only 10:30pm).
+ 
+ 
+ 
+JRNL 07/19/95
+Went to work. Painted walls all day with Chris. Didn't go
+ to lunch anywhere because we both brought food. Some
+ old lady wanted my phone number because she wanted us
+ to paint her house or something. If she ever calls we'll
+ just take a look at what she wants and name a price. If
+ she won't pay that much then who cares. Neither of us
+ really need the extra money.
+Got a haircut after work. Mom bought me a new pair of shoes
+ to.
+DJ called and told about Mt StHellens trip this weekend.
+ Theres a meeting tomorrow about it.
+Went to church video training.
+Worked on J1.1. Made (Enter) push lines down unless not
+ enough space or don't need to. Still have to fix (BckSp)
+ and (Del). Any more(?). Hope not.
+JRNL 07/20/95
+Went to work. Started building B. Went to lunch with Chris
+ & his dad.
+Called Ben about campout. Its not Mt StHellens (DJ was
+ wrong). Ben said that DJ and Ty decided not to go at the
+ last minute. I'm tring to get ahold of them. Ill probably
+ go to the scout meeting tonight though.
+Went to meeting. Said I'd probably go but wasn't quite sure.
+ Was going to have Sully call before he came to pick me up.
+DJ called back. Decided to go to water slides with him and
+ Ty. Mom wanted me to go to some church thing so I hoped
+ that I could do both. Coul't find out for sure though
+ because I was home alone.
+ 
+ 
+ 
+JRNL 07/21/95
+Saw it was cloudy and decided not to go water sliding but
+ I'd go camping instead. Besides, I talked to Mom and I
+ wouldn't be able to go to the church thing if I went water
+ sliding anyway. I told her I would go camping and not with
+ the girls to Pullman. She was upset but she let me go.
+Sully came by at about 12. We picked up Ben and then started
+ driving to Hanegan Peak where we would be hiking. We stoped
+ to eat lunch and get some more food.
+We hiked a little pass the place where we stayed last time
+ (with Ben, DJ, and little Chris). We camped in another
+ camp spot about two miles farther than before (about 6
+ total miles). There was lots of bugs. We ate steak and
+ cup of soups. After dark Ben and I started off to hike
+ Hanegan Peak. All wa had was a head light. We got lost near
+ the top and decided to go back. Played cards. Went to bed.
+JRNL 07/22/95
+Sleeping bag was wet and to many bugs. Got up after 3 hrs
+ of sleep (2:30 to 5:30). Decided to come back a day early
+ and not go to Copper lake. Hiked back. Drove to Bellingham.
+ Showered at YMCA. Went to Pizza Hut. I was sick so I saved
+ my share for later.
+Got home and remembered I would be alone all day until the
+ next day. Went to Cost Cutter and got seven movies.
+ (Girl in the Swing, Robocop 3, Cyborg, Love Potion #9,
+  Leathal Wepon 1, Life of Brian, Bev. Hills Cop 3).
+Watched all moves except last one and ate pizza. Got to
+ tired and Went to bed (at around 5:30a).
+ 
+ 
+ 
+ 
+JRNL 07/23/95
+Got up at 2pm. Finished watching last movie. Cooked a hotdog
+ because all pizza was gone. Rewound all movies. I would
+ take them back but I have no idea when they will be back.
+ So I'm catching up on journals insteaed. All the movies
+ were cool except Girl in the Swing which was a really cheap
+ lame British film. Life of Brian was pretty cheap also but
+ it was sort of funny.
+Mom called. Said they wouldn't be back until at least 12
+ or 1 in the morning.
+Took movies back and rented Total Recall. Watched it.
+Mom called again. The girls had arrived late and they would
+ be back the next morning instead.
+Went to bed at 12 because I had to work the next morning.
+ 
+ 
+JRNL 07/24/95
+Woke up at 7 with a headache. Called Grandma and told her to
+ tell my boss Bill that I wouldn't be in today. Went back
+ to sleep.
+They came back at about 10:30am. I went back to sleep again.
+Got up later and took a shower. Decided not to go to School
+ of Truth with Mom & the girls. They would leave at 5:30p
+ and would be gone until Saterday. Still need to take movie
+ back. I should have gone to work because I would have been
+ able to then.
+After they left took movie ack and withdrew $100 from bank.
+ I was going to mall and needed money just incase there
+ was something cool. There wasn't.
+Went to training with Dad. Last one.
+Worked on J1.1. Found BIG problem with EofLineNum function.
+ Can easily fix but it makes errors in the rest. Sucks.
+JRNL 07/25/95
+Went to work. Was a little late because Dad drove me. Bill
+ said to try to be there by eight. Weeded by myself in the
+ morning then went and helped Chris paint in building B.
+ Dad forgot to give me lunch money so I called him and he
+ picked me up for lunch. Went to DQ.
+Came home and slept for a little in the afternoon and more
+ after dinner. Didn't do much today. It rained all day.
+Dad thought I was doing something 'bad' (?!) when I turned
+ off screen before he bardged in. I just didn't want him to
+ be nosy and look at what I was writing because I know thats
+ what he'd do.
+ 
+ 
+ 
+ 
+JRNL 07/26/95
+Painted building B all day. Dad forgot lunch money again so
+ I called him and he brought some food from DQ. Clock was
+ loose on wall and fell when we painted. It broke pieces off
+ the side.
+Got home and started some Flash progra again. Got it to work
+ finally. There wasn't a prayer meeting tonight so we rented
+ Dumb & Dumber. It was pretty funny. Wasn't as lame as it
+ looked in the previews.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 07/27/95
+Painted building B alone today. Chris was at DQ. Wasn't too
+ boring. Had walkman and stuff. There was a pretty good
+ looking girl always watching me today.
+Called DJ to see what he was doing over the weekend. Ended
+ up going over there. Us and Ty went to Dymands to play
+ pool for a couple hours. Afterwards we stoped at the store
+ because I wanted to check out sun glasses. I bought some
+ cool little ones with blood red lenses. They made the
+ sky look cool and stuff. Some of the green traffic lights
+ turned light gray. Some green ones stayed the same.
+Called Dad because I wanted to stay over the night. I would
+ miss work the next day but it wouldnt matter because I
+ usually don't work on Fridays.
+Edited Doom levels all night. Ty had to go home at 10p.
+ Made a level that was the inside of DJ's room/trailer.
+JRNL 07/28/95
+Got up at late at about 2. Worked on Doom levels for a
+ while. Wanted to try changing graphics and guys but we
+ needed Windows. It got erased on Ty's computer. We had DJ's
+ dad take us to my house and get my computer. We had to link
+ them to get it copied.
+Tried to use WinTex, a program that was supposed to let you
+ edit Doom graphics. We got it to pull sprites out of the
+ Doom .WAD file and save them as .BMP files we could edit.
+ We couldn't get it to put them back in after that though.
+ We stayed up until about 3 trying to make them work. I got
+ a headache and went to bed. I couldn't sleep and later I
+ threw up outside.
+ 
+ 
+ 
+JRNL 07/29/95
+Got up feeling better. Headache was almost gone.
+Figured out how to use DMGraph and it worked better than
+ the other software. DJ and I made his head on a stick and
+ some other graphics. Ty's mouse broke. Tried to fix it but
+ I needed a soldering iron.
+Ty came over. Showed game to him and Stan and then we spent
+ the rest of the evening making Ty look cool in a picture
+ taken when he worked in the cafeteria at school.
+DJ and Ty played Ping Pong for an hour. Stan and I listened
+ to music.
+Ty took me home at 11:45. I was supposed to be back around
+ 11 but it didn't matter bacause Mom and Dad were at Pam
+ & Gregs house. Amy Spurgen was over for the weekend with
+ the girls. They all got back at about 4 that afternoon.
+ 
+JRNL 07/30/95
+Got up early for meeting at Aroyos. Mom wanted to walk to
+ that school durring the meeting to talk about them going
+ to Russia.
+Went out to pizza at Little Caesars.
+Spent the afternoon at Grandpa and Pats house. Read a book.
+ We took a walk around a lake.
+Went over to Grandmas. Will and Corey were there. Will had
+ some baby crows.
+Went home. Can't remember what happened after that.
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 07/31/95
+Went to work. Painted. Chris wasn't there. Called Mom
+ because I didn't have any lunch money. We ate at the little
+ Pizza Hut.
+Mom and the girls left at 5 or 6 to go back to Truth School.
+ I have to go down to Bellview on Thurs after work. Will
+ stay for the weekend and see them and Grandma.
+Was supposed to pick up computer at DJ's at 9. Dad was late
+ and we got there at about 10:30. Tried to fix Ty's Windows
+ but didn't have enough time. DJ showed some of the Doom
+ guys he drew.
+Chevron gave Dad $55 back instead of $45. Dad went back and
+ gave it back.
+ 
+ 
+ 
+JRNL 08/01/95
+Went to work. Painted building B. Found out Chris won't be
+ back all week because they need him at DQ.
+Was some crash on the Guide right near the other side of
+ Horton. Don't know who was killed though.
+We were going to get a movie but Dad came in to late and I
+ was to tired anyway.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 08/02/95
+Started painting building C. Had to move all the stuff to
+ a storage room there.
+Came home and worked on v2.0 of FakeDos. Finished it.
+Dad went to the prayer meeting and then came home before he
+ left to Bellview. He left at about 10:30p. He'll stay at
+ Grandma's until tomorrow morning and then he'll fly
+ somewhere. I can't remember excatly. He'll get back Sunday.
+Wanted to get a movie at Cost Cutter and rode bike there
+ after Dad left. Tried to rent a movie but they wouldn't let
+ me for some reason. First they said I couldn't rent a rated
+ R movie because I wasn't 17 yet. So I picked out another
+ one. When the guy scanned my card he said he couldn't let
+ me rent this one either because the computer said that no
+ one under 18 could use that account. I've used that account
+ before hundreds of times, even for 'rated R' movies. Sucks.
+JRNL 08/03/95
+Went to work. Had to get up by my self and ride my bike
+ because everyone was gone. Painted in building C. Chris
+ came back at about 11. We went to the mall at lunch and
+ looked around MusicLand and HotTopics. Chris bought a
+ blacklight poster and two gold hoop earrings. I told him
+ to get a large one and a small one and wear them in the
+ same hole.
+Mom is supposed to come and pick me up sometime around 6:30.
+ She isn't here yet. I'd take a shower but I don't know when
+ she'll be here.
+Got here around 7. She let me drive to Bellview. After we
+ got there everyone was in bed except Grandma. Stayed up a
+ little while and then went to bed.
+ 
+ 
+JRNL 08/04/95
+Got up early and went to the truth school. It wasn't very
+ fun. Had no idea what was going on and didn't know anyone
+ there.
+Went back to Grandma's afterwards and had lunch. Amy Spurgen
+ came with us to stay with the girls for the weekend. I had
+ I headache from the meeting and slept most of the day. I
+ got to sleep in the bedroom because I was sick (not the
+ couch, Mom took it instead).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 08/05/95
+Slept in until almost 12. Got up and didn't do anything.
+ Mom and the girls left to go to someones wedding at 1.
+ Grandma left at 1 also to go to a birthday party. I stayed
+ home and did nothing. Watched the Simpsons. After everyone
+ got back grandma took me to go get something to eat at
+ Arbies.
+We watched the movie Big in the evening. After that everyone
+ went to bed. I couldn't sleep. I stayed up for a few more
+ hours reading some book of Grandmas about a girl that sees
+ visions and tries to solve a murder. Didn't get very far.
+ 
+ 
+ 
+ 
+ 
+JRNL 08/06/95
+Got up and went to Seattle meeting. Picked up Dad at the
+ airport afterwards. We ate at McDolanlds and went back to
+ Grandma's afterwards. Sat around until dinner. We had
+ turkey and mashed potatoes and stuff. After dinner Grandma
+ wanted to watch a show about ancient Greece. Then we
+ watched Murder She Wrote. After it was over Dad and I left.
+Went to bed at about 12.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 08/09/95
+Went to work. Chris called in suck so I worked
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 08/07/95
+Went to work. Found out the old paint in building C is oil
+ based. Have to be extra carefull and sand the walls a
+ little also.
+Chris and I went to the mall durring lunch. He got a sweat-
+ shirt for his girlfriends birthday. I bororrowed $10 to
+ get a poster of The Crow.
+It was raining today. We're supposed to get a movie tonight
+ so I hope Dad comes in in time to get one.
+Remembered I hadn't seen The Crow for a long time so we got
+ it. I don't think Dad liked it very much.
+ 
+ 
+ 
+ 
+ 
+JRNL 08/08/95
+Went to work. Painted building C. Went to mall and ate pizza
+ for lunch. I paid Chris back and bought lunch because I
+ owed him from a long time ago. Played Rage at Tilt for a
+ while.
+Called DJ after work. Went over there around 5. Didn't do
+ much except watch TV. Went home at about 11:30.
+Dad said I had to take down the poster I got because it
+ 'looked bad' and Mom wouldn't like it.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 08/09/95
+Went to work. Chris called in sick so I worked alone. Talked
+ to Grandma to see if I could borrow her car tomorrow to
+ take the drivers test in. She said its all right.
+Sat around all afternoon. Got mouse to work. Started working
+ on Doom stuff.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 08/10/95
+Decided not to bother going to work since I'd just be
+ working for a few hours. Picked up Grandmas car and
+ followed Dad to the driving place. Waited in line for a
+ while. We filled out some papers and then found out that
+ I would have to wait for about a week to take the test
+ because all the spots were filled. I have to go in on
+ Tuesday the 22nd at 8:30a. Took grandmas car back.
+Mowed the lawn and did dishes. Worked on Doom walls all
+ day.
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 08/11/95
+Decided not to go to work because its Friday. I only have
+ half a day to make up anyway. Got up at 11 and had to
+ mow the lawn for a while. Called DJ to see whats going on.
+ Decided to go to Seattle because it might be cool there.
+ Ty and DJ should be here any minute now.
+They came at about 3. Thought it might be to late to go but
+ we went anyway. Went to the Bellview Square but there was
+ nothing to do there. Went to Seattle to look around and see
+ if we could find a pizza place. Stoped at the Seatle Center
+ for a while but didn't do anything. Drove around Seattle
+ trying to find a place to eat but couldn't find any. Drove
+ home at got to Bellingham in 45 mins (from Bothel). Stoped
+ at Pizza Hut near Fred Meyer. Got a large pepperoini and a
+ med Supreme. Was going to spend the night at DJs but Ives
+ woke his Dad up and got him mad. He said we had to go home.
+JRNL 08/15/95
+Went to work. Painted building C. Went to Future Shop at
+ lunch to check out the price of a pair of 6's. Had a coupon
+ for Subway and got a foot long steak sub. Listened to CDs
+ in Chris's truck durring breaks.
+Went to mall after work. Didn't find anything cool.
+Got July's check today for about $675. Will try to save
+ $650.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 08/12/95
+Dad left to Seattle at about 10a. Got up at about 12 and
+ took a shower. Sat around in bed reading. Don't think I can
+ do anything today because Mom and the girls are comming
+ home sometime later. I don't know when.
+They got home at about 7. We rented Another Steakout. Dad
+ and Anna and I took Trooper on a walk to Cost Cutter. Got
+ a 2liter bottle of RC Cola for work. Dad hid it in some
+ bushes behind building B at the collage. I don't think I'll
+ ever get it.
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 08/14/95
+Went to work. Mom drove me. Bill will be gone until
+ Thursday. Moved boxes for Chris's dad and some girl all
+ morning. Went to the mall to return something at lunch. We
+ went to Circuit City to buy CDs. I got the two older NIN
+ ones. Chris got the new Live Cd, Bone, and the soundtrack
+ to Dangerous Minds. His suck. Mine are cool.
+Went home and slept all most of the afternoon and evening.
+ Got up at about 10 or something. Listened/taped both of
+ my new Cds.
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 08/13/95
+Went to the church meeting. It was at the people who have a
+ new baby's house. They live about an hour away. There was
+ a potluck afterwards. The girls wanted to go swimming at
+ some new pool but it was too full. They went hiking or
+ something instead.
+We rented Amos and Andrew. Then I went to bed.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 08/16/95
+Went to work. Chris wasn't there, he was probably at DQ.
+ Finished the upper part of building C. Went to the mall
+ after work to buy new earphones for walkman.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 08/20/95
+Was too tired to go out fishing early in the morning. Got up
+ around 10 and packed up. Dad checked out and we paddled
+ around the lake in the canoe for a while. Then we left.
+ Stoped to eat at Dairy Queen. Drove a while. Stoped to see
+ some rafters cross a rapid part of the river. There were
+ some people that had already crashed or something when we
+ got out. Some lady was hurt or something and Dad had to
+ give them a warm jacket while the ambulance got there. We
+ didn't stop after that until we got home. Ben called and
+ I have to be at the church at 10:15a tomorrow to go to Mt
+ St Hellens. I have to go to the Franks with everyone later
+ tonight to talk about them moving to Russia.
+Only Dad decided to go to the Franks tonight. I sat around
+ and read a book. Dad said they had probably decided to wait
+ a while before they moved.
+JRNL 08/19/95
+Was going to get up early today but was too tired. Ate
+ breakfast and went out on the boat. Fished for a while and
+ then went around the lake for a while. It was a nicer day
+ than before but there were still a few clouds. Didn't
+ catch anything. Read a book for most of the day and played
+ Monopoly in the evening. I was ahead for most of the game
+ but somehow Dad won.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 08/18/95
+Tried to get up early in the morning but was too tired. Ate
+ breakfast and went fishing in the boat for a while. The
+ weather got bad and we went in after a while. Sat around
+ most of the day. In the evening we played Monopoly and I
+ won.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 08/17/95
+Went to work. Bill was back and I told him I would have to
+ leave a little early today. I also asked him if I could
+ take Monday through Wednesday off next week to go to Mt St
+ Hellens. He said ok. Chris and I started painting the
+ place where the stairs are in building C. It was almost
+ impossible to get the celing taped because it was so high.
+ Went to Sound Advice to take back the amp Chris bought for
+ his car. He made a deal with the guy to build him a box
+ and install the door speakers for the price of it.
+Mom picked me up at 3. Went home and packed. Dad and I left
+ for Canada at around 5:30 which was later then we wanted.
+ We got there after the place closed but they left our cabin
+ unlocked for us. We played poker for a while and went to
+ bed.
+ 
+JRNL 08/30/95
+Got up. Went to work. Painted building C. Had some lunch
+ left over from yesterday and some money.
+Came home. Mom said she and the girls had seen a cool car
+ that they thought I would like for $5500. Mom, Dad, and I
+ went to see it. It was an '87 Pontiac Fiero in real nice
+ cond. Decided I'd check into it and see if the owner would
+ accept payments. I hope Dad can find a way to give me the
+ $200 he owes me.
+Read a book for a while. Cleaned room and did laundry.
+1st day of school for Meridian (DJ, Ben). Fools.
+ 
+ 
+ 
+ 
+ 
+JRNL 08/29/95
+Went to work. 1st day of being alone (school started for
+ Chris). Mom packed me a lunch. Painted building C. Ben
+ came by to have me sign the letter he wrote about Vince.
+Came home. Read for a while. Ate dinner. Was going to clean
+ my room but went to sleep instead. Slept all evening.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 08/28/95
+Went to work. Painted building C. Went to McDonalds for
+ lunch. Chris found cat piss behind the seat of his truck.
+ We had to go back to McDonalds to wash our hands. Chris
+ decided to take me home that day. We stopped by Future Shop
+ to look at 8's for his truck. Listened to the speakers they
+ had there and he decided to keep his 10's longer even
+ though there wasn't evough air space.
+Read or something all afternoon.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 08/27/95
+Family came and picked me up at about 10a. Went to meeting
+ at MacGilveries. There was lunch afterwards.
+Told Dad and Mom about Firebird. We went to go see it and
+ for some reason they didn't like it. And I found out that
+ Dad wouldn't be able to cosign to finance a car anyway
+ because his credit was bad (bankrupt). They also said it
+ would be rude to ask Grandma to cosign and she probably
+ wouldn't be able to qualify either.
+Was mad all day. Now I'll probably have to wait forever to
+ get a decent car.
+ 
+ 
+ 
+ 
+ 
+JRNL 08/26/95
+Got up at about 12. Ty got up early for some reason. Watched
+ commercials on TV for a while. DJ had to go to the doctors
+ at 1:30. Ty, Stan and I went to the mall and played video
+ games. Also went to the Chevy dealer because Stan had seen
+ a Ford Probe he wanted to look at. Came back to pick up DJ.
+ Went to place in Lynden to look at Firebird and ask its
+ price. The guy said 12000 and that it was a '92 and a V6.
+ We went to the Lynden library to check out how much it was
+ supposed to be worth. About thay much. Went back to DJs.
+ Ty went home. Went to McDonalds (DJ, Stan, Ives, Me) to
+ pick up dinner. Looked at some dealerships in Lynden for
+ a while. Called home later that night. They said I could
+ stay until the morning because of the meeting.
+ 
+ 
+JRNL 08/25/95
+Went to work. Painted building C. Went to the mall for
+ lunch. John Ashton was there with two girls. Was going to
+ eat with them but we were to covered with paint and decided
+ we didn't want to be seen. Went to McDonalds drive thru
+ instead.
+Came home. Called DJ. Was going to over there at 7. Had to
+ mow the lawn first. They came by at 7 even though Mom was
+ going to take me. I wanted to see the Firebird in Lynden
+ that Chris had told me about. Looked at that. It was cool,
+ nice teal color, looked pretty new, T-Top, nice wheels/
+ tires, good stereo, etc. Was closed ao could ask about it.
+ Went to look at a Corvett Stingray that Ty and DJ said they
+ saw. Went to the guys house and talked to him. It was only
+ $9900 but since the insurance was so high I couldn't afford
+ it. Rented two movies. Spent the night.
+JRNL 08/24/95
+Went to work. Chris wasn't there hope he wasn't in jail
+ because he was supposed to go to court on Monday. Painted
+ building C.
+Came home and did nothing. Went to library. Got some books.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 08/23/95
+Had to get up early because stupid Vince wanted to leave.
+ His moter home was having electrical problems again and he
+ couldn't watch TV. Got food at McDonalds. Went to Mt St
+ Hellens place and watched a movie about it. Was dumb. Rode
+ back to Bellingham.
+Got home and Grandma was here. Mom brought some coffee candy
+ from where ever she and Dad had gone. Sat around and read.
+ Have to go to work tomorrow.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 08/22/95
+Got up and got ready to hike. Drove to the mountain. Started
+ hiking. Went through trees, then rocks, then ash at the
+ top. Ty got there first, then Sully, then me, then Ben and
+ DJ. I was with Ben and DJ until the very end, halfway
+ through the ash. They still got to the top half an hour
+ after I did. Saw some girl comming down who looked pretty
+ fine. Came by her again a couple times when we hiked down.
+ Could tell she thought I was cool because she would always
+ look at me and smile, and look away when I noticed. Got
+ down and played White Zombie in the van. It was cool until
+ Vince came marching out of his moter home and started
+ yelling and screaming and cussing. We got pissed off and
+ almost killed him. He decided not to let us go to the Ape
+ Caves or eat dinner. We had to camp in the lame RV park
+ again. Took showers and played poker.
+JRNL 08/21/95
+Was supposed to be picked up at 11 but Vince decided to go
+ (hurray.) and Sully got cought in a traffic jam. Left at
+ 2:30 instead. Ate dinner at Arbies. Got batteries for
+ CD player I brought. Got to RV park after dark. We wanted
+ to build a fire but stupid Vince wouldn't let us. We had to
+ go to bed at 10 but we couldn't sleep because it sucked.
+ Ty left to go sleep on top of the picnic table because it
+ was more comfortable. Ben, DJ, and I didn't get to sleep
+ until 4:30 in the morning.
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 08/31/95
+Went to work. Cleaned up janitors room. Painted. Bill took
+ forever to get new paint so had to sit around forever.
+ Had a Lunchable that Mom packed.
+Theres supposed to be a scout meeting tonight.
+DJ and Ty were supposed to pick me up but they were late.
+ Stan came too beacuse he was bored. We had to pick up Ben.
+ Talked about what we were going to do this winter and Sully
+ wants me to find out how much a ski trip will cost.
+We went to look at cars afterwards. Looked at Ford Probes
+ (for Stan) and stoped by to look at the Fiero I want.
+Ty stayed the night.
+ 
+ 
+ 
+ 
+JRNL 09/05/95
+Went to work. Painted building C. Am almost done.
+Went with Mom to get job applications at Burger King and
+ Dairy Queen.
+Dad said he talked to the guy who was selling the Fiero.
+ The guy said he would probably accept payments on the car.
+ It looks like it might work out. Dad will probably call
+ again tonight and work something out.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 09/01/95
+Ty and I got up early to take DJ to school. Afterwards we
+ drove around looking for job applications. Filled a few
+ out. Went to Payless Drug and they said we could have an
+ interview later that day at 2:00.
+Went back to school at lunch even though Mom stupidly
+ thought we wern't allowed there durring the day. (If that
+ was true, why did the principal say it was ok and the
+ school have given Ty a free lunch ticket?).
+Went to Payless. I had my interview first cause I had my
+ app. filled out. Ty went next. They said they would call
+ us back and tell us what they decided.
+Ives rented the new Star Trek movie and some computer games.
+ DJ and Ty and me went and got Interview with the Vampire
+ and something else that I forget. They all fell asleep.
+ Stan and Tyler came back at 1 and we watched the rest.
+JRNL 09/02/95
+Got up at 11. It was hot. We wanted to go swimming. Ty,
+ DJ, and me went to some gravel pit lake to swim but it
+ was too cold. We decided to go to the new pool that they
+ built in Bellingham. We went there and stayed until 6:30.
+ Went to my house (no one was home, they were in Seattle)
+ and changed clothes and ate some food. We went to the mall
+ afterwards. Went back to DJ's house. Called Mom at 11 and
+ she said she wanted me to come home.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 09/03/85
+Had to get up at 7 and drive to Seattle for the Labor Day
+ Conference. Stayed all day. Mom and Dad decided to stay
+ till the next day but I didn't want to so I rode home with
+ the Franks.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 09/04/95
+Got up at 11. Called DJ. Didn't have a way to get there so
+ I went to the bus stop. Waited about half an hour before
+ I remembered that it was a holiday and the busses wouldn't
+ run. Had to go home and get my bike.
+Watched Childs Play 3 at DJs. Ty called and wanted to do
+ something. Decided to go to a movie. He came by and we got
+ Stan and picked up Lacey. Went to the mall but there were
+ no good movies. Went to Sunset and got tickets to
+ Waterworld. Started at 7:15 and it was only 5:30. Played
+ pool at Dymonds till then. Saw the movie. It was pretty
+ cool. Went back to DJ's and called Mom. She came and picked
+ me up.
+ 
+ 
+ 
+JRNL 09/06/95
+Went to work. Painted. Chris came by at around 3:30. He had
+ a new system in his truck. Sounded cool. It only had one
+ 8 and two door speakers but the 8 was in some special box
+ that cost about $200.
+Called DJ to see if his stepdad would look at the car I
+ want. He said he would if we could bring it by. Dad called
+ the guy who ownes it but he was busy and we'll do it
+ tomorrow.
+Had to mow the lawn. Mom, Dad, Mary went to prayer meeting.
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 09/10/95
+Got up. Took shower. Went to meeting at Aroyos.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 09/09/95
+Got up at 2:30. Sat around most of the day. Stan and Tyler
+ left to go to his house to get some clothes. They came
+ back and tried to hook up a big speaker to Stans radio.
+ Watched some Goofie movie with Ives and them while we
+ to leave. Left at about 9. Drove around. Went to Burger
+ King and the mall and some stores. Got droped off at home
+ at 11:30.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 09/08/95
+Got up to practice driving before the driving test at 10.
+ Took the test. Didn't pass bacause the lady said I didn't
+ use the turn signal for a left turn once which wasn't true.
+ She wasn't paying very close attantion the whole time. Have
+ it reseceduled for next Friday.
+Went back to work painting curbs. Grandma took me back home.
+Called DJ to see whats going on tonight. Might go to the
+ football game and then the dance.
+Got droped off at the school at 7:15. Waited there with Ty
+ for everyone to show up. About half an hour later they
+ came (Stan, Laey, DJ, Tyler). Decided to go to the Ferndale
+ game instead. Stayed there for a while. Ty got bored and
+ left by himself and went home. The rest of us drove around
+ and went to Burger King and stuff. Came back to DJs house
+ and everyone stayed the night (exept Lacey).
+JRNL 09/12/95
+Got up. Mom took me to work. She did registration there
+ today. I painted red around the doorways of building A.
+ Also put in lights in the ceiling and cleaned up chairs in
+ a room in building B. Chris came by. Said he was quiting
+ there. Maybe I'll get more hours now.
+Came home and read Total Recall.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+JRNL 01/21/96
+Cool. I haven't typed one of these in a long time. There's
+a lot of snow. Had to go to work at Burger King at 12. Dad
+had to take me because it was icy/snowy and I didn't want to
+mess up my car. (I bought an '87 Pontiac Fiero in Augest or
+September or something.)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,142 @@
+[Root]
+Most Recent Package=Slider 1.0 Beta Package 1
+Most Recent Deploy=Slider 1.0 Beta Deploy 1
+
+[Deploy|Slider 1.0 Beta Deploy 1|Root]
+Package=Slider 1.0 Beta Package 1
+Handler=PDWizard.FolderDplySubWiz
+Folder=C:\Jons\BLSlider\Deploy
+
+[Package|Slider 1.0 Beta Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Jons\BLSlider\Package
+
+[Package|Slider 1.0 Beta Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Slider 1.0 Beta Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Slider 1.0 Beta Package 1|Files Found]
+
+[Package|Slider 1.0 Beta Package 1|Files Released]
+
+[Package|Slider 1.0 Beta Package 1|Missing Dependency Information]
+C:\Jons\BLSlider\Reset.exe=
+
+[Package|Slider 1.0 Beta Package 1|Out-of-Date Dependency Information]
+
+[Package|Slider 1.0 Beta Package 1|Files Added]
+c:\jons\blslider\reset.exe=
+c:\jons\blslider\complete\blsini.dat=
+c:\jons\blslider\complete\blslogo.dat=
+c:\jons\blslider\complete\brkface.jpg=
+c:\jons\blslider\complete\fireworks.jpg=
+c:\jons\blslider\complete\luckystrike.jpg=
+c:\jons\blslider\complete\mermaid.jpg=
+c:\jons\blslider\complete\neonpizza.jpg=
+c:\jons\blslider\complete\ravenskull.jpg=
+c:\jons\blslider\complete\readme.txt=
+c:\jons\blslider\complete\tripscreen.jpg=
+C:\Jons\BLSlider\prologo.dat=
+
+[Package|Slider 1.0 Beta Package 1|Files Removed]
+
+[Package|Slider 1.0 Beta Package 1|Files In Project]
+C:\Jons\BLSlider\BLSlider.exe=Yes
+C:\WIN98\SYSTEM\MSVBVM60.DLL=Yes
+C:\WIN98\SYSTEM\OLEAUT32.DLL=Yes
+C:\WIN98\SYSTEM\OLEPRO32.DLL=Yes
+C:\WIN98\SYSTEM\ASYCFILT.DLL=Yes
+C:\WIN98\SYSTEM\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WIN98\SYSTEM\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Jons\BLSlider\Reset.exe=Yes
+C:\Jons\BLSlider\Complete\blsini.dat=Yes
+C:\Jons\BLSlider\Complete\blslogo.dat=Yes
+C:\Jons\BLSlider\Complete\brkface.jpg=Yes
+C:\Jons\BLSlider\Complete\fireworks.jpg=Yes
+C:\Jons\BLSlider\Complete\luckystrike.jpg=Yes
+C:\Jons\BLSlider\Complete\mermaid.jpg=Yes
+C:\Jons\BLSlider\Complete\neonpizza.jpg=Yes
+C:\Jons\BLSlider\Complete\ravenskull.jpg=Yes
+C:\Jons\BLSlider\Complete\readme.txt=Yes
+C:\Jons\BLSlider\Complete\tripscreen.jpg=Yes
+C:\Jons\BLSlider\prologo.dat=Yes
+
+[Package|Slider 1.0 Beta Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Slider 1.0 Beta Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Slider 1.0 Beta Package 1|Install Locations]
+C:\Jons\BLSlider\BLSlider.exe=$(AppPath)
+C:\WIN98\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WIN98\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Jons\BLSlider\Reset.exe=$(AppPath)
+C:\Jons\BLSlider\Complete\blsini.dat=$(AppPath)
+C:\Jons\BLSlider\Complete\blslogo.dat=$(AppPath)
+C:\Jons\BLSlider\Complete\brkface.jpg=$(AppPath)
+C:\Jons\BLSlider\Complete\fireworks.jpg=$(AppPath)
+C:\Jons\BLSlider\Complete\luckystrike.jpg=$(AppPath)
+C:\Jons\BLSlider\Complete\mermaid.jpg=$(AppPath)
+C:\Jons\BLSlider\Complete\neonpizza.jpg=$(AppPath)
+C:\Jons\BLSlider\Complete\ravenskull.jpg=$(AppPath)
+C:\Jons\BLSlider\Complete\readme.txt=$(AppPath)
+C:\Jons\BLSlider\Complete\tripscreen.jpg=$(AppPath)
+C:\Jons\BLSlider\prologo.dat=$(AppPath)
+
+[Package|Slider 1.0 Beta Package 1|Configure Shared Files]
+Applicable=Yes
+C:\Jons\BLSlider\BLSlider.exe=No
+C:\Jons\BLSlider\Reset.exe=No
+C:\Jons\BLSlider\Complete\blsini.dat=No
+C:\Jons\BLSlider\Complete\blslogo.dat=No
+C:\Jons\BLSlider\Complete\brkface.jpg=No
+C:\Jons\BLSlider\Complete\fireworks.jpg=No
+C:\Jons\BLSlider\Complete\luckystrike.jpg=No
+C:\Jons\BLSlider\Complete\mermaid.jpg=No
+C:\Jons\BLSlider\Complete\neonpizza.jpg=No
+C:\Jons\BLSlider\Complete\ravenskull.jpg=No
+C:\Jons\BLSlider\Complete\readme.txt=No
+C:\Jons\BLSlider\Complete\tripscreen.jpg=No
+C:\Jons\BLSlider\prologo.dat=No
+
+[Package|Slider 1.0 Beta Package 1|Distribution]
+Type=single
+Size=
+Title=Black Lotus Slider v1.0 Beta
+
+[Package|Slider 1.0 Beta Package 1|Package]
+PackageFolder=C:\Jons\BLSlider\Package
+ProjectFolder=C:\Jons\BLSlider
+ServerSideCab=
+File1=C:\Jons\BLSlider\Package\setup.exe
+File2=C:\Jons\BLSlider\Package\Setup.Lst
+File3=C:\Jons\BLSlider\Package\BLSlider.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|Slider 1.0 Beta Package 1|IconGroups]
+Group0=Black Lotus Software
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Slider 1.0 Beta Package 1|Black Lotus Software]
+Icon1=BLSlider.exe
+Title1=Black Lotus Slider v1.0 Beta
+StartIn1=$(AppPath)
+Key1=Icon1

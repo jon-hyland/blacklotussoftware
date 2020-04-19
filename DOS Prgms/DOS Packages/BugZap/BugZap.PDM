@@ -1,0 +1,110 @@
+[Root]
+Most Recent Package=BugZap Package
+Most Recent Deploy=BugZap Deploy
+
+
+[Package|BugZap Package|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Jons\BugZap\Package
+
+[Package|BugZap Package|Configure DAO ISAMs]
+Applicable=No
+
+[Package|BugZap Package|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|BugZap Package|Files Found]
+
+[Package|BugZap Package|Files Released]
+
+[Package|BugZap Package|Missing Dependency Information]
+
+[Package|BugZap Package|Out-of-Date Dependency Information]
+
+[Package|BugZap Package|Files Added]
+C:\Jons\BugZap\BUGZAP.EXE=
+C:\Jons\BugZap\BUGZAP.IMG=
+C:\Jons\BugZap\BUGZAP.PAS=
+C:\Jons\BugZap\readme.txt=
+
+[Package|BugZap Package|Files Removed]
+
+[Package|BugZap Package|Files In Project]
+C:\Jons\BugZap\BugZap.dll=Yes
+C:\WIN98\SYSTEM\MSVBVM60.DLL=Yes
+C:\WIN98\SYSTEM\OLEAUT32.DLL=Yes
+C:\WIN98\SYSTEM\OLEPRO32.DLL=Yes
+C:\WIN98\SYSTEM\ASYCFILT.DLL=Yes
+C:\WIN98\SYSTEM\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WIN98\SYSTEM\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Jons\BugZap\BUGZAP.EXE=Yes
+C:\Jons\BugZap\BUGZAP.IMG=Yes
+C:\Jons\BugZap\BUGZAP.PAS=Yes
+C:\Jons\BugZap\readme.txt=Yes
+
+[Package|BugZap Package|Configure Registry Files]
+Applicable=No
+
+[Package|BugZap Package|Configure Remote Servers]
+Applicable=No
+
+[Package|BugZap Package|Install Locations]
+C:\Jons\BugZap\BugZap.dll=$(AppPath)
+C:\WIN98\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WIN98\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Jons\BugZap\BUGZAP.EXE=$(AppPath)
+C:\Jons\BugZap\BUGZAP.IMG=$(AppPath)
+C:\Jons\BugZap\BUGZAP.PAS=$(AppPath)
+C:\Jons\BugZap\readme.txt=$(AppPath)
+
+[Package|BugZap Package|Configure Shared Files]
+Applicable=Yes
+C:\Jons\BugZap\BugZap.dll=No
+C:\Jons\BugZap\BUGZAP.EXE=No
+C:\Jons\BugZap\BUGZAP.IMG=No
+C:\Jons\BugZap\BUGZAP.PAS=No
+C:\Jons\BugZap\readme.txt=No
+
+[Package|BugZap Package|Distribution]
+Type=single
+Size=
+Title=Deluxe Bug Zapper Screensaver
+
+[Package|BugZap Package|IconGroups]
+Group0=Black Lotus Console
+PrivateGroup0=False
+Parent0=$(Programs)
+
+[Package|BugZap Package|Black Lotus Console]
+Icon1=BUGZAP.EXE
+Title1=Deluxe Bug Zapper
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|BugZap Package|Package]
+PackageFolder=C:\Jons\BugZap\Package
+ProjectFolder=C:\Jons\BugZap
+ServerSideCab=
+File1=C:\Jons\BugZap\Package\setup.exe
+File2=C:\Jons\BugZap\Package\Setup.Lst
+File3=C:\Jons\BugZap\Package\BugZap.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Deploy|BugZap Deploy|Root]
+Package=BugZap Package
+Handler=PDWizard.FolderDplySubWiz
+Folder=C:\Jons\BugZap\Deploy

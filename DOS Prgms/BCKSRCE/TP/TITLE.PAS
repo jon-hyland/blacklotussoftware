@@ -1,0 +1,250 @@
+program Test;
+
+uses
+ Crt;
+
+type
+ ArrayInt = array[1..10, 1..29] of integer;
+ ArrayStr = array[1..10, 1..29] of string[1];
+
+var
+ TitleFor : ArrayInt;
+ TitleBck : ArrayInt;
+ TitleCnt : ArrayInt;
+ TitleStr : ArrayStr;
+ j, k, x, y : integer;
+ GoodPt : boolean;
+
+begin
+ for j := 1 to 10 do
+  begin
+   for k := 1 to 29 do
+    begin
+     TitleStr[j, k] := chr(255);
+    end;
+  end;
+ TitleStr[01,03] := chr(220);
+ TitleStr[01,04] := chr(220);
+ TitleStr[01,05] := chr(220);
+ TitleStr[01,06] := chr(220);
+ TitleStr[01,08] := chr(220);
+ TitleStr[01,09] := chr(220);
+ TitleStr[01,10] := chr(220);
+ TitleStr[01,11] := chr(220);
+ TitleStr[01,13] := chr(220);
+ TitleStr[01,14] := chr(220);
+ TitleStr[01,15] := chr(220);
+ TitleStr[01,16] := chr(220);
+ TitleStr[01,18] := chr(220);
+ TitleStr[01,19] := chr(220);
+ TitleStr[01,20] := chr(220);
+ TitleStr[01,21] := chr(220);
+ TitleStr[01,22] := chr(220);
+ TitleStr[01,24] := chr(220);
+ TitleStr[01,28] := chr(220);
+ TitleStr[02,03] := chr(219);
+ TitleStr[02,08] := chr(219);
+ TitleStr[02,09] := chr(220);
+ TitleStr[02,10] := chr(220);
+ TitleStr[02,11] := chr(219);
+ TitleStr[02,13] := chr(219);
+ TitleStr[02,14] := chr(220);
+ TitleStr[02,15] := chr(220);
+ TitleStr[02,16] := chr(219);
+ TitleStr[02,20] := chr(220);
+ TitleStr[02,21] := chr(223);
+ TitleStr[02,22] := chr(255);
+ TitleStr[02,25] := chr(223);
+ TitleStr[02,26] := chr(220);
+ TitleStr[02,27] := chr(223);
+ TitleStr[03,03] := chr(223);
+ TitleStr[03,04] := chr(223);
+ TitleStr[03,05] := chr(223);
+ TitleStr[03,06] := chr(223);
+ TitleStr[03,08] := chr(223);
+ TitleStr[03,10] := chr(223);
+ TitleStr[03,11] := chr(223);
+ TitleStr[03,13] := chr(223);
+ TitleStr[03,16] := chr(223);
+ TitleStr[03,18] := chr(223);
+ TitleStr[03,19] := chr(223);
+ TitleStr[03,20] := chr(223);
+ TitleStr[03,21] := chr(223);
+ TitleStr[03,22] := chr(223);
+ TitleStr[03,26] := chr(223);
+ TitleStr[05,01] := chr(220);
+ TitleStr[05,02] := chr(220);
+ TitleStr[05,03] := chr(220);
+ TitleStr[05,04] := chr(220);
+ TitleStr[05,06] := chr(220);
+ TitleStr[05,07] := chr(220);
+ TitleStr[05,08] := chr(220);
+ TitleStr[05,10] := chr(220);
+ TitleStr[05,11] := chr(220);
+ TitleStr[05,12] := chr(220);
+ TitleStr[05,13] := chr(220);
+ TitleStr[05,15] := chr(220);
+ TitleStr[05,18] := chr(220);
+ TitleStr[05,20] := chr(220);
+ TitleStr[05,21] := chr(220);
+ TitleStr[05,22] := chr(220);
+ TitleStr[05,23] := chr(220);
+ TitleStr[05,24] := chr(220);
+ TitleStr[05,26] := chr(220);
+ TitleStr[05,27] := chr(220);
+ TitleStr[05,28] := chr(220);
+ TitleStr[05,29] := chr(220);
+ TitleStr[06,01] := chr(219);
+ TitleStr[06,02] := chr(220);
+ TitleStr[06,03] := chr(220);
+ TitleStr[06,07] := chr(219);
+ TitleStr[06,10] := chr(219);
+ TitleStr[06,12] := chr(220);
+ TitleStr[06,13] := chr(220);
+ TitleStr[06,15] := chr(219);
+ TitleStr[06,16] := chr(220);
+ TitleStr[06,17] := chr(220);
+ TitleStr[06,18] := chr(219);
+ TitleStr[06,22] := chr(219);
+ TitleStr[06,26] := chr(219);
+ TitleStr[06,27] := chr(220);
+ TitleStr[06,28] := chr(220);
+ TitleStr[06,29] := chr(220);
+ TitleStr[07,01] := chr(223);
+ TitleStr[07,02] := chr(223);
+ TitleStr[07,03] := chr(223);
+ TitleStr[07,04] := chr(223);
+ TitleStr[07,06] := chr(223);
+ TitleStr[07,07] := chr(223);
+ TitleStr[07,08] := chr(223);
+ TitleStr[07,10] := chr(223);
+ TitleStr[07,11] := chr(223);
+ TitleStr[07,12] := chr(223);
+ TitleStr[07,13] := chr(223);
+ TitleStr[07,15] := chr(223);
+ TitleStr[07,18] := chr(223);
+ TitleStr[07,22] := chr(223);
+ TitleStr[07,26] := chr(223);
+ TitleStr[07,27] := chr(223);
+ TitleStr[07,28] := chr(223);
+ TitleStr[07,29] := chr(223);
+ TitleStr[09,25] := 'v';
+ TitleStr[09,26] := '1';
+ TitleStr[09,27] := '.';
+ TitleStr[09,28] := '0';
+ TitleStr[10,08] := chr(157);
+ TitleStr[10,10] := 'J';
+ TitleStr[10,11] := 'o';
+ TitleStr[10,12] := 'n';
+ TitleStr[10,14] := 'H';
+ TitleStr[10,15] := 'y';
+ TitleStr[10,16] := 'l';
+ TitleStr[10,17] := 'a';
+ TitleStr[10,18] := 'n';
+ TitleStr[10,19] := 'd';
+ TitleStr[10,21] := chr(157);
+ for j := 1 to 29 do TitleFor[1, j] := 4;
+ for j := 1 to 29 do TitleFor[2, j] := 12;
+ for j := 1 to 29 do TitleFor[3, j] := 14;
+ for j := 1 to 29 do TitleFor[4, j] := 0;
+ for j := 1 to 29 do TitleFor[5, j] := 4;
+ for j := 1 to 29 do TitleFor[6, j] := 12;
+ for j := 1 to 29 do TitleFor[7, j] := 14;
+ for j := 1 to 29 do TitleFor[8, j] := 0;
+ TitleFor[3, 04] := 0;
+ TitleFor[3, 05] := 0;
+ TitleFor[3, 06] := 0;
+ TitleFor[3, 11] := 0;
+ TitleFor[3, 18] := 0;
+ TitleFor[3, 20] := 0;
+ TitleFor[3, 21] := 0;
+ TitleFor[3, 22] := 0;
+ TitleFor[7, 02] := 0;
+ TitleFor[7, 03] := 0;
+ TitleFor[7, 04] := 0;
+ TitleFor[7, 06] := 0;
+ TitleFor[7, 08] := 0;
+ TitleFor[7, 11] := 0;
+ TitleFor[7, 12] := 0;
+ TitleFor[7, 26] := 0;
+ TitleFor[7, 27] := 0;
+ TitleFor[7, 28] := 0;
+ TitleFor[9, 25] := 12;
+ TitleFor[9, 26] := 12;
+ TitleFor[9, 27] := 12;
+ TitleFor[9, 28] := 12;
+ TitleFor[10, 08] := 04;
+ TitleFor[10, 10] := 04;
+ TitleFor[10, 11] := 04;
+ TitleFor[10, 12] := 12;
+ TitleFor[10, 14] := 14;
+ TitleFor[10, 15] := 14;
+ TitleFor[10, 16] := 12;
+ TitleFor[10, 17] := 12;
+ TitleFor[10, 18] := 04;
+ TitleFor[10, 19] := 04;
+ TitleFor[10, 21] := 04;
+ for j := 1 to 10 do
+  begin
+   for k := 1 to 29 do
+    begin
+     TitleBck[j, k] := 0;
+    end;
+  end;
+ TitleBck[3, 03] := 7;
+ TitleBck[3, 04] := 7;
+ TitleBck[3, 05] := 7;
+ TitleBck[3, 06] := 7;
+ TitleBck[3, 08] := 7;
+ TitleBck[3, 11] := 7;
+ TitleBck[3, 13] := 7;
+ TitleBck[3, 16] := 7;
+ TitleBck[3, 18] := 7;
+ TitleBck[3, 19] := 7;
+ TitleBck[3, 20] := 7;
+ TitleBck[3, 21] := 7;
+ TitleBck[3, 22] := 7;
+ TitleBck[3, 26] := 7;
+ TitleBck[7, 01] := 7;
+ TitleBck[7, 02] := 7;
+ TitleBck[7, 03] := 7;
+ TitleBck[7, 04] := 7;
+ TitleBck[7, 06] := 7;
+ TitleBck[7, 07] := 7;
+ TitleBck[7, 08] := 7;
+ TitleBck[7, 10] := 7;
+ TitleBck[7, 11] := 7;
+ TitleBck[7, 12] := 7;
+ TitleBck[7, 13] := 7;
+ TitleBck[7, 15] := 7;
+ TitleBck[7, 18] := 7;
+ TitleBck[7, 22] := 7;
+ TitleBck[7, 26] := 7;
+ TitleBck[7, 27] := 7;
+ TitleBck[7, 28] := 7;
+ TitleBck[7, 29] := 7;
+ clrscr;
+ for j := 1 to 10 do
+  begin
+   for k := 1 to 29 do
+    begin
+     TitleCnt[j, k] := 0;
+    end;
+  end;
+ for j := 1 to 290 do
+  begin
+   GoodPt := false;
+    repeat
+     x := random(29)+1;
+     y := random(10)+1;
+     if TitleCnt[y, x] = 0 then GoodPt := true;
+    until GoodPt = true;
+   TitleCnt[y, x] := 1;
+   textcolor(TitleFor[y, x]);
+   textbackground(TitleBck[y, x]);
+   gotoxy(x, y);
+   write(TitleStr[y, x]);
+   delay(1);
+  end;
+ readkey;
+end.

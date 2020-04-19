@@ -1,0 +1,110 @@
+[Root]
+Most Recent Package=NC 1.5 Test - Package
+Most Recent Deploy=NC 1.5 Test - Deploy
+
+
+[Package|NC 1.5 Test - Package|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Jons\Net Creeper\Package
+
+[Package|NC 1.5 Test - Package|Configure DAO ISAMs]
+Applicable=No
+
+[Package|NC 1.5 Test - Package|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|NC 1.5 Test - Package|Files Found]
+
+[Package|NC 1.5 Test - Package|Files Released]
+
+[Package|NC 1.5 Test - Package|Missing Dependency Information]
+
+[Package|NC 1.5 Test - Package|Out-of-Date Dependency Information]
+
+[Package|NC 1.5 Test - Package|Files Added]
+C:\Jons\Net Creeper\unallowed.dat=
+C:\Jons\Net Creeper\netcreep.dat=
+C:\Jons\Net Creeper\recent.dat=
+C:\Jons\Net Creeper\favorite.dat=
+
+[Package|NC 1.5 Test - Package|Files Removed]
+
+[Package|NC 1.5 Test - Package|Files In Project]
+C:\Jons\Net Creeper\Netcreep.exe=Yes
+C:\WIN98\SYSTEM\MSVBVM60.DLL=Yes
+C:\WIN98\SYSTEM\OLEAUT32.DLL=Yes
+C:\WIN98\SYSTEM\OLEPRO32.DLL=Yes
+C:\WIN98\SYSTEM\ASYCFILT.DLL=Yes
+C:\WIN98\SYSTEM\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WIN98\SYSTEM\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Jons\Net Creeper\unallowed.dat=Yes
+C:\Jons\Net Creeper\netcreep.dat=Yes
+C:\Jons\Net Creeper\recent.dat=Yes
+C:\Jons\Net Creeper\favorite.dat=Yes
+
+[Package|NC 1.5 Test - Package|Configure Registry Files]
+Applicable=No
+
+[Package|NC 1.5 Test - Package|Configure Remote Servers]
+Applicable=No
+
+[Package|NC 1.5 Test - Package|Install Locations]
+C:\Jons\Net Creeper\Netcreep.exe=$(AppPath)
+C:\WIN98\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WIN98\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Jons\Net Creeper\unallowed.dat=$(AppPath)
+C:\Jons\Net Creeper\netcreep.dat=$(AppPath)
+C:\Jons\Net Creeper\recent.dat=$(AppPath)
+C:\Jons\Net Creeper\favorite.dat=$(AppPath)
+
+[Package|NC 1.5 Test - Package|Configure Shared Files]
+Applicable=Yes
+C:\Jons\Net Creeper\Netcreep.exe=No
+C:\Jons\Net Creeper\unallowed.dat=No
+C:\Jons\Net Creeper\netcreep.dat=No
+C:\Jons\Net Creeper\recent.dat=No
+C:\Jons\Net Creeper\favorite.dat=No
+
+[Package|NC 1.5 Test - Package|Distribution]
+Type=single
+Size=
+Title=Net Creeper v1.5 - Test Release
+
+[Package|NC 1.5 Test - Package|IconGroups]
+Group0=Black Lotus Software
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|NC 1.5 Test - Package|Black Lotus Software]
+Icon1=NetCreep.exe
+Title1=Net Creeper v1.5 - Test Release
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|NC 1.5 Test - Package|Package]
+PackageFolder=C:\Jons\Net Creeper\Package
+ProjectFolder=C:\Jons\Net Creeper
+ServerSideCab=
+File1=C:\Jons\Net Creeper\Package\setup.exe
+File2=C:\Jons\Net Creeper\Package\Setup.Lst
+File3=C:\Jons\Net Creeper\Package\NetCreep.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Deploy|NC 1.5 Test - Deploy|Root]
+Package=NC 1.5 Test - Package
+Handler=PDWizard.FolderDplySubWiz
+Folder=C:\Jons\Net Creeper\Deploy

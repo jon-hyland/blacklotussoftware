@@ -1,0 +1,121 @@
+[Root]
+Most Recent Package=Text Crypt Package
+Most Recent Deploy=Text Crypt Deploy
+
+[Deploy|Text Crypt Deploy|Root]
+Package=Text Crypt Package
+Handler=PDWizard.FolderDplySubWiz
+Folder=C:\Jons\Crypt\Dep
+
+[Package|Text Crypt Package|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Jons\Crypt\Package
+
+[Package|Text Crypt Package|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Text Crypt Package|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Text Crypt Package|Files Found]
+
+[Package|Text Crypt Package|Files Released]
+
+[Package|Text Crypt Package|Missing Dependency Information]
+
+[Package|Text Crypt Package|Out-of-Date Dependency Information]
+
+[Package|Text Crypt Package|Files Added]
+c:\jons\crypt\compare.exe=
+c:\jons\crypt\crypt.exe=
+c:\jons\crypt\decrypt.exe=
+c:\jons\crypt\example.cod=
+c:\jons\crypt\example.ori=
+c:\jons\crypt\readme.txt=
+C:\Jons\Crypt\useme.txt=
+
+[Package|Text Crypt Package|Files Removed]
+
+[Package|Text Crypt Package|Files In Project]
+C:\Jons\Crypt\Crypt.dll=Yes
+C:\WIN98\SYSTEM\MSVBVM60.DLL=Yes
+C:\WIN98\SYSTEM\OLEAUT32.DLL=Yes
+C:\WIN98\SYSTEM\OLEPRO32.DLL=Yes
+C:\WIN98\SYSTEM\ASYCFILT.DLL=Yes
+C:\WIN98\SYSTEM\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WIN98\SYSTEM\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Jons\Crypt\COMPARE.EXE=Yes
+C:\Jons\Crypt\CRYPT.EXE=Yes
+C:\Jons\Crypt\DECRYPT.EXE=Yes
+C:\Jons\Crypt\EXAMPLE.COD=Yes
+C:\Jons\Crypt\EXAMPLE.ORI=Yes
+C:\Jons\Crypt\README.TXT=Yes
+C:\Jons\Crypt\useme.txt=Yes
+
+[Package|Text Crypt Package|Configure Registry Files]
+Applicable=No
+
+[Package|Text Crypt Package|Configure Remote Servers]
+Applicable=No
+
+[Package|Text Crypt Package|Install Locations]
+C:\Jons\Crypt\Crypt.dll=$(AppPath)
+C:\WIN98\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WIN98\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Jons\Crypt\COMPARE.EXE=$(AppPath)
+C:\Jons\Crypt\CRYPT.EXE=$(AppPath)
+C:\Jons\Crypt\DECRYPT.EXE=$(AppPath)
+C:\Jons\Crypt\EXAMPLE.COD=$(AppPath)
+C:\Jons\Crypt\EXAMPLE.ORI=$(AppPath)
+C:\Jons\Crypt\README.TXT=$(AppPath)
+C:\Jons\Crypt\useme.txt=$(AppPath)
+
+[Package|Text Crypt Package|Configure Shared Files]
+Applicable=Yes
+C:\Jons\Crypt\Crypt.dll=No
+C:\Jons\Crypt\COMPARE.EXE=No
+C:\Jons\Crypt\CRYPT.EXE=No
+C:\Jons\Crypt\DECRYPT.EXE=No
+C:\Jons\Crypt\EXAMPLE.COD=No
+C:\Jons\Crypt\EXAMPLE.ORI=No
+C:\Jons\Crypt\README.TXT=No
+C:\Jons\Crypt\useme.txt=No
+
+[Package|Text Crypt Package|Distribution]
+Type=single
+Size=
+Title=Text Crypt v1.0 -- Black Lotus Software
+
+[Package|Text Crypt Package|Package]
+PackageFolder=C:\Jons\Crypt\Package
+ProjectFolder=C:\Jons\Crypt
+ServerSideCab=
+File1=C:\Jons\Crypt\Package\setup.exe
+File2=C:\Jons\Crypt\Package\Setup.Lst
+File3=C:\Jons\Crypt\Package\Crypt.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|Text Crypt Package|IconGroups]
+Group0=Black Lotus Console
+PrivateGroup0=False
+Parent0=$(Programs)
+
+[Package|Text Crypt Package|Black Lotus Console]
+Icon1=useme.txt
+Title1=Text Crypt v1.0
+StartIn1=$(AppPath)
+Key1=Icon1

@@ -1,0 +1,26 @@
+HKCR
+{
+	FileBloc.Interface.1 = s 'Interface Class'
+	{
+		CLSID = s '{EC0C82E0-77FE-4C55-AC85-D1F574A27C43}'
+	}
+	FileBloc.Interface = s 'Interface Class'
+	{
+		CLSID = s '{EC0C82E0-77FE-4C55-AC85-D1F574A27C43}'
+		CurVer = s 'FileBloc.Interface.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {EC0C82E0-77FE-4C55-AC85-D1F574A27C43} = s 'Interface Class'
+		{
+			ProgID = s 'FileBloc.Interface.1'
+			VersionIndependentProgID = s 'FileBloc.Interface'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{28214EF4-3E10-4C53-81EA-F3CFAF0D62CC}'
+		}
+	}
+}

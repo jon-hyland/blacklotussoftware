@@ -1,0 +1,42 @@
+program Coder;
+
+uses
+ Crt;
+
+var
+ File1 : text;
+ File2 : text;
+ Key : char;
+ j, k : integer;
+
+procedure Help;
+ begin
+  writeln('TextCoder v1.0 - Jon Hyland 7/17/95');
+  writeln(' usage: textcode input.ext output.ext /c /d /h');
+  writeln(' switches: /c = code  /d = decode  /h = help');
+  writeln;
+  halt(3);
+ end;
+
+begin
+ if ((paramstr(1) = '/h') or (paramstr(1) = '/H') or (paramstr(2) = 'h') or
+  (paramstr(2) = '/H') or (paramstr(3) = '/h') or (paramstr(3) = '/H') or
+  (paramstr(1) = '')) then Help;
+ assign(File1, paramstr(1));
+ assign(File2, paramstr(2));
+ reset(File1);
+ rewrite(File2);
+  repeat
+    repeat
+     read(File1, key);
+     if ((paramstr(3) = '/c') or (paramstr(3) = '/C') or (paramstr(3) = ''))
+      then write(File2, chr(ord(Key) + 128));
+     if ((paramstr(3) = '/d') or (paramstr(3) = '/D'))
+      then write(File2, chr(ord(Key) - 128));
+    until Eoln(File1);
+   readln(File1);
+   writeln(File2);
+  until Eof(File1);
+ close(File1);
+ close(File2);
+end.

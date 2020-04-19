@@ -1,0 +1,106 @@
+[Root]
+Most Recent Package=Crazy8 Package
+Most Recent Deploy=Crazy8 Deploy
+
+
+[Package|Crazy8 Package|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Jons\Crazy8\Package
+
+[Package|Crazy8 Package|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Crazy8 Package|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Crazy8 Package|Files Found]
+
+[Package|Crazy8 Package|Files Released]
+
+[Package|Crazy8 Package|Missing Dependency Information]
+
+[Package|Crazy8 Package|Out-of-Date Dependency Information]
+
+[Package|Crazy8 Package|Files Added]
+C:\Jons\Crazy8\Crazy8.exe=
+C:\Jons\Crazy8\crazy8.pas=
+C:\Jons\Crazy8\readme.txt=
+
+[Package|Crazy8 Package|Files Removed]
+
+[Package|Crazy8 Package|Files In Project]
+C:\Jons\Crazy8\Crazy8.dll=Yes
+C:\WIN98\SYSTEM\MSVBVM60.DLL=Yes
+C:\WIN98\SYSTEM\OLEAUT32.DLL=Yes
+C:\WIN98\SYSTEM\OLEPRO32.DLL=Yes
+C:\WIN98\SYSTEM\ASYCFILT.DLL=Yes
+C:\WIN98\SYSTEM\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WIN98\SYSTEM\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Jons\Crazy8\Crazy8.exe=Yes
+C:\Jons\Crazy8\crazy8.pas=Yes
+C:\Jons\Crazy8\readme.txt=Yes
+
+[Package|Crazy8 Package|Configure Registry Files]
+Applicable=No
+
+[Package|Crazy8 Package|Configure Remote Servers]
+Applicable=No
+
+[Package|Crazy8 Package|Install Locations]
+C:\Jons\Crazy8\Crazy8.dll=$(AppPath)
+C:\WIN98\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WIN98\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Jons\Crazy8\Crazy8.exe=$(AppPath)
+C:\Jons\Crazy8\crazy8.pas=$(AppPath)
+C:\Jons\Crazy8\readme.txt=$(AppPath)
+
+[Package|Crazy8 Package|Configure Shared Files]
+Applicable=Yes
+C:\Jons\Crazy8\Crazy8.dll=No
+C:\Jons\Crazy8\Crazy8.exe=No
+C:\Jons\Crazy8\crazy8.pas=No
+C:\Jons\Crazy8\readme.txt=No
+
+[Package|Crazy8 Package|Distribution]
+Type=single
+Size=
+Title=Black Lotus Crazy 8's  v1.0
+
+[Package|Crazy8 Package|IconGroups]
+Group0=Black Lotus Console
+PrivateGroup0=False
+Parent0=$(Programs)
+
+[Package|Crazy8 Package|Black Lotus Console]
+Icon1=Crazy8.exe
+Title1=Crazy 8's v1.0
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Crazy8 Package|Package]
+PackageFolder=C:\Jons\Crazy8\Package
+ProjectFolder=C:\Jons\Crazy8
+ServerSideCab=
+File1=C:\Jons\Crazy8\Package\setup.exe
+File2=C:\Jons\Crazy8\Package\Setup.Lst
+File3=C:\Jons\Crazy8\Package\Crazy8.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Deploy|Crazy8 Deploy|Root]
+Package=Crazy8 Package
+Handler=PDWizard.FolderDplySubWiz
+Folder=C:\Jons\Crazy8\Deploy

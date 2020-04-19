@@ -1,0 +1,98 @@
+[Root]
+Most Recent Package=Black Lotus Alarm Clock v1.1 Package 1
+Most Recent Deploy=Black Lotus Alarm Clock v1.1 Deploy 1
+
+
+[Package|Black Lotus Alarm Clock v1.1 Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\win98\desktop\clock\pack
+
+[Package|Black Lotus Alarm Clock v1.1 Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Black Lotus Alarm Clock v1.1 Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Black Lotus Alarm Clock v1.1 Package 1|Files Found]
+
+[Package|Black Lotus Alarm Clock v1.1 Package 1|Files Released]
+
+[Package|Black Lotus Alarm Clock v1.1 Package 1|Missing Dependency Information]
+
+[Package|Black Lotus Alarm Clock v1.1 Package 1|Out-of-Date Dependency Information]
+
+[Package|Black Lotus Alarm Clock v1.1 Package 1|Files Added]
+C:\Program Files\Alarm Clock\blclock.dat=
+
+[Package|Black Lotus Alarm Clock v1.1 Package 1|Files Removed]
+
+[Package|Black Lotus Alarm Clock v1.1 Package 1|Files In Project]
+C:\Program Files\Alarm Clock\BLClock.exe=Yes
+C:\WIN98\SYSTEM\MSVBVM60.DLL=Yes
+C:\WIN98\SYSTEM\OLEAUT32.DLL=Yes
+C:\WIN98\SYSTEM\OLEPRO32.DLL=Yes
+C:\WIN98\SYSTEM\ASYCFILT.DLL=Yes
+C:\WIN98\SYSTEM\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WIN98\SYSTEM\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Program Files\Alarm Clock\blclock.dat=Yes
+
+[Package|Black Lotus Alarm Clock v1.1 Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Black Lotus Alarm Clock v1.1 Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Black Lotus Alarm Clock v1.1 Package 1|Install Locations]
+C:\Program Files\Alarm Clock\BLClock.exe=$(AppPath)
+C:\WIN98\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WIN98\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Program Files\Alarm Clock\blclock.dat=$(AppPath)
+
+[Package|Black Lotus Alarm Clock v1.1 Package 1|Configure Shared Files]
+Applicable=Yes
+C:\Program Files\Alarm Clock\BLClock.exe=No
+C:\Program Files\Alarm Clock\blclock.dat=No
+
+[Package|Black Lotus Alarm Clock v1.1 Package 1|Distribution]
+Type=single
+Size=
+Title=Black Lotus Alarm Clock v1.1
+
+[Package|Black Lotus Alarm Clock v1.1 Package 1|IconGroups]
+Group0=Black Lotus Software
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Black Lotus Alarm Clock v1.1 Package 1|Black Lotus Software]
+Icon1=BLClock.exe
+Title1=Black Lotus Alarm Clock v1.1
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Black Lotus Alarm Clock v1.1 Package 1|Package]
+PackageFolder=C:\win98\desktop\clock\pack
+ProjectFolder=C:\Program Files\Alarm Clock
+ServerSideCab=
+File1=C:\win98\desktop\clock\pack\setup.exe
+File2=C:\win98\desktop\clock\pack\Setup.Lst
+File3=C:\win98\desktop\clock\pack\BLClock.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Deploy|Black Lotus Alarm Clock v1.1 Deploy 1|Root]
+Package=Black Lotus Alarm Clock v1.1 Package 1
+Handler=PDWizard.FolderDplySubWiz
+Folder=C:\win98\desktop\clock\dep

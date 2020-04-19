@@ -1,0 +1,118 @@
+[Root]
+Most Recent Package=Wormbomb Package
+Most Recent Deploy=Wormbomb Deploy
+
+
+[Package|Wormbomb Package|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Jons\Wormbomb\Package
+
+[Package|Wormbomb Package|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Wormbomb Package|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Wormbomb Package|Files Found]
+
+[Package|Wormbomb Package|Files Released]
+
+[Package|Wormbomb Package|Missing Dependency Information]
+
+[Package|Wormbomb Package|Out-of-Date Dependency Information]
+
+[Package|Wormbomb Package|Files Added]
+C:\Jons\Wormbomb\readme.txt=
+C:\Jons\Wormbomb\TITLESCR.PIK=
+C:\Jons\Wormbomb\WORMBOMB.EXE=
+C:\Jons\Wormbomb\WORMBOMB.PAS=
+C:\Jons\Wormbomb\WORMHISC.DAT=
+C:\Jons\Wormbomb\WORMSCRN.PIK=
+
+[Package|Wormbomb Package|Files Removed]
+
+[Package|Wormbomb Package|Files In Project]
+C:\Jons\Wormbomb\Wormbomb.dll=Yes
+C:\WIN98\SYSTEM\MSVBVM60.DLL=Yes
+C:\WIN98\SYSTEM\OLEAUT32.DLL=Yes
+C:\WIN98\SYSTEM\OLEPRO32.DLL=Yes
+C:\WIN98\SYSTEM\ASYCFILT.DLL=Yes
+C:\WIN98\SYSTEM\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WIN98\SYSTEM\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Jons\Wormbomb\readme.txt=Yes
+C:\Jons\Wormbomb\TITLESCR.PIK=Yes
+C:\Jons\Wormbomb\WORMBOMB.EXE=Yes
+C:\Jons\Wormbomb\WORMBOMB.PAS=Yes
+C:\Jons\Wormbomb\WORMHISC.DAT=Yes
+C:\Jons\Wormbomb\WORMSCRN.PIK=Yes
+
+[Package|Wormbomb Package|Configure Registry Files]
+Applicable=No
+
+[Package|Wormbomb Package|Configure Remote Servers]
+Applicable=No
+
+[Package|Wormbomb Package|Install Locations]
+C:\Jons\Wormbomb\Wormbomb.dll=$(AppPath)
+C:\WIN98\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WIN98\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Jons\Wormbomb\readme.txt=$(AppPath)
+C:\Jons\Wormbomb\TITLESCR.PIK=$(AppPath)
+C:\Jons\Wormbomb\WORMBOMB.EXE=$(AppPath)
+C:\Jons\Wormbomb\WORMBOMB.PAS=$(AppPath)
+C:\Jons\Wormbomb\WORMHISC.DAT=$(AppPath)
+C:\Jons\Wormbomb\WORMSCRN.PIK=$(AppPath)
+
+[Package|Wormbomb Package|Configure Shared Files]
+Applicable=Yes
+C:\Jons\Wormbomb\Wormbomb.dll=No
+C:\Jons\Wormbomb\readme.txt=No
+C:\Jons\Wormbomb\TITLESCR.PIK=No
+C:\Jons\Wormbomb\WORMBOMB.EXE=No
+C:\Jons\Wormbomb\WORMBOMB.PAS=No
+C:\Jons\Wormbomb\WORMHISC.DAT=No
+C:\Jons\Wormbomb\WORMSCRN.PIK=No
+
+[Package|Wormbomb Package|Distribution]
+Type=single
+Size=
+Title=Wormbomb v1.3 -- 1996 Jon Hyland
+
+[Package|Wormbomb Package|IconGroups]
+Group0=Black Lotus Console
+PrivateGroup0=False
+Parent0=$(Programs)
+
+[Package|Wormbomb Package|Black Lotus Console]
+Icon1=WORMBOMB.EXE
+Title1=Wormbomb v1.3
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Wormbomb Package|Package]
+PackageFolder=C:\Jons\Wormbomb\Package
+ProjectFolder=C:\Jons\Wormbomb
+ServerSideCab=
+File1=C:\Jons\Wormbomb\Package\setup.exe
+File2=C:\Jons\Wormbomb\Package\Setup.Lst
+File3=C:\Jons\Wormbomb\Package\Wormbomb.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Deploy|Wormbomb Deploy|Root]
+Package=Wormbomb Package
+Handler=PDWizard.FolderDplySubWiz
+Folder=C:\Jons\Wormbomb\Dep

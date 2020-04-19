@@ -1,0 +1,1 @@
+Black Lotus Secret Messager v1.2.  Usefull for sending and recieving encrypting email.  This program features a text editor that saves the words to an encrypted format that is virtually impossible for someone to crack.  (c) 1999 Black Lotus Software.

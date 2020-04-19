@@ -1,0 +1,196 @@
+[Root]
+Most Recent Package=Binary Crypt v1.21 Final Package
+Most Recent Deploy=Binary Crypt v1.21 Final Deploy
+
+
+[Package|Binary Crypt Floppy Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Jons\Packages\Binary Crypt\Floppy Package
+
+[Package|Binary Crypt Floppy Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Binary Crypt Floppy Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Binary Crypt Floppy Package 1|Files Found]
+
+[Package|Binary Crypt Floppy Package 1|Files Released]
+
+[Package|Binary Crypt Floppy Package 1|Missing Dependency Information]
+
+[Package|Binary Crypt Floppy Package 1|Out-of-Date Dependency Information]
+
+[Package|Binary Crypt Floppy Package 1|Files Added]
+C:\Jons\Binary Crypt\readme.txp=
+
+[Package|Binary Crypt Floppy Package 1|Files Removed]
+
+[Package|Binary Crypt Floppy Package 1|Files In Project]
+C:\Jons\Binary Crypt\BinCrypt.exe=Yes
+C:\WIN98\SYSTEM\MSVBVM60.DLL=Yes
+C:\WIN98\SYSTEM\OLEAUT32.DLL=Yes
+C:\WIN98\SYSTEM\OLEPRO32.DLL=Yes
+C:\WIN98\SYSTEM\ASYCFILT.DLL=Yes
+C:\WIN98\SYSTEM\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WIN98\SYSTEM\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Jons\Binary Crypt\readme.txp=Yes
+
+[Package|Binary Crypt Floppy Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Binary Crypt Floppy Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Binary Crypt Floppy Package 1|Install Locations]
+C:\Jons\Binary Crypt\BinCrypt.exe=$(AppPath)
+C:\WIN98\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WIN98\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Jons\Binary Crypt\readme.txp=$(AppPath)
+
+[Package|Binary Crypt Floppy Package 1|Configure Shared Files]
+Applicable=Yes
+C:\Jons\Binary Crypt\BinCrypt.exe=No
+C:\Jons\Binary Crypt\readme.txp=No
+
+[Package|Binary Crypt Floppy Package 1|Distribution]
+Type=multi
+Size=1.44 MB
+Title=Black Lotus Binary Crypt v1.2
+
+[Package|Binary Crypt Floppy Package 1|IconGroups]
+Group0=Black Lotus Software
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Binary Crypt Floppy Package 1|Black Lotus Software]
+Icon1=BinCrypt.exe
+Title1=Black Lotus Binary Crypt v1.2
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Binary Crypt Floppy Package 1|Package]
+PackageFolder=C:\Jons\Packages\Binary Crypt\Floppy Package
+ProjectFolder=C:\Jons\Binary Crypt
+ServerSideCab=
+File1=C:\Jons\Packages\Binary Crypt\Floppy Package\setup.exe
+File2=C:\Jons\Packages\Binary Crypt\Floppy Package\Setup.Lst
+File3=C:\Jons\Packages\Binary Crypt\Floppy Package\BinCry1.CAB
+File4=C:\Jons\Packages\Binary Crypt\Floppy Package\BinCry2.CAB
+Handler1=PDWizard.FloppyDplySubWiz
+Handler2=PDWizard.FolderDplySubWiz
+Handler3=PDWizard.WebPostDplySubWiz
+
+[Deploy|Binary Crypt Floppy Deploy 1|Root]
+Package=Binary Crypt Floppy Package 1
+Handler=PDWizard.FloppyDplySubWiz
+Floppy Drive=a:\
+Format=No
+
+
+[Package|Binary Crypt v1.21 Final Package|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Jons\Packages\Binary Crypt\Package
+
+[Package|Binary Crypt v1.21 Final Package|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Binary Crypt v1.21 Final Package|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Binary Crypt v1.21 Final Package|Files Found]
+
+[Package|Binary Crypt v1.21 Final Package|Files Released]
+
+[Package|Binary Crypt v1.21 Final Package|Missing Dependency Information]
+
+[Package|Binary Crypt v1.21 Final Package|Out-of-Date Dependency Information]
+
+[Package|Binary Crypt v1.21 Final Package|Files Added]
+C:\Jons\Binary Crypt\helpdoc.bct=
+
+[Package|Binary Crypt v1.21 Final Package|Files Removed]
+
+[Package|Binary Crypt v1.21 Final Package|Files In Project]
+C:\Jons\Binary Crypt\BinCrypt.exe=Yes
+C:\WIN98\SYSTEM\MSVBVM60.DLL=Yes
+C:\WIN98\SYSTEM\OLEAUT32.DLL=Yes
+C:\WIN98\SYSTEM\OLEPRO32.DLL=Yes
+C:\WIN98\SYSTEM\ASYCFILT.DLL=Yes
+C:\WIN98\SYSTEM\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WIN98\SYSTEM\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Jons\Binary Crypt\helpdoc.bct=Yes
+
+[Package|Binary Crypt v1.21 Final Package|Configure Registry Files]
+Applicable=No
+
+[Package|Binary Crypt v1.21 Final Package|Configure Remote Servers]
+Applicable=No
+
+[Package|Binary Crypt v1.21 Final Package|Install Locations]
+C:\Jons\Binary Crypt\BinCrypt.exe=$(AppPath)
+C:\WIN98\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WIN98\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Jons\Binary Crypt\helpdoc.bct=$(AppPath)
+
+[Package|Binary Crypt v1.21 Final Package|Configure Shared Files]
+Applicable=Yes
+C:\Jons\Binary Crypt\BinCrypt.exe=No
+C:\Jons\Binary Crypt\helpdoc.bct=No
+
+[Package|Binary Crypt v1.21 Final Package|Distribution]
+Type=single
+Size=
+Title=Black Lotus Binary Crypt v1.21
+
+[Package|Binary Crypt v1.21 Final Package|IconGroups]
+Group0=Black Lotus Software
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Binary Crypt v1.21 Final Package|Black Lotus Software]
+Icon1=BinCrypt.exe
+Title1=Black Lotus Binary Crypt v1.21
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Binary Crypt v1.21 Final Package|Package]
+PackageFolder=C:\Jons\Packages\Binary Crypt\Package
+ProjectFolder=C:\Jons\Binary Crypt
+ServerSideCab=
+File1=C:\Jons\Packages\Binary Crypt\Package\setup.exe
+File2=C:\Jons\Packages\Binary Crypt\Package\Setup.Lst
+File3=C:\Jons\Packages\Binary Crypt\Package\BinCrypt.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Deploy|Binary Crypt v1.21 Final Deploy|Root]
+Package=Binary Crypt v1.21 Final Package
+Handler=PDWizard.FolderDplySubWiz
+Folder=C:\Jons\Packages\Binary Crypt\Deploy

@@ -1,0 +1,23 @@
+This is a test of TextCrypt and TextDeCrypt.
+Coded file password is PASS.
+
+1111              1111
+ 2222            2222
+  3333          3333
+   4444        4444
+    5555      5555         The quick brown fox jumped over the lazy dog.
+     6666    6666          `1234567890-=\qwertyuiop[]asdfghjkl;'zxcvbnm,./
+      7777  7777           ~!@#$%^&*()_+|QWERTYUIOP{}ASDFGHJKL:"ZXCVBNM<>?
+       88888888
+        999999
+         0000
+
+tab     tab     tab:space space space 
+
+XXXX        XXXX
+  XXXX    XXXX
+    XXXXXXXX
+      XXXX
+    XXXXXXXX
+  XXXX    XXXX
+XXXX        XXXX

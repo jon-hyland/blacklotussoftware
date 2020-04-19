@@ -1,0 +1,94 @@
+[Root]
+Most Recent Package=BLBC 1.0 Beta Package
+Most Recent Deploy=BLBC v1.0 Beta Deploy
+
+
+[Package|BLBC 1.0 Beta Package|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Program Files\Binary Crypt\Package
+
+[Package|BLBC 1.0 Beta Package|Configure DAO ISAMs]
+Applicable=No
+
+[Package|BLBC 1.0 Beta Package|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|BLBC 1.0 Beta Package|Files Found]
+
+[Package|BLBC 1.0 Beta Package|Files Released]
+
+[Package|BLBC 1.0 Beta Package|Missing Dependency Information]
+
+[Package|BLBC 1.0 Beta Package|Out-of-Date Dependency Information]
+
+[Package|BLBC 1.0 Beta Package|Files Added]
+
+[Package|BLBC 1.0 Beta Package|Files Removed]
+
+[Package|BLBC 1.0 Beta Package|Files In Project]
+C:\Program Files\Binary Crypt\BinEnc.exe=Yes
+C:\WIN98\SYSTEM\MSVBVM60.DLL=Yes
+C:\WIN98\SYSTEM\OLEAUT32.DLL=Yes
+C:\WIN98\SYSTEM\OLEPRO32.DLL=Yes
+C:\WIN98\SYSTEM\ASYCFILT.DLL=Yes
+C:\WIN98\SYSTEM\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WIN98\SYSTEM\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|BLBC 1.0 Beta Package|Configure Registry Files]
+Applicable=No
+
+[Package|BLBC 1.0 Beta Package|Configure Remote Servers]
+Applicable=No
+
+[Package|BLBC 1.0 Beta Package|Install Locations]
+C:\Program Files\Binary Crypt\BinEnc.exe=$(AppPath)
+C:\WIN98\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WIN98\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|BLBC 1.0 Beta Package|Configure Shared Files]
+Applicable=Yes
+C:\Program Files\Binary Crypt\BinEnc.exe=No
+
+[Package|BLBC 1.0 Beta Package|Distribution]
+Type=single
+Size=
+Title=Black Lotus Binary Crypt v1.0 Beta
+
+[Package|BLBC 1.0 Beta Package|IconGroups]
+Group0=Black Lotus Software
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|BLBC 1.0 Beta Package|Black Lotus Software]
+Icon1=BinEnc.exe
+Title1=Black Lotus Binary Crypt v1.0 Beta
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|BLBC 1.0 Beta Package|Package]
+PackageFolder=C:\Program Files\Binary Crypt\Package
+ProjectFolder=C:\Program Files\Binary Crypt
+ServerSideCab=
+File1=C:\Program Files\Binary Crypt\Package\setup.exe
+File2=C:\Program Files\Binary Crypt\Package\Setup.Lst
+File3=C:\Program Files\Binary Crypt\Package\BinEnc.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Deploy|BLBC v1.0 Beta Deploy|Root]
+Package=BLBC 1.0 Beta Package
+Handler=PDWizard.FolderDplySubWiz
+Folder=C:\Program Files\Binary Crypt\Deploy

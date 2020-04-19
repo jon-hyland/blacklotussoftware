@@ -1,0 +1,51 @@
+.OPTION EXPLICIT
+.Set Cabinet=off
+.Set Compress=off
+.Set MaxDiskSize=CDROM
+.Set ReservePerCabinetSize=6144
+.Set DiskDirectoryTemplate=".."
+.Set CompressionType=MSZIP
+.Set CompressionLevel=7
+.Set CompressionMemory=21
+.Set CabinetNameTemplate="Cooldraw.CAB"
+"Setup.Lst"
+"setup.exe"
+.Set Cabinet=on
+.Set Compress=on
+"Cooldraw.dll"
+"MSVBVM60.DLL"
+"OLEAUT32.DLL"
+"OLEPRO32.DLL"
+"ASYCFILT.DLL"
+"STDOLE2.TLB"
+"COMCAT.DLL"
+"SETUP1.EXE"
+"VB6STKIT.DLL"
+"ST6UNST.EXE"
+"ARENA.PIC"
+"ARENA2.PIC"
+"BENMENU.PIC"
+"BUGS.PIC"
+"CDTIT.PAS"
+"CDTIT.PIC"
+"CHARSET.DAT"
+"CHART.PIC"
+"CHECKER.PIC"
+"CHECKERS.PIC"
+"COOLDRAW.EXE"
+"COOLDRAW.PAS"
+"DEATH.PIC"
+"FACE.PIC"
+"FLIPTEST.PIC"
+"PASSWORD.PIC"
+"PHONE.PIC"
+"README.TXT"
+"SLAYPIT.PIC"
+"SLUGS.PIC"
+"SPACE.PIC"
+"SPACEWAR.PIC"
+"SPILTEST.PIC"
+"TEST.PIC"
+"TETRIS.PIC"
+"TOLLMENU.PIC"
+"TOOLMENU.PIC"

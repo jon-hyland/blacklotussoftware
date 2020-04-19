@@ -1,0 +1,118 @@
+[Root]
+Most Recent Package=Block Package
+Most Recent Deploy=Block Deploy
+
+
+[Package|Block Package|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Jons\Block\Package
+
+[Package|Block Package|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Block Package|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Block Package|Files Found]
+
+[Package|Block Package|Files Released]
+
+[Package|Block Package|Missing Dependency Information]
+
+[Package|Block Package|Out-of-Date Dependency Information]
+
+[Package|Block Package|Files Added]
+C:\Jons\Block\BLOCK.EXE=
+C:\Jons\Block\BLOCK.HS=
+C:\Jons\Block\BLOCK.PAS=
+C:\Jons\Block\BLOCK.TXT=
+C:\Jons\Block\README.TXT=
+C:\Jons\Block\STD.PAS=
+
+[Package|Block Package|Files Removed]
+
+[Package|Block Package|Files In Project]
+C:\Jons\Block\Block.dll=Yes
+C:\WIN98\SYSTEM\MSVBVM60.DLL=Yes
+C:\WIN98\SYSTEM\OLEAUT32.DLL=Yes
+C:\WIN98\SYSTEM\OLEPRO32.DLL=Yes
+C:\WIN98\SYSTEM\ASYCFILT.DLL=Yes
+C:\WIN98\SYSTEM\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WIN98\SYSTEM\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Jons\Block\BLOCK.EXE=Yes
+C:\Jons\Block\BLOCK.HS=Yes
+C:\Jons\Block\BLOCK.PAS=Yes
+C:\Jons\Block\BLOCK.TXT=Yes
+C:\Jons\Block\README.TXT=Yes
+C:\Jons\Block\STD.PAS=Yes
+
+[Package|Block Package|Configure Registry Files]
+Applicable=No
+
+[Package|Block Package|Configure Remote Servers]
+Applicable=No
+
+[Package|Block Package|Install Locations]
+C:\Jons\Block\Block.dll=$(AppPath)
+C:\WIN98\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WIN98\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Jons\Block\BLOCK.EXE=$(AppPath)
+C:\Jons\Block\BLOCK.HS=$(AppPath)
+C:\Jons\Block\BLOCK.PAS=$(AppPath)
+C:\Jons\Block\BLOCK.TXT=$(AppPath)
+C:\Jons\Block\README.TXT=$(AppPath)
+C:\Jons\Block\STD.PAS=$(AppPath)
+
+[Package|Block Package|Configure Shared Files]
+Applicable=Yes
+C:\Jons\Block\Block.dll=No
+C:\Jons\Block\BLOCK.EXE=No
+C:\Jons\Block\BLOCK.HS=No
+C:\Jons\Block\BLOCK.PAS=No
+C:\Jons\Block\BLOCK.TXT=No
+C:\Jons\Block\README.TXT=No
+C:\Jons\Block\STD.PAS=No
+
+[Package|Block Package|Distribution]
+Type=single
+Size=
+Title=Black Lotus Block Cruncher v1.2
+
+[Package|Block Package|IconGroups]
+Group0=Black Lotus Console
+PrivateGroup0=False
+Parent0=$(Programs)
+
+[Package|Block Package|Black Lotus Console]
+Icon1=BLOCK.EXE
+Title1=Block Cruncher v1.2
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Block Package|Package]
+PackageFolder=C:\Jons\Block\Package
+ProjectFolder=C:\Jons\Block
+ServerSideCab=
+File1=C:\Jons\Block\Package\setup.exe
+File2=C:\Jons\Block\Package\Setup.Lst
+File3=C:\Jons\Block\Package\Block.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Deploy|Block Deploy|Root]
+Package=Block Package
+Handler=PDWizard.FolderDplySubWiz
+Folder=C:\Jons\Block\Deploy

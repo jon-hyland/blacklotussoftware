@@ -1,0 +1,3822 @@
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 1    ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+ Table of Contents
+ =================
+
+ Chapter 1   Introduction .................................... Page  2
+
+ Chapter 2   Installing COMit ................................ Page  4
+
+ Chapter 3   Starting COMit from MS-DOS ...................... Page  6
+
+ Chapter 4   COMit's Prompts and Menus ....................... Page  8
+
+ Chapter 5   Setups .......................................... Page 12
+
+ Chapter 6   Adding and Revising Names ....................... Page 21
+
+ Chapter 7   Calling with COMit .............................. Page 27
+
+ Chapter 8   Online Functions ................................ Page 30
+
+ Chapter 9   Answering with COMit (Host Mode) ................ Page 39
+
+ Chapter 10  Other Ways to Go Online ......................... Page 45
+
+ Chapter 11  File Utilities .................................. Page 47
+
+ Chapter 12  Diagnostics ..................................... Page 54
+
+ Chapter 13  Writing and Using Scripts ....................... Page 57
+
+ Chapter 14  Transfer Protocols .............................. Page 66
+
+ Chapter 15  Errors & Troubleshooting ........................ Page 69
+
+ Appendix 1 - COMit Files .................................... Page 74
+
+ Appendix 2 - VT52 & VT100 Terminal Emulation................. Page 75
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 2    ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ COMit is communications software.  A modem connects your computer to the
+ telephone line.  Communications software controls data flow to and from the
+ modem and manages your keyboard, display, and disk files while using the
+ modem.
+
+ At the nucleus of COMit is the dialing directory, an easy to use database
+ where you can store names, phone numbers, and modem setups.  On your screen it
+ appears as a wire-bound notebook, which you can "flip" through, search, or
+ sort into alphabetical order.  You can even add pages with your own notes,
+ instructions, and records!
+
+ Move to any entry, press a key, and COMit instructs the modem to dial for you,
+ and to redial if the line is busy.  Once connected, your computer acts as a
+ terminal, giving you access to the remote computer's resources.  Seven
+ built-in transfer protocols provide compatibility with nearly any other system
+ for sending and receiving disk files.
+
+ You can record your session to a printer or disk file, or when something has
+ slipped out of view, you can use COMit's "scroll-back" feature to review as
+ many lines as you want.
+
+ With a simple but powerful "scripting" capability, you can prepare responses
+ to a remote computer's prompts before a call, so that routine information
+ requests and file transfers can be done automatically and completely
+ unattended.  You needn't be a programmer to prepare these scripts.  COMit, by
+ "watching" your last call, can write a script for you, and it is stored right
+ in the dialing directory so you don't have dozens of files to manage!
+
+ Do you want your computer to answer calls from others?  It's easy to do with
+ COMit's host mode.  Callers can view, send, and receive files, and you,
+ remotely or locally, can set 3 levels of password security, authorizing access
+ to just the callers and disk files you wish.  A "chat" feature is also
+ available for typing messages back and forth while online.
+
+ COMit goes beyond other communications software by adding Class 2, 4, 5, and
+ 7 MNP (and in certain editions, V.42bis) to modems which may not have the
+ capability built into the hardware.  MNP and/or V.42bis ensures flawless
+ transmissions, even when phone connection quality is poor, and optional
+ compression of data "on the fly" for sending and receiving potentially more
+ than three times the rated speed of the modem.
+
+ To aid in original setup as well as troubleshooting, COMit provides an
+ extensive array of diagnostic features.  It can locate your modem, find
+ conflicting devices, and in many cases, it can even compensate for incorrect
+ switch settings.  You can also quickly view your modem's S-Register settings
+ and their meanings.   For troubleshooting that goes beyond communications,
+ COMit provides CPU, DOS version, math coprocessor, and video card
+ identification, a RAM test, a speed and performance test, and listings of
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 3    ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ memory resident programs, environment strings, Config.SYS file, Autoexec.BAT
+ file, and interrupt vectors.
+
+ You'll find COMit's file utilities especially valuable when preparing data to
+ be sent, and reviewing data received.  A conventional or "tree structure"
+ directory lists the files on your disk, sorted by date, size, name, or
+ extension.  By pressing a key, you can examine the contents of any file. Or,
+ you can "tag" multiple files for batch operations.  You can print all tagged
+ files, free-up space by deleting them, or you can check them to identify disk
+ errors.  Especially useful is the ability to preselect files to be sent before
+ making a call.
+
+ COMit's innovative menus give easy access to all features, without slowing
+ down experienced users.  A complete "manual on a disk" helps new users learn
+ about COMit, communications concepts, and the modem.  Its "hypertext"
+ organization, complete with index, glossary, and table of contents, lets you
+ browse from topic to topic, getting more detailed information where desired.
+ The manual, when loaded, is just a keystroke away.
+
+ COMit is written in compact, fast, assembly language to get the best possible
+ performance from your computer and modem.  If available, it can take advantage
+ of up to 5 megabytes of EMS memory.  Its unique directory file structure
+ minimizes the number of disk files required, and provides automatic backup so
+ you can restore to the previous session in the event of disk or operator
+ errors.
+
+
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 4    ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ Chapter 1   Learning & Installing COMit
+ ---------------------------------------
+ This manual gives you a "hard copy" reference for installing and using COMit.
+
+ You may prefer (and we highly recommend) getting familiar with COMit first by
+ using the "manual on a disk".  It goes into great detail for communications
+ and data storage terminology, as well as all the features of COMit.  The
+ built-in glossary makes it especially useful for first-time modem users.
+
+ To do so, you must first go through the installation process.
+
+ Installing on a Hard Disk
+ -------------------------
+ 1. Put your COMit disk in a drive and close its latch.
+
+ Normally, you'll use Drive A.
+
+ 2. Now change the drive letter to match the drive you've put the COMit disk
+ into.  This is done by entering the drive letter and a colon.  For example:
+
+    A: [Enter]
+
+ Next, simply type:
+
+   INSTALL [Enter].
+
+ You'll be prompted by the program for the remaining steps.
+
+ The usual process includes making a subdirectory to hold COMit's files,
+ unpacking those files that have been compressed to save disk space,
+ and copying them to the destination you indicate.
+
+ After installation, you'll be taken to the drive and directory where
+ COMit has been installed.
+
+ To start COMit, with the "help" manual available, simply type:
+
+   COMITH [Enter].
+
+ Or, to browse though the help manual outside of COMit, simply type "HELP".
+
+ Chapter 3 gives other ways to start COMit.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 5    ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Installing on a Floppy Disk
+ ---------------------------
+ 1. Find a blank formated diskette and label it "COMit - Working Copy"
+
+ 2. Insert the original COMit diskette and type INSTALL.
+
+    When you are prompted, indicate you want to install on Drive A or B.
+
+    If you have floppy disk(s) only, the procedure may involve swapping
+    between the install disk and your working copy several times, as the
+    install program unpacks and copies your files.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 6    ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ Chapter 3   Starting COMit from MS-DOS
+ ======================================
+
+ At the DOS prompt, change to the drive containing COMIT.EXE.  For example, if
+ it is on Drive C, type:
+
+   C: [Enter]
+
+ Change to the subdirectory containing the COMit Program. For example, if it is
+ in a subdirectory called COMIT, your command is CD \COMIT [Enter].  (If COMit
+ is not in a subdirectory you can leave out this step.)
+
+ For COMit without online help.............type: COMIT   [Enter]
+ For COMit, with help available............type: COMITH  [Enter]
+ To view the manual alone, without COMit...type: HELP    [Enter]
+
+ Optional Startup Parameters
+ ---------------------------
+ If you know exactly what you'll want to do in COMit, you may add optional
+ startup parameters to the command line before pressing [Enter].  (If you are
+ not yet familiar with COMit, SKIP AHEAD TO THE NEXT CHAPTER for now.)
+
+ To go directly to a name in the dialing directory, put the name (or just
+ enough characters to identify the name) right after COMIT.  For example, to
+ start COMit and go directly to the COMPUSERVE entry, your command is:
+
+   COMIT COMPUSERVE [Enter]
+
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 7    ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Actually, you only need just enough letters to identify the name, so if
+ COMPUSERVE is the only name starting with "C" you get there by typing:
+
+   COMIT C [Enter]
+
+ In addition, you can provide any Main Menu command after the (optional)
+ dialing directory search-for name.
+
+ For example, to look-up and dial COMPUSERVE can use...
+
+   COMIT COMPUSERVE /OD [Enter]
+
+ To go on line as host immediately you can use...
+
+   COMIT /OH [Enter]
+
+ Or, to use COMit's file utilities, you might type...
+
+   COMIT /F [Enter]
+
+ The optional startup parameters are especially valuable to batch file
+ programmers because a COMit session can be made completely automatic.  If your
+ system has a main menu program, you can even set it so that selections in the
+ menu call specific names in COMit's dialing directory.
+
+ When using a name and "/OD", you may add a character to control what COMit
+ does after the call (or call attempt.)
+
+  /ODX exits COMit and returns to DOS after one attempt to make the call.
+  /OD1 to /OD9 controls the number of redial attempts before an exit to DOS.
+
+ Upon exit from COMit,ERRORLEVEL(as recognized by MS-DOS) is set to tell what
+ happened.
+
+    ERRORLEVEL 0 indicates the call was successful.
+    ERRORLEVEL 1 indicates there was no answer or no data connect.
+    ERRORLEVEL 2 indicates the connection was lost during the call.
+    Other ERRORLEVELs may be set by the "H" script command.
+
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 8    ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ Chapter 4  COMit's Prompts and Menus
+ ====================================
+
+ It's easy to get around the COMit program, and to know just what COMit expects
+ of you at any time.  This chapter introduces you to COMit's prompts and menus.
+
+
+ Dialing Directory Screen
+ -------------------------
+ After the program has been loaded from the disk, COMit searches for its data
+ file, which contains your dialing directory and all the setups.  The
+ information is displayed on the Dialing Directory Screen, which is your
+ starting point for most operations in COMit.
+
+
+ Ûßßßßßß ÛßßßßßÛ ÛßßßÛßßßÛ  Ü ÜÜÜÜÜ tm    Communications Software by Tradewind
+ ÛÜÜÜÜÜÜ ÛÜÜÜÜÜÛ Û   Û   Û  Û   Û               with Class 2/4/5/7 MNP(R)
+                                            Copyright (c)1992 - Version 1.##
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³Port COM2 IRQ3 02F8                   Dial ATDT                             ³
+ ³Path C:\COMIT                         Init AT E1V1Q0                      01³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+  (Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü(Ü
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³Name                    ³Number                  ³Bits Rate  MNP Echo   Term³
+ ÆÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍØÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍØÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍµ
+ ³TRADEWIND               ³1 818 335-6013          ³8N1  2400  MNP7 N      TTY³
+ ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+ ³                        ³                        ³                          ³
+ ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+ ³                        ³                        ³                          ³
+ ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+ ³                        ³                        ³                          ³
+ ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+ ³                        ³                        ³                          ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ Dialing Directory                                           Page 1 of 1
+  [/]Menu     [A]AddEntry    [S]Script [ ]Up   [F4]DeleteEntry       [F5]GoTo
+  [Enter]Dial [R]ReviseEntry [N]Notes  [ ]Down [F2]InsertLastDeleted [F6]Sort
+
+ The top portion of the screen is the COMit logo.  The COMit version number is
+ shown near the upper right of the screen.
+
+ Just below the logo, is a heading section.  For the dialing directory screen,
+ it shows your current setups.  Below the heading, you see a row of "spirals",
+ designed to give the "feel" of a wire-bound notebook.  Below the spiral are
+ "pages" which can be flipped using the [PgUp] and [PgDn] keys.  A flashing
+ cursor, and (usually) a highlight bar marks your current line.  You can use
+
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 9    ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+ the up and down arrow keys to move from line to line.  The [Home] key is a
+ quick way to get to the first line.  The [End] key goes to the last active
+ line.
+
+ The third line from the bottom tells you the title of the page you are
+ viewing. In this case it is "Dialing Directory".  To the right on the same
+ line, you can see the page count and your current page number.
+
+ The bottom two lines are the message area.  Here's where COMit tells you what
+ it wants.  On the dialing directory screen, the message area shows several key
+ commands that are available.  For example, [F6] can be pressed to sort the
+ dialing directory into alphabetical order.
+
+
+ COMit's Main Menu
+ -----------------
+ COMit's Main Menu is your "jump-off point" to the many features of COMit.
+ As the message shows on the dialing directory screen, you can press the slash
+ key [/] to bring up the main menu.  (Note: Forward slash on the bottom row
+ of your typewriter keyboard -- not to be confused with backslash [\] -- is
+ the default "Menu Access Key".  It can be changed, as described in Chapter 5
+ under "F-Key Setups.")
+
+
+   ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+   İ   COMit                                Ş
+   İ   Main Menu                            Ş
+   İ  ÚÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ Ş
+   İ  ³O³Go Online...                     ³ Ş
+   İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+   İ  ³S³Setups                           ³ Ş
+   İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+   İ  ³D³Diagnostics                      ³ Ş
+   İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+   İ  ³F³Files                            ³ Ş
+   İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+   İ  ³H³Help                             ³ Ş
+   İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+   İ  ³X³Exit COMit                       ³ Ş
+   İ  ÀÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ Ş
+   İ  [Esc] returns to dialing directory    Ş
+   İ                                        Ş
+   ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+
+ Using a COMit Menu
+ ------------------
+ COMit has several menus besides the main menu.  Generally, you'll press the
+ forward slash key [/] to bring up the menu that is appropriate to the current
+ situation.  [F1] usually works as an alternative to the menu access key.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 10   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+ If you really didn't want the menu, and instead intended to type a slash, just
+ press the slash key again. The menu disappears and the slash is typed. (This
+ only applies where COMit is waiting for you to type something, such as when
+ you are communicating with a remote computer, but it works for whatever key
+ you've assigned as the menu access key under F-Key setups.)
+
+ To select from a menu, simply press one of the indicated letter keys.  Or, use
+ the up and down arrow keys to move the menu so the pointer is at the choice
+ you want then press [Enter].
+
+ If you don't want any of the choices, press [Esc].
+
+ In some cases, a choice will lead to a submenu of other choices, which you can
+ select in the same way.  Pressing [Esc] takes you back to the submenu's
+ "parent" menu.  [Esc] again removes the menu display, and returns you to the
+ operation in progress.   The [Home] key works identically to the [Esc] key.
+ The [.] key takes you to the "top" of the menu you're using.
+
+
+
+ Getting to COMit's Main Menu
+ -----------------------------
+ Since the Main Menu is so important, here's how to get it from anywhere within
+ COMit...
+
+ To bring up COMit's main menu...
+ - If not yet running COMit, start COMit then press [/].
+ - If viewing the dialing directory, press [/]...
+ - If performing a function that was accessed from the main menu, press [Esc]
+   until the main menu appears.
+ - If online, use [/][H] to hang up, then [Esc] until the main menu appears.
+
+
+ Help within COMit
+ -----------------
+ If you started COMit with COMITH or COMITHP, the following keys are available
+ at any time...
+
+ [ALT-Z] brings up the help system.
+
+ [ALT-W] brings up the help system, goes directly to the topic (if any) at the
+ current cursor position.  You can take advantage of this by selecting /H from
+ COMit's main menu.  There, you can typing the word you want to look-up.  Move
+ the cursor over the word you typed and press [Alt-W].
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 11   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+ Exiting COMit
+ -------------
+ Before we get too far into the COMit program, perhaps it's best to notice how
+ to get out.
+
+ To exit COMit, simply press [X] at the COMit's main menu.
+
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1990 Tradewind Software   Page 12   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+ Chapter 5 - Setups
+ ==================
+ When using COMit for the first time, and occasionally in the future, you'll
+ want to customize COMit to your computer and your preferences.
+
+ Upon original startup, COMit's (almost empty) dialing directory screen is
+ displayed.  You'll add names to the directory later. (That's the subject of
+ the next chapter.)   The upper portion of the screen shows your current
+ settings.
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³Port COM2 IRQ3 02F8                   Dial ATDT                             ³
+ ³Path C:\COMIT                         Init ATS0=0Q0V1X4&C1&D2             03³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Setting the COM Port
+ --------------------
+ For communicating, the most important setup is the COM port.  It tells COMit
+ where to find your modem within the circuitry of your computer.
+
+ When COMit is displaying the dialing directory, the current COM Port setting
+ is shown near the upper left corner of the screen.  For example:
+
+ Port COM2 IRQ3 02F8
+
+ The COM number may range from 1 to 8.  The IRQ number may be 3, 4, 5, or 7.
+ The address is a hexadecimal number, normally 03F8, 02F8, 03E8, or 02E8.  The
+ purpose of this procedure is to match COMit to the way your modem is
+ configured, (or serial card, if it is an external modem.)
+
+ The easy way to make sure these settings are correct is to use COMit's
+ built-in diagnostics, /DC from COMit's Main Menu. (Press [/] to display
+ COMit's Main Menu, [D] to select diagnostics, [C] for Check all COM ports.)
+
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 13   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+ COMit takes a moment to check all combinations, then the "COM port
+ diagnostics" page displays.
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COM# IRQ# ADDR  Test Result....................(FIFO)  LineStat ModmStat  ³
+ ÆÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍµ
+ ³COM1 IRQ3 03F8  Doesn't exist                          .65..... ....3.10  ³
+ ³COM1 IRQ4 03F8  Serial port exists but no modem found  .65..... ........  ³
+ ³COM1 IRQ5 03F8  Doesn't exist                          .65..... ....3.10  ³
+ ³COM1 IRQ7 03F8  Doesn't exist                          .65..... ....3.10  ³
+ ³COM2 IRQ3 02F8  Modem ID is: 248                    Y  .65..... ..54....  ³
+ ³COM2 IRQ4 02F8  Doesn't exist                          .65..... ..54....  ³
+ ³COM2 IRQ5 02F8  Doesn't exist                          .65..... ..54....  ³
+ ³COM2 IRQ7 02F8  Doesn't exist                          .65..... ..54....  ³
+ ³COM3 IRQ3 03E8  Doesn't exist                          .65..... 7.543...  ³
+ ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+ ³COM port diagnostics                                    Page 1 of 2       ³
+ ³Move the cursor to your choice and press [Enter].                         ³
+ ³[Esc] returns without any change.                                         ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ If COMit has found your modem, the cursor bar is highlighting it.  You may use
+ the up and down arrow keys to move the cursor to other lines on the display.
+ (There are two pages to see.)   Any line that says "Modem ID" followed by a
+ number, indicates a modem.  (It's possible that you may have more than one
+ modem on the system.)  The modem ID number is meaningful to the manufacturer,
+ but is not important to us, other than the fact that the first digit usually
+ indicates the modem's maximum rate: 3=300 bps, 1=1200 bps, 2=2400 bps.
+
+ By pressing [Enter] with the cursor on a line with "Modem ID", the Port
+ information is installed.
+
+ If "Modem ID" doesn't appear on one of the lines, one of the following is
+ possible:
+
+ - The modem is OFF or not installed.    - The modem needs resetting.
+ - Another device is conflicting.        - Data or power cables misconnected.
+ - Switches or jumpers set incorrectly
+   on the modem or serial card.
+
+ COMit attempts to give you more information if possible.  The most common
+ problem is a conflict with another device, such as a mouse.  (If a mouse
+ exists, it will be noted in the heading area of the screen.  Your modem
+ should be set to a different IRQ number.)  Or, an internal modem might be
+ set to a COM port number that is already present in your computer - usually
+ COM1 or COM2.  The solution for any of these problems is to turn of the
+
+ The solution for any of thes problems is to turn off the system and verify
+ your connections and switch settings. You may need to disable an offending
+ device, or change switches to use a different port or IRQ.  Then start COMit
+ and try again.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 14   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ The Setups Menu
+ ---------------
+ COMit's Setup menu is brought up by selecting /S when the dialing directory
+ screen is being displayed.  (The slash key shows the main menu, and [S] goes
+ to the setups submenu.)
+   ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+   İ   Submenu                              Ş
+   İ   Setups                               Ş
+   İ  ÚÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ Ş
+   İ  ³C³ Colors                          ³ Ş
+   İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+   İ  ³P³ Com Port                        ³ Ş
+   İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+   İ  ³D³ Dialing prefix                  ³ Ş
+   İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+   İ  ³I³ Initialization string           ³ Ş
+   İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+   İ  ³T³ Terminal Options and Paths      ³ Ş
+   İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+   İ  ³H³ Host Options and Paths          ³ Ş
+   İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+   İ  ³F³ F-Keys and Menu Access Key      ³ Ş
+   İ  ÀÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ Ş
+   İ   Press [Esc] to return to prior menu  Ş
+   İ                                        Ş
+   ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+
+ From the setups menu you can press C,P,D,I,T,H, or F, or you can press [Esc]
+ to go back to the main menu, and [Esc] again to return to the dialing
+ directory screen.
+
+
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 15   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Setting the Colors
+ ------------------
+ To set the screen colors, select /SC form COMit's main menu.  A screen
+ displays to identify areas where colors can be set and the Color Selection
+ menu is presented for you.
+
+ Options C and B are for returning COMit to its default colors.  (Use C if you
+ have a color screen, and B if you have monochrome.)   If you prefer white on
+ black instead of black on white, try option W.
+
+ Options T, H, M, L, and K  set individual colors for text, headings, message
+ area, COMit logo, and cursor highlight.  When any of these are selected, the
+ Color Selection Submenu comes up where you can toggle through the 16
+ foreground colors and 8 background alternatives.
+
+ When the colors are to your liking, press [Esc].
+
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1990 Tradewind Software   Page 16   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ COM Port Setup (Another Way)
+ ----------------------------
+ The "easy" way for setting the COM port is through "COM Port Diagnostics", as
+ already discussed.  The setups menu provides another method, which is faster
+ (if you know what you want) and more flexible.  This method can be used when
+ you have an unusual setting, or when you want create a setting to be used on
+ a computer other than one you are currently running.
+
+ Select /SP from COMit's main menu.  A screen similar to the following
+ displays.
+
+ ³ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ³
+ ³COM# IRQ# ADDR³Notes                                                       ³
+ ³ÍÍÍÍÍÍÍÍÍÍÍÍÍÍØÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ³
+ ³COM1 IRQ4 03F8³<-- Normal selection if your modem is set for COM1          ³
+ ³COM2 IRQ3 02F8³<-- Normal selection if your modem is set for COM2          ³
+ ³COM3 IRQ4 03E8³<-- Normal selection if your modem is set for COM3          ³
+ ³COM4 IRQ3 02E8³<-- Normal selection if your modem is set for COM4          ³
+ ³COM1 IRQ3 03F8³<-- Alternate for COM1                                      ³
+ ³COM1 IRQ5 03F8³<-- Alternate for COM1                                      ³
+ ³COM1 IRQ7 03F8³<-- Alternate for COM1                                      ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ To change the COM port setting, simply move the cursor to the appropriate line
+ (note that there are 3 pages) and press [Enter].  If you have a custom
+ setting, you can type it on a blank line and press [Enter].
+
+ Dialing Prefix Setup
+ ---------------------
+ The dialing prefix setup screen is displayed when you select /SD from  COMit's
+ main menu .
+
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ Dialing Prefix                ³Description
+ ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍØÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+ ATDP                          ³<--- Normal for (old-fashioned) pulse systems.
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ATDT                          ³<--- Normal for touch-tone systems.
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                               ³<--- You can put your custom prefix here.
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+ The dialing prefix is the command that COMit sends to your modem immediately
+ before the phone number.  It is usually ATDP for pulse dialing or ATDT for
+ tone dialing.   Other characters and digits can be added, such as comma, which
+ causes a 2 second pause, or an area code, if you're temporarily out of your
+ home area.  Use the "custom prefix" line to do so.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 17   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ To make a change, move the cursor to the prefix you want and press [Enter].
+ [Esc] exits without any changes.
+
+
+ Initialization String Setup
+ ---------------------------
+ Initialization String Setup is done by selecting option /SI from COMit's Main
+ Menu.
+
+ The initialization string is a command COMit sends to your modem to put it in
+ the proper operating mode. (It must start with "AT")  The modem must respond
+ with "OK" for COMit to continue.
+
+ Upon selecting /SI, a screen similar to the following is displayed, and many
+ modem models are included in the list along with the defaults.  The cursor is
+ located on your current setting.  (The modem listed need not be the actual
+ model you are using, as long as it behaves the same.)   The ## column is for
+ easy reference.
+
+
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+  ³Initialization String         ³## Description                            ³
+  ÆÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍØÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍµ
+  ³AT E1V1Q0                     ³01 <-- Default                            ³
+  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+  ³ATS0=0Q0V1X1                  ³02 <-- Better for most 1200 bps modems    ³
+  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+  ³ATS0=0Q0V1X4&C1&D2            ³03 <-- Better for most 2400 bps modems    ³
+  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+
+ For first time setup, select the line for the modem model you've installed,
+ and press [Enter].  (The arrow keys and [PgUp], [PgDn] can be used to find
+ your make and model.)  If you can't find your modem model, select one of the
+ first 3 default settings in the table.
+
+ A customized initialization string may be created by editing any of the
+ "standard" strings provided and pressing [Enter], or by moving to a blank line
+ at the end, typing your string, and pressing [Enter]. The custom string will
+ be identified as number 99 in the table the next time you return to this
+ screen.
+
+ Note that for some modems, two options are provided:  "modem's MNP" or
+ "COMit's MNP".  If you select "modem's MNP" you'll be using the protocols
+ built into the modem's hardware (for MNP or V.42bis.)  In this case, your
+ dialing directory entries should be set to "NONE" in the MNP column, and
+ "Use MNP" should be set to "N" under Host Options and Paths.
+
+ To exit Initialization String Setup without making a change, press [Esc]
+ instead of [Enter].
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 18   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ Terminal Options and Paths
+ --------------------------
+ Terminal Options Setup is accessed by pressing /ST from COMit's Main Menu .
+
+ The purpose is to specify default drives and paths for files to be to be sent
+ and received while online.  A screen similar to the following is displayed.
+
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+  ³ Path for COMit's work files:        [C:\COMIT                      ]   ³
+  ³ Default Send (upload-from) Path:    [C:\COMIT\SEND                 ]   ³
+  ³ Default Receive (download-to) Path: [C:\COMIT\RECV                 ]   ³
+  ³ Default log (capture) file:         [COMIT.LOG                     ]   ³
+  ³ Default Printer Device Name:        [LPT1]                             ³
+  ³ ASCII upload delay. 10th secs/Line: [0 ]                               ³
+  ³ Seconds to wait for connect (10-255)[60 ]                              ³
+  ³ Up/Download buffer size in KB (2-64)[64]                               ³
+  ³                                                                        ³
+  ³ Zmodem Options: Autodownload Y/N [Y]   Recovery/Overwrite/Any   [R]    ³
+  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ The "path for work files" specifies where COMIT.CDF, COMIT.CDB, COMIT.USR are
+ to be stored.  (See Appendix 1.)
+
+ The "default send path" tells where COMit is to look for files to be sent,
+ unless you override it while uploading.
+
+ The "default receive path" tells where COMit will put files received, unless
+ you override it while downloading.
+
+ Note that it is up to you to use the MS-DOS Mkdir (or MD) command to make the
+ directories you specify, if they don't already exist.
+
+ The "default log file" is a file name (assumed to be in the receive path) for
+ your Log File. The name can be overridden (after pressing Alt-L) when online.
+
+ "Printer Device Name" is which printer to use for Alt-C (Print Capture) and
+ other printing functions.  LPT1 is the default.
+
+ ASCII upload delay is a way to slow down the transfer when a remote system
+ can't process the data you are sending it fast enough.  If you enter 5 here,
+ for example, COMit will pause 1/2 second after each text line it sends
+ in an ASCII upload.
+
+ Change "Seconds to wait for connect" if you find that COMit waits too long
+ (or not long enough) after dialing.  This number is most often between 30 and
+ 60 seconds.
+
+ The "Up/Download buffer size" is normally 64KB.  A smaller number results in
+ more disk activity to help keep certain notebook computers "awake" during
+ long file transfers.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 19   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ The Zmodem "Autodownload" option should be "Y".  This saves a step when
+ receiving files with Zmodem.  (Change it to "N" if you find that Zmodem
+ downloads are being triggered at the wrong places.)  Selecting "R" (Recovery)
+ allows any interrupted Zmodem download to be resumed without retransferring
+ files and partial files you already have.  "O" (Overwrite) causes complete
+ files to be sent (or retransmitted), including those already present on the
+ destination computer.  "A" (Any) allows the remote computer (instead of the
+ local one) to decide whether Recovery or Overwrite is to be used.
+
+
+ Host Options Setup
+ ------------------
+ Host Options Setup is accessed by pressing /SH from COMit's Main Menu. The
+ inputs specify options to be used when COMit is answering the phone.
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³Default Send (download-from) Path.............[C:\COMIT\                  ³
+ ³Default Receive (upload-to) Path..............[C:\COMIT\                  ³
+ ³Welcome Message: [Welcome to COMit Remote Access                         ]³
+ ³Initial bps rate..............................[2400  ]                    ³
+ ³Automatic adjust to caller's rate?............[Y] (Y or N)                ³
+ ³Initialization String (leave blank if same)...[                          ]³
+ ³Use MNP if caller is using it?....R= Require  [Y] (Y, N or R)             ³
+ ³Private System?...............................[N] (Y or N)                ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ The "default send path" tells COMit where to look for files to be sent when
+ a caller wants to download.  "Default receive path" tells COMit where to put
+ files uploaded by callers.  Use the MS-DOS Mkdir (or MD) command if you
+ want to specify a directory that doesn't already exist.
+
+ The "Welcome Message" is displayed when COMit answers.
+
+ The "Initial bps rate" is the rate COMit is to use when initializing for host
+ mode.  (It specifies the speed between computer and modem.)  "Automatic
+ Adjust" tells whether or not this rate should ever be changed when a call is
+ is answered.  This is usually "N" for modems capable of 9600 bps or faster,
+ or when using a modem's (hardware) MNP or V.42bis.  It is usually "Y" for
+ other modems, or when using COMit's (software) MNP or V.42bis.
+
+ "Initialization string" allows you to use a different modem setup when acting
+ as host.  If left blank, the initialization string is the same as that used
+ when making calls.  See Initialization String Setup.
+
+ "Use MNP" should be "N" if you are using the modem's (hardware) MNP or V.42bis
+ or if your caller doesn't have MNP capability. It should be "Y" to use
+ COMit's (software) MNP or V.42bis. "R" is the same as "Y" except any call
+ not using one of the error correcting protocols is refused.
+
+ To prevent unauthorized callers, set "Private System" to "Y".  (Chapter 9
+ tells how to authorize callers.)  "N" allows anyone to call (but new callers'
+ rights are limited to uploading, downloading, and file viewing within the
+ host send and receive directories specified above.)
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 20   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ F-Key Setups
+ -------------
+ COMit allows you to "program" the F-Keys (F1 through F10) on your keyboard so
+ that, when online, they can perform automatic typing for you.
+
+ For example, if you want to program F1 to type your name, you can do so.
+
+ The F-Key Setups screen is displayed by selecting /SF from COMit's Main Menu.
+ You are given a screen like the following where your definitions can be typed.
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³F1  [Joe Brown^M                                                        ]  ³
+ ³F2  [123AB^M                                                            ]  ³
+ ³F3  [                                                                   ]  ³
+ ³F4  [                                                                   ]  ³
+ ³F5  [                                                                   ]  ³
+ ³F6  [                                                                   ]  ³
+ ³F7  [                                                                   ]  ³
+ ³F8  [                                                                   ]  ³
+ ³F9  [                                                                   ]  ³
+ ³F10 [                                                                   ]  ³
+ ³[/] <-- Menu access key override.  (Normally "/")                          ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ If a particular string of characters must be terminated with [Enter], use ^M
+ where [Enter] is to go.  Other control keys can be specified similarly, as a
+ carat ^ symbol followed by an upper case letter or symbol.
+
+ Trailing blanks (at the end of a string assigned to an F-key) are ignored.
+ If you will be using a terminal emulation such as VT-52 or VT-100, certain
+ F-keys represent to special keys on the terminal.  In this case, use [Alt]
+ plus the desired F-key to automatically type any of the strings you specify
+ here.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 21   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ Chapter 6   Adding and Revising Names
+ =====================================
+ Whenever the dialing directory screen is displayed, you may add a new name or
+ revise an existing one.  (If a menu is being displayed over the dialing
+ directory, press [Esc].)
+
+ To add a name to the dialing directory, use up-arrow, down-arrow, or any other
+ cursor movement key to go to the line where you want the new entry.  Then
+ press [A].  COMit inserts a blank line for you and fills in default Bits,
+ Rate, MNP, Echo, and Terminal settings (which you'll be able to change.)
+
+ To revise an existing name, move to the desired line and press [R].
+
+ Now watch the message area (at the bottom of the screen) for instructions.
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³Name                     ³Number              ³ Bits Rate  MNP Echo Term ³
+ ÆÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ ÍÍÍØÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ ÍØÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍµ
+ ³Tradewind Software       ³1 818 335 6013      ³ 8N1  2400   7   N    TTY ³
+ ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+ ³PC BBS                   ³1 555 555 1234      ³ 8N1  1200   N   N    TTY ³
+ ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ  ÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+ ³Compuserve               ³987 6543            ³ 7E1  2400   4   N   VT52 ³
+ ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ  ÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+ ³GEnie                    ³123 4567            ³ 8N1  2400   7   Y    TTY ³
+                                                  ³³³  ³      ³   ³    ³
+                                                  ³³³  ³      ³   ³    ³
+           Data bits (usually 7 or 8)   ÄÄÄÄÄÄÄÄÄÄÙ³³  ³      ³   ³    ³
+           Parity (usually E, O, or N)  ÄÄÄÄÄÄÄÄÄÄÄÙ³  ³      ³   ³    ³
+           Stop bits (usually 1 or 2)   ÄÄÄÄÄÄÄÄÄÄÄÄÙ  ³      ³   ³    ³
+           Rate (usually 300, 1200, or 2400 ÄÄÄÄÄÄÄÄÄÄÄÙ      ³   ³    ³
+           MNP (usually NONE, MNP7, or V42bis)ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ   ³    ³
+           Echo (Y or N) ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ    ³
+           Terminal Emulation (Usually TTY or ANSI) ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ At first, the cursor is in the Name Column.   Type or edit the name and press
+ [Enter].   [Esc] is available to cancel your request to add or revise.
+
+ Next, the cursor moves to the Number Column.  Fill in the phone number and
+ press [Enter].  Dashes, blanks, and other punctuation symbols are optional.
+ The [F1] key is available for additional help (and options) for the
+ the phone number.
+
+ You may embed special characters in the number, such as comma, which causes a
+ brief pause, or the letter  "R", which allows you to call an "originate-only"
+ modem.   When dialing, COMit creates the modem's command by combining the
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 22   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ dialing prefix (entered from the Setups menu) with the phone number.  For
+ example, to dial the first number illustrated, and assuming a dial prefix of
+ ATDT, COMit sends
+
+  ATDT1 818 335 6013
+
+  ...followed by a carriage return, to the modem.
+
+ [Enter] from the phone number column takes you into the columns for
+ communications setups.   In each of these columns, you may press [Spacebar] to
+ flip through the most common settings, or [F1] to enter a custom setting.
+ [F1] also provides more help.  [Enter] accepts your choice.  [Esc] goes back
+ to the previous column.
+
+ Bits Column
+ -----------
+ The bits specification is a digit (for data bits) a letter (for parity), and a
+ digit (for stop bits.)  The common settings: 8N1, 7E1, and 7O1 can be selected
+ by pressing the space bar.  Custom settings can be entered by pressing [F1].
+
+ Data bits are the bits that represent the characters transmitted.  COMit
+ allows setting 5,6,7, or 8 data bits.  In most cases you'll want 8 data bits,
+ but some information services require 7 data bits.
+
+ Parity refers to a type of error checking that is used in communications.
+ Comit supports all 5 types.
+
+   N None
+   O Odd
+   E Even
+   M Mark
+   S Space
+
+ Your data bits and parity setting must agree with that of the computer you are
+ calling.
+
+ Stop bits are sent immediately after the data and parity bits.  The usual
+ setting is 1, but sometimes 2 stop bits are used to slow down the transmission
+ just a bit so that a slower receiving device can keep up.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 23   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ Rate Column
+ -----------
+ Rate refers to the speed at which data is transmitted and received, measured
+ as bps (bits per second.)
+
+ COMit supports the following bps rates:
+
+  50, 75, 110, 134, 150, 300, 600, 1200, 1800, 2000, 2400, 4800, 9600,
+  19200, 38400, 57600, 76800, 115200
+
+ For most communications you'll probably be using 300, 1200, 2400, 9600,
+ 19200, 38400, or 57600.  These can be selected by pressing [Spacebar].
+ Other rates can be entered by pressing [F1].
+
+ The rate cannot exceed the capabilities of your modem and/or serial card,
+ but it may (on some modems) exceed the maximum transmission rate over the
+ phone lines.  For example, you may be able to set the rate to 38400 for
+ a 9600 bps modem.  38400, in this case, is the rate between modem and
+ computer. If your modem doesn't allow this, or if you are using COMit's
+ (software) MNP or V.42bis, the rate must agree with the rate (or one of
+ the rates) expected by the computer to be called.
+
+ MNP Column
+ ----------
+ MNP stands for Microcom Networking Protocol.  It provides for error-free
+ communication at (potentially) much greater speeds through data compression.
+ COMit can implement MNP (in software) for modems which don't have it built
+ into the hardware (or where the modem's MNP has been turned off by a special
+ initialization string.)
+
+ As provided with certain modems, COMit interfaces to a driver file, V42.DRV,
+ that implements V.42 error prevention and data compression in software.
+ (Other modems may have it built entirely into the hardware, making the driver
+ file and any special procedures unnecessary.)  Software V.42 is available if
+ if "V.42bis" displays above the copyright notice on your dialing directory
+ screen, and if "+H1" is somewhere in your initialization string.  For purposes
+ of discussion, we treat V.42 and V.42bis as if they were two more classes
+ of MNP.
+
+ The "classes" of MNP supported by COMit are...
+ NONE   - Regular communications (or MNP implemented in the modem's hardware.)
+ MNP2   - Error correction only
+ MNP4   - Error correction with improved speed due to bigger data packets.
+ MNP5   - Error correction + basic data compression
+ MNP7   - Error correction + enhanced data compression.
+ V42    - Error correction only (With certain modems.)
+ V42bis - Error correction + much enhanced data compression. (Certain modems.)
+ REQD   - MNP (or V.42) required.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 24   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ These can be selected by pressing [Spacebar] (in the MNP column.)  If you
+ know the remote user supports MNP, select CLASS7 (or V42bis, if available)
+ When a call is made, the two computers will automatically "negotiate" to
+ to agree on the highest class both can support.
+
+ Select "NONE" if your modem is implementing MNP (or V.42) in hardware,
+ or if the remote computer can't handle MNP.
+
+
+ Echo Column
+ -----------
+ The entry here is normally "N" (No Echo), sometimes called "Full Duplex".
+ "Y" (Yes Echo) requests "Half duplex" communications.  [Spacebar] toggles
+ the choices.
+
+ An incorrect setting will result in characters being doubled on your screen
+ when online, or an inability to see characters you are typing when online.
+ This is easily remedied by pressing Alt-E or [/][E] while online.  Then you
+ can return to the echo column (after the session) to make a permanent change.
+
+ Term Column
+ -----------
+ A terminal is a keyboard and video display with very little or no computing
+ power of its own, connected to a mainframe or minicomputer.
+
+ Each type of terminal has its own codes that tell it how and where on the
+ screen to display data, and special keys that send codes to the the remote
+ computer.  Terminal Emulation makes your personal computer act like a specific
+ type of terminal.  COMit supports the most important emulations:
+
+   TTY   (Teletype)
+   ANSI  (American National Standards)
+   VT52  (Digital Equipment Corporation)
+   VT100 (Digital Equipment Corporation)
+
+ TTY is most common, in which the dialogue between computers is displayed
+ character by character in a single color.  ANSI allows use of colors and
+ screen positioning. VT52 and VT100 provide special screen and hard-copy
+ printing capabilities, and ability to use the arrow keys and F-keys under
+ the host computer's control.
+
+ [Spacebar] flips through the choices and [F1] provides more information.
+ Your choice depends on the expectations of the computer to be called.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 25   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+ Saving the New Name
+ -------------------
+ After the "Term" column, COMit saves the changes to your dialing directory.
+ The COMit data file is written to disk, including all changes made this
+ session.
+
+
+ Searching, Moving, and Deleting Names
+ -------------------------------------
+ When displaying the Dialing Directory...
+
+ Press [F5] to quickly find an entry by the first few letters of the name.
+ If there are more entries with the same initial letters, you can press [F5]
+ again to go to them.  (If you prefer, [Alt-G] is the same as [F5].)
+
+ [F3] or [Ctrl-N] inserts a blank line at the current cursor position.
+ [F4] or [Ctrl-Y] deletes the name at the current position.
+ [F2] undeletes the last name deleted.
+
+ If you wish to arrange the names in a different sequence, you can use [F4] and
+ [F2].  First delete the name to be moved with [F4].  Then move the cursor to
+ its new position and press [F2].
+
+ If you want the entire dialing directory sorted into alphabetical order, press
+ [F6] then "Y".  (If you prefer, [Alt-S] is the same as [F6].)
+
+ Note Page
+ ---------
+ COMit gives you a place to type your own notes about any dialing directory
+ entry.  To get to a dialing directory entry's note page, display the Dialing
+ Directory Screen, move the cursor bar to the desired entry, and press [N].
+
+ You can type anything you wish...
+
+     Instructions
+     Reminders
+     A record of calls made
+     Etc.
+
+ The note page is also available while you are on-line to a remote computer.
+ Simply press [Alt-N] or [/][N].
+
+ [Esc] returns to your original point.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 26   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ Script Page
+ -----------
+ Each dialing directory entry has its own (optional) script page.  To see it,
+ press [S] when the cursor is on the name.  [Esc] returns to the dialing
+ directory screen.  Chapter 13 is devoted to scripts.
+
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1990 Tradewind Software   Page 27   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ Chapter 7  - Calling with COMit
+ ===============================
+
+ To make a call with COMit, go to the Dialing Directory Screen, locate the name
+ you want, and press [Enter].
+
+ Or, from COMit's main menu, select option /OD.  The currently indicated name
+ will be dialed.
+
+ Here's what happens...
+
+ 1. COMit checks the parameters for the dialing directory entry. If any of them
+ are invalid, the Invalid Dialing Attempt screen is displayed, where the
+ problem is identified for you, and you can make the indicated correction(s).
+
+ 2. Next, COMit displays the Online Screen, which is blank except the status
+ line at the bottom.  The Initialization String is sent to the modem.  (You'll
+ see it and the modem's response at the top of the screen.)  COMit waits for
+ the modem to respond with "OK".  (Two attempts are made, if necessary.)  If no
+ "OK" is received, the Failed to Connect! Menu displays.  (Failure to get
+ the "OK" may indicate a rate too fast for the modem, an invalid initialization
+ string for the modem, an incorrect COM port or IRQ, or a modem that needs to
+ be reset manually (by powering down.)
+
+ 3. If a script has been defined for the dialing directory entry, COMit
+ executes it up to the first "W", "O", "D", "S", or "R" command it contains.
+ (This allows any pre-call inputs and messages within the script to be
+ processed.)  If you press [Esc] at any of the script's prompts, the call is
+ canceled.  If you press [Alt-S], the script is ignored, and execution
+ continues as if it were a non-scripted call.
+
+ 4. COMit dials the number and waits for the modem to respond with a CONNECT
+ message.  While COMit is dialing, the name, the script message (if
+ applicable), and the dialing command are displayed.
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³Calling Tradewind Software                              ³
+ ³                                                        ³
+ ³Note: This dialing directory entry has a script.        ³
+ ³Press [Alt-S] to switch: Ignore Script / Use script     ³
+ ³                                                        ³
+ ³ATDT 1 818 335-6013                                     ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ If a script is present for the dialing directory entry, you can toggle it
+ on or off with [Alt-S] anytime before the CONNECT, as the message shows.
+ If you turn scripting off here, you will need to turn it back on again
+ (using the same method) for the next call in the same COMit session if
+ you want scripting to be active.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 28   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+ If COMit gets a CONNECT within 60 seconds (or the time you specified under
+ "Terminal Options and Paths") you're online to the remote computer, and you
+ can respond to the prompts it sends, or you can use any of COMit's local
+ functions available from the Online Screen and its Online Menu.
+
+
+ 5. The call ends when...
+ - You press [/][H] or [Alt-H] to hang up.
+ - The connection is lost for some unknown reason.
+ - A script is in progress and an H command is encountered.
+ - Or when the remote computer hangs up on you. This is the normal way.
+   Usually you'll answer one of its menu prompts (such as "G" for Goodbye)
+   or you'll type a command it recognizes, such as BYE [Enter].
+
+ Messages while Dialing
+ ----------------------
+ "Initializing"  tells you that COMit is attempting to set up the modem for
+ communications by sending the initialization string.  As soon as COMit gets
+ an "OK" from the modem, it goes on to the next step (usually dialing.)
+
+ If an "OK" is not returned in 3 seconds, COMit attempts to reset the  modem
+ and tries again.   An error message on the screen may indicate an incompatible
+ initialization string, which you can change from the Setups menu.
+
+ The "Awaiting CONNECT" message indicates that COMit has successfully
+ initialized the modem and has begun dialing.  (This is replaced by "Using
+ Script" or "Ignoring Script" if a script has been defined for the number.)
+
+ If the call goes through, and a modem answers the phone at the other end, the
+ local modem sends a message to COMit containing the word "CONNECT", such as...
+
+    CONNECT, CONNECT 1200, CONNECT 2400, etc.
+
+ This is COMit's signal to begin communicating.
+
+ While the "Awaiting CONNECT" message is displayed, you'll see a countdown
+ timer to the right.  When it reaches zero, COMit will terminate the dialing
+ attempt.
+
+ You can terminate earlier by pressing [Esc].
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 29   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ It is also possible the modem will send another message.
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+  ³ERROR       ³ The phone number or dialing prefix was       ³
+  ³            ³ unacceptable to the modem, or the modem      ³
+  ³            ³ wasn't ready for it.                         ³
+  ÃÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+  ³OK          ³ The phone number ended in a semicolon, or    ³
+  ³            ³ a non-dialing modem command was used in      ³
+  ³            ³ place of the dialing prefix.                 ³
+  ÃÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+  ³NO CARRIER  ³ The modem's timer expired before the call    ³
+  ³            ³ was answered by a remote modem.              ³
+  ÃÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+  ³BUSY        ³ These are "extended result codes" which      ³
+  ³VOICE       ³ give you more information about the reason   ³
+  ³NO DIALTONE ³ a data call failed.  These messages can be   ³
+  ³NO ANSWER   ³ enabled or disabled for specific needs by    ³
+  ³etc.        ³ including an "X" command (such as X1), in    ³
+  ³            ³ your initialization string or dialing prefix.³
+  ÀÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ If "Invoking V42.DRV" displays at the lower right of the screen, it indicates
+ COMit has passed control to the V.42 driver (if applicable) and negotiation
+ for V.42 or V.42bis is in progress.   This occurs only if you selected V42 or
+ V42bis, and the initialization string contains "+H1".
+
+ The "Esc cancels MNP" message flashes at the lower right of the screen while
+ COMit is negotiating the MNP link parameters with the remote computer. This
+ occurs immediately after the CONNECT is achieved, and only if you've selected
+ an MNP Class other then NONE.  If you press [Esc] at this time, no MNP will be
+ used for the call.  The MNP Class indicator (on the bottom line of the screen)
+ tells what class was finally negotiated.  Zero indicates no MNP.
+
+ The "On Line" message at the lower right of your screen indicates that you are
+ now in control of the session with the remote computer.  You may answer its
+ prompts, or use any of COMit's online functions. (See Chapter 8.)
+
+ The "Alt-S ends script" message (if present) at the lower right of your screen
+ indicates a script is in progress.  Usually, you'll want to keep "hands off"
+ until the script terminates, but if necessary, you may use the keyboard to
+ take over or help the script along.  When the script terminates (unless a
+ hang-up command has been programmed into it), the "On Line" message displays,
+ and you have control of the session.
+
+ The "Hanging Up" message indicates that COMit is attempting to insure the
+ phone is hung up.   (You may see this message even when the phone is already
+ hung up. COMit just wants to do all it can to make sure.)
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 30   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ Chapter 8   Online Functions
+ ============================
+ Within COMit, we use the term "online" to refer to the times when you are
+ actually using the modem, either to send it commands directly, or when
+ communicating "through" it to a remote computer.
+
+ You have a 24-line work area on the screen where your dialogue with the remote
+ computer will take place.  The bottom line is the status line. It tells the
+ communications parameters that are in effect
+
+  ÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÂÄÄÄÂÄÄÄÄÄÄÂÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  [/]=Menu³1    TTY³2400   ³8N1³Echo:N³MNP:0³LogTo: Nothing³On Line
+  ÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÁÄÄÄÁÄÄÄÄÄÄÁÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    ³             ³   ³     ³    ³     ³        ³            ³
+  ÚÄÁÄÄÄÄÄÄÄÄÄÄÄÄ¿³ÚÄÄÁÄÄÄ¿ ³ÚÄÄÄÁÄÄÄÄ¿³ÚÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄ¿ÚÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+  ³This is a     ³³³ This ³ ³³This is ³³³A drive and file³³The current status ³
+  ³reminder      ³³³ tells³ ³³Y or N  ³³³name here means ³³is shown here as   ³
+  ³that the      ³³³ the  ³ ³³for full³³³ screen data is ³³one of these...    ³
+  ³slash key     ³³³ bps  ³ ³³or half ³³³ simultaneously ³ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+  ³brings up the ³³³ Rate ³ ³³duplex  ³³³going to a disk ³³ Initializing      ³
+  ³Online Menu   ³³³ (*)  ³ ³³ (Echo) ³³³ "Log File" (**)³³ Awaiting CONNECT  ³
+  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ³ÀÄÄÄÄÄÄÙ ³ÀÄÄÄÄÄÄÄÄÙ³ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ³ Hanging Up        ³
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄ¿ÚÄÄÄÄÁÄÄÄÄÄÄ¿ÚÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿³ On Line           ³
+ ³  This tells what   ³³ Data bits ³³    The MNP Class   ³³ [Esc] cancels MNP ³
+ ³ Terminal Emulation ³³ Parity    ³³being used is shown ³³ Alt-S ends script ³
+ ³ is in effect. (***)³³ Stop bits ³³  here. (0 = None)  ³³ [PgDn]=End DownLd ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙÀÄÄÄÄÄÄÄÄÄÄÄÙÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+  * When MNP Class 5 or 7 is being used, the rate indicator acts as a
+  speedometer, giving a moving average for the rate over the last 6 seconds.
+
+ ** Double vertical bars to the left and right of the "LogTo" legend indicate
+  print capture has been turned on, using [Alt-C].  Data goes to the printer
+  as well as the screen.  (Make sure the printer is ON and ready.)
+
+ *** A single digit (1, 2, or 3) to the left of the terminal name tells whether
+  Enter and Backspace have been redefined (using [Alt-T].)  In VT100 emulation,
+  "A" may also display, to indicate the host has redefined the keyboard for
+  "application mode."  (See Time and Terminal Status.)
+
+
+ The Online Menu
+ ----------------
+ After a connection has been established (COMit has dialed and another computer
+ has answered) the screen dialogue is under the control of the remote computer.
+ You are acting as its "terminal".  Your keystrokes are sent to it for
+ processing.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 31   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ These keys are processed locally.  Let's first look at [/], the forward slash
+ key, which brings up the "Online Menu".
+
+  ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+  İ   COMit                                Ş
+  İ   On-Line Menu                         Ş
+  İ  ÚÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ Ş
+  İ  ³T³ Time and Terminal Status [Alt-T]³ Ş
+  İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+  İ  ³H³ Hang up                  [Alt-H]³ Ş
+  İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+  İ  ³P³ Change Parameters        [Alt-P]³ Ş
+  İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+  İ  ³E³ Echo                     [Alt-E]³ Ş
+  İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+  İ  ³N³ Note Page                [Alt-N]³ Ş
+  İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+  İ  ³L³ Open/Close Log File      [Alt-L]³ Ş
+  İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+  İ  ³S³ Send File (Upload)        [PgUp]³ Ş
+  İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+  İ  ³R³ Receive File (Download)   [PgDn]³ Ş
+  İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+  İ  ³F³ Directory and Utilities  [Alt-F]³ Ş
+  İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+  İ  ³K³ Send a Break             [Alt-B]³ Ş
+  İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+  İ  ³B³ Scroll back review    [Up Arrow]³ Ş
+  İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+  İ  ³C³ Print Capture On/Off     [Alt-C]³ Ş
+  İ  ÀÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ Ş
+  İ                                        Ş
+  ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+
+ Note: If you want to TYPE a slash (instead of bringing up the online menu),
+ just press [/] twice.  If you've changed your Menu Access Key to something
+ other than slash (under F-Key setups) that key can be used instead.
+
+ As you can see, the online menu indicates several short-cuts, that can be
+ used instead.  For example [Alt-T] gets "time and terminal status", just like
+ [/][T], but without going through the online menu.  (Note that these
+ alternative keys are not available WHILE the online menu is displayed.)
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 32   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Time and Terminal Status
+ ------------------------
+ This option is available by selecting [T] from COMit's online menu or by
+ pressing [Alt-T] while online.  The duration of the call thus far, and the
+ time taken for the last file transfer is displayed.
+
+ If special key mappings are in effect (for VT100 terminal emulation) they
+ are listed on the screen.  This tells what keys on your PC keyboard are used
+ to represent the keys on the VT100 keyboard.
+
+ From the Time and Terminal Status screen, you can also change the functioning
+ of the [Enter] key and [Backspace] by pressing 0, 1, 2, or 3.  This may be
+ required when communicating with certain host computers.  "1" means [Enter]
+ sends a carriage return and line feed (instead of a carriage return only.)
+ "2" means the Backspace key sends the DEL character, ASCII 128 (instead of
+ ASCII 8.)  "3" means options 1 and 2 are both in effect.  "0" goes back
+ to normal.
+
+
+ Hang Up
+ -------
+ This option is available by selecting [H] from COMit's online menu or by
+ pressing [Alt-H] while online.  COMit terminates the online session and
+ returns you to the dialing directory.
+
+
+ Change Parameters
+ ------------------
+ This option is available by selecting [P] from COMit's online menu or by
+ pressing [Alt-P] while online. It is NOT available when using MNP. (During an
+ MNP call, the bps rate and bits cannot be changed.)  Use it if the data from
+ the remote computer is unitelligible.  The Paramater Changes Menu is shown so
+ you can make a choice:
+
+  ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+  İ                                       Ş
+  İ   Parameter Changes Menu              Ş
+  İ  ÚÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿Ş
+  İ  ³B³Next Bits Option                 ³Ş
+  İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´Ş
+  İ  ³R³Next Rate Option                 ³Ş
+  İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´Ş
+  İ  ³A³Accept as shown                  ³Ş
+  İ  ÀÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙŞ
+  İ   [Esc] resumes with new parameters.. Ş
+  İ                                       Ş
+  ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 33   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ You may use up-arrow or down-arrow to point to the item to be changed (bits or
+ rate), or you may press [B] or [R]. Each press toggles to the next choice:
+
+  Rate: 300, 1200, 2400, 9600, 19200, 38400, 57600
+  Bits: 7E1, 7O1, 8N1
+
+ At the bottom of the screen the "Rate & Bits ---> ³2400 ³8N1³" legend shows
+ your current setting.  Other choices are available only when specified on an
+ entry of the Dialing Directory Screen BEFORE the call.
+
+ [Esc] or [A] resumes the online session. Once there, you may need to press
+ [Enter] or some other keys to get the remote computer to "say something". If
+ it is readable, your settings are probably correct. If not, press [Alt-P] or
+ [/][P] again to try a different combination.
+
+ Echo
+ ----
+ This option is available by selecting [E] from COMit's online menu or by
+ pressing [Alt-E] while online.
+
+ The effect is to toggle echoing ON or OFF.  When echo is "Yes", full duplex
+ communications are used.  When echo is "No", half duplex is in effect.
+
+ If you can't see your typing, this is usually a clue that echo needs to be
+ changed to "Y".  If letters are doubled when you type, echo should be changed
+ to "N".  The status line (at the bottom of the screen) shows the current
+ setting.
+
+
+ Note Page
+ ---------
+ [N] from COMit's online menu or [Alt-N] while online brings up the note page
+ for the current dialing directory entry.   You can write notes to yourself
+ about the call here.
+
+ The notes are available to you after the call (by pressing [N] when the cursor
+ is on the dialing directory entry) and they'll be available during future
+ calls.
+
+ Escape from the note page resumes your online session.
+
+
+ Open/Close Log File
+ -------------------
+ A Log File (sometimes called "capture file") is a record of what has been
+ displayed on the screen during an online session (or part of one.)
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 34   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ When you "open the log file" it simply means you are asking COMit to record
+ everything that will displayed or typed.   You "close the log file" to make
+ COMit stop recording.
+
+ To open the log file, press [Alt-L] or select [L] from the online menu.  The
+ "Open log file" box appears.
+
+  ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+  İ  Open log (capture) file...            Ş
+  İ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ Ş
+  İ ³Path: C:\COMIT\RECV                 ³ Ş
+  İ ³File: COMIT.LOG                     ³ Ş
+  İ ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+  İ ³                                    ³ Ş
+  İ ³                                    ³ Ş
+  İ ³                                    ³ Ş
+  İ ÃÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+  İ ³      ³                             ³ Ş
+  İ ³      ³                             ³ Ş
+  İ ³Status³                             ³ Ş
+  İ ³----->³Drive & directory request    ³ Ş
+  İ ÀÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ Ş
+  İ  Edit the path. (if necessary.)        Ş
+  İ  [Enter] accepts.  [Esc] goes back.    Ş
+  ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+
+ Note: If a log file was already open, it is now closed.  Press [Alt-L] or
+ [/][L] again to reopen it, or to open one with another name.
+
+ Originally, your default path and log file name will be shown, as may have be
+ specified in "Terminal Options" of the Setup menu.  (See Chapter 5).
+ Subsequent log file requests bring up the last path and file name used.
+
+ You may press [Enter] for Path and [Enter] for File if the names shown are
+ acceptable, or you may edit the names shown.  [Esc] (once or twice) cancels
+ the request.
+
+ If the file already exists you are warned with a message saying "Press [Enter]
+ to add to the file, [D] to delete the old data."  [Enter] appends all new data
+ to the end of the old file.  [D] deletes any data the old file may have
+ contained and starts fresh with the same name.  Use [Esc] if you want to
+ specify a different name.
+
+ After the names are specified, your online session resumes.  The "LogTo"
+ legend at the bottom of the screen shows the drive and file name (but not the
+ path) you've chosen.   For example:  "LogTo: C:COMIT.LOG"
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 35   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ Sending and Receiving Files
+ ---------------------------
+ Options [S] and [R] from the online menu, or [PgUp] for "send" and [PgDn] for
+ "receive" are used for sending and receiving files.  (Uploading is another
+ name for "sending".  Downloading is another name for "receiving".)
+
+ It is important to note that the key pressed for sending or receiving on the
+ YOUR computer is to be pressed AFTER telling the REMOTE computer what protocol
+ and file(s) are to be transferred.   Most remote computer systems will prompt
+ you with a message such as "Begin your download procedure" or "Begin your
+ upload procedure."
+
+ When you press [/][S], [PgUp], [/][R], or [PgDn], a Protocol Selection Menu is
+ displayed, where it is your job to specify a transfer protocol compatible with
+ the protocol selected on the remote computer.  (For example, if you told the
+ remote computer you want to use XMODEM, you now need to tell COMit you'll be
+ using XMODEM.)
+   ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ     ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+   İ   Protocol Selection Menu             Ş     ³If you've pressed [PgUp]   ³
+   İ   Download (receive file) using...    Ş <---³or [/][S] this says        ³
+   İ  ÚÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿Ş     ³"Upload (send file) using" ³
+   İ  ³X³XMODEM                           ³Ş     ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+   İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´Ş
+   İ  ³C³XMODEM-CRC                       ³Ş
+   İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´Ş     ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+   İ  ³Y³YMODEM (XMODEM-1K)               ³Ş     ³ Selecting Y or G brings ³
+   İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´Ş <---³ up a submenu to specify Ã
+   İ  ³G³YMODEM-G (XMODEM-1K-G)           ³Ş     ³ whether you want to use ³
+   İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´Ş     ³ Regular or Batch        ³
+   İ  ³Z³ZMODEM                           ³Ş     ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+   İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´Ş
+   İ  ³A³ASCII                            ³Ş
+   İ  ÀÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙŞ
+   İ   [Esc] resumes online session...     Ş
+   İ                                       Ş
+   ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+
+ Note that YMODEM (regular) and XMODEM-1K are identical.  On some systems,
+ the term YMODEM refers to what is called YMODEM-BATCH in COMit.
+ See Chapter 14 for a discussion of the Transfer Protocols available.
+
+ For uploading (sending) files using YMODEM or YMODEM-G, note that you can
+ select R, B, or T on the submenu.  R is for regular YMODEM or YMODEM-G which
+ is limited to one file at a time.  B and T are the same as far as the remote
+ computer is concerned, but different locally...
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 36   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ Use B if your YMODEM-Batch or YMODEM-G-Batch upload is to be a single file or
+ if it is a group of files that can be specified in a single wildcard
+ specification.  (Such as *.*)
+
+ Use T if (before or during the call) you have used Tagged File Utilities
+ ([/][F] or [Alt-F]) to make a list of one or more filenames (or wildcard
+ filespecs) to be uploaded in a single batch.  (See Chapter 11.)
+
+
+ Sending Files
+ -------------
+ After selecting the upload protocol, the Send File Box displays, where you can
+ specify the file path and name, and watch the progress of the upload.
+
+ The Send File Box is displayed after you select an upload protocol from the
+ Protocol Selection Menu.   It allows you to tell COMit the file path and name,
+ and it shows the progress of an upload.
+                                      ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+    The protocol is shown here. ----->İ Send file using XMODEM               Ş
+                                      İÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿Ş
+    File Name Input is done here. --->İ³Path: C:\COMIT\SEND                 ³Ş
+    (Unless you selected YT or GT on  İ³File: BUDGET.EXE                    ³Ş
+    the Protocol Selection Menu)      İÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´Ş
+                                      İ³          ¿ ÚÄ¿ÚÄ¿   Ú ÚÚÄ¿ÚÄÄ      ³Ş
+    This shows the count of bytes     İ³          ³ ÃÄ´  ³   ÀÄ´ÚÄÙÀÄ¿Bytes ³Ş
+    remaining to be sent. ----------->İ³          Á ÀÄÙ  Á ,   ÙÀÄÄÀÄÙto go ³Ş
+                                      İÃÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´Ş
+                                      İ³      ³Received                     ³Ş
+    Error and status messages are     İ³      ³Sending block     1          ³Ş
+    shown here. --------------------->İ³Status³Sending block     2          ³Ş
+                                      İ³----->³Sending block     3          ³Ş
+                                      İÀÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙŞ
+    Prompts telling you what to do    İ Transfering "BUDGET.EXE".  Press     Ş
+    are shown here. ----------------->İ [Esc] to quit before completion.     Ş
+                                      İ                                      Ş
+                                      ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 37   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Receiving Files
+ ---------------
+ The Receive File Box is displayed after you select a download protocol from
+ the Protocol Selection Menu.   It allows you to tell COMit the file path and
+ name, and it shows the progress of a download.
+
+                                      ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+   The protocol is shown here. -----> İ Receive file using YMODEM-G          Ş
+                                      İÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿Ş
+   File Name Input is done here ----> İ³Path: C:\COMIT\RECV                 ³Ş
+   (For batch downloads, just the     İ³File: OE01.MRG                      ³Ş
+    path is specified.)               İÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´Ş
+                                      İ³               ÚÄ¿   ÚÄ¿Ú ÚÚÄ¿      ³Ş
+   This shows the count of bytes      İ³               ÚÄÙ   ³ ³ÀÄ´ÃÄ´Bytes ³Ş
+   received (or remaining.) --------> İ³               ÀÄÄ , ÀÄÙ  ÙÀÄÙrecvd ³Ş
+                                      İÃÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´Ş
+                                      İ³      ³Sending NAK    1             ³Ş
+   Error and status messages are      İ³      ³Receiving Block    1         ³Ş
+   shown here. ---------------------> İ³Status³Receiving Block    2         ³Ş
+                                      İ³----->³Receiving Block    3         ³Ş
+                                      İÀÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙŞ
+   Prompts telling you what to do     İ Transfering "OE01.MRG".  Press       Ş
+   are shown here. -----------------> İ [Esc] to quit before completion.     Ş
+                                      İ                                      Ş
+                                      ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+
+ When a file to be received already exists on your disk, the prompt displays
+ "Press [D] to delete, or [Esc] to rename."  [D] deletes the file on your disk
+ before starting download of the new one by the same name.  If you want to
+ preserve the old file, press [Esc] and specify a different file name.
+
+ In "batch" downloads, the remote computer provides the file name(s).  If a
+ file by the same name already exists on your computer, COMit doesn't ask if
+ you want to delete it.  Instead, it renames the new file by replacing the
+ last character of the name with a "$" sign.  For example, BUDGET.EXE is
+ received as BUDGET.EX$.  (To use it, you'll need to rename BUDGET.EX$ after
+ your COMit session.)  The same applies for any download done by a script,
+ because it is assumed you might not be present at the keyboard.
+
+ If a download is terminated before completion (by your pressing [Esc] or
+ [Ctrl-X], or by the remote computer electing to terminate it) you are prompted
+ "Press [K] to keep the incomplete file received, [D] to delete it." Your
+ normal answer will be [D] because incomplete files are usually not acceptable
+ to the programs that must use them.  This prompt doesn't appear when using a
+ script.
+
+ After the transfer is completed successfully, you'll hear 3 "beeps" and you
+ are returned online.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 38   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ A few differences apply for ASCII downloads.  After using the Receive File Box
+ to specify the file name, control of the keyboard is returned back to you and
+ the Receive File Box disappears.  The status line displays "[PgDn]=End
+ DownLd".  If necessary, you may answer prompts from the remote computer, which
+ will be included in your download file.  The download ends when you press
+ [PgDn], [PgUp], [/][S], or [/][R], or you terminate the session by hanging up.
+ It also ends if the remote computer sends a Ctrl-Z end-of-file character.
+
+ File Utilities while Online
+ ----------------------------
+ You can access all of COMit's file utilities while online.  To do so press
+ [/][F] or [Alt-F].  File utilities are discussed fully in Chapter 11. The
+ [Esc] key from file utilities resumes your online session.
+
+ Sending a Break
+ ---------------
+ Some host computers require the ability to send a "break" signal.  This can
+ be done by pressing [Alt-B] or by selecting [/][K] from the online menu.
+
+ Reviewing Scrolled Lines
+ ------------------------
+ The [Up-Arrow] key when you are online, or [/][B] from the online menu, lets
+ you go back and review the lines that have scrolled out of view at the
+ the top of the screen.  When reviewing, you can use [PgUp], [PgDn], [Home],
+ and [End] to more quickly find what you want to see.  The [Esc] key resumes
+ your online session.
+
+ While reviewing, you can get a hard-copy printout of the session, or selected
+ lines that have been displayed.  Turn on your printer, then move the cursor
+ bar to any line.  Press [C] to print it, or [E] to print it and all lines that
+ were displayed since.
+
+ You can also review (and print) your online session after hanging up.
+ /OR from the main menu does so.
+
+ Print Capture
+ -------------
+ [Alt-C] when online, or [/][C] from the online menu toggles print capture ON
+ and OFF.  This records your session on paper.  (Make sure your printer is ON
+ and ready to go.)  You can tell if print capture is toggled ON by looking at
+ the "LogTo" legend on the status line.  Double (instead of single) vertical
+ bars display left and right of the legend.
+
+ F-Keys while On-Line
+ ---------------------
+ If you used F-key setup (Chapter 5) the F-keys may be used while online for
+ "automatic typing".   For example, you can program F1 to type your name, F2 to
+ type your account number, etc.  F-keys which have not been programed this way
+ have no effect while online.  (In VT52 or VT100 terminal emulation the F-keys
+ are used for other purposes.  In these cases, press [Alt] with the F-key to
+ to type the data you've programmed for it.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 39   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Chapter 9   Answering with COMit (Host Mode)
+ ============================================
+
+ We've seen how COMit can make calls.  It can also answer them.  The term "Host
+ mode" refers to COMit's actions when it has answered a call from a remote
+ computer.
+
+ To answer, or to prepare for answering, select option /OH from COMit's Main
+ Menu:  "Go Online as Host now or when phone rings"
+
+ Option /OH is used when...
+
+ - You want COMit to answer incoming calls.
+ - You want COMit to act as Host when two computers are connected modem to
+   modem.
+ - You want to set up passwords and authorized users for calls you may receive.
+ - You want to test host mode locally (as if YOU were a caller into your
+   system.)
+
+ Here's what happens...
+
+ First, COMit sends the modem initialization string. If you have specified a
+ special initialization string for Host mode, COMit sends it instead.  (See
+ Chapter 5 "Initialization String Setup" and "Host Options Setup")
+
+
+ If initialization succeeds, COMit displays the online screen so you can verify
+ the settings shown on the status line.  It also displays...
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³Waiting for the phone to ring.                                           ³
+ ³Calls answered so far:    0                                              ³
+ ³                                                                         ³
+ ³The [Esc] key or [X] returns to the menu.                                ³
+ ³                                                                         ³
+ ³Press [U] to access the user name and password file...                   ³
+ ³Press [T] to test host mode locally...                                   ³
+ ³Press [A] to make COMit answer NOW without waiting for the phone to ring.³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ If the phone rings (or is already ringing), COMit issues an ATA command (to
+ tell the modem to answer) and goes to Host Mode.
+
+ [U] gives you access the the user name and password file.   It displays the
+ Sysop Functions Menu, which we'll discuss later in this chapter.
+
+ [T] lets you see what a caller will see. It simulates Host Mode.
+
+ [A] makes COMit answer without waiting for the phone to ring.  This is used
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 40   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ for a call that is already in progress, or when two local computers are
+ connected modem to modem.  The other user should select /OT from COMit's Main
+ Menu first. (See Chapter 10.)
+
+ Host Mode
+ ----------
+ While in host mode, you can view the actions of the caller, and you can help
+ the caller along (if necessary) by answering the prompts yourself. [/][H]
+ allows you to manually hang up on the caller.
+
+ First, a COMit logo is displayed, followed by the message specified in Host
+ Options Setup (Chapter 5).  The default is "Welcome to COMit Remote Access."
+
+ Then the user is asked for first and last name, and password.  If you've
+ defined this as a "Private System" (through Host Options Setup) the caller
+ must enter the name exactly as it is specified in the user file.  If it is not
+ a private system, anyone may call.  Their name and password is added to the
+ user file when they call for the first time.  (Rights for new callers are
+ limited, until you authorize additional rights through the Sysop Functions
+ Menu.
+
+ When the caller is logged on, the Host Mode Menu appears...
+
+   [F]File Directory  [C]Chat
+   [D]Download        [U]Upload
+   [T]Type a file     [P]Test pattern
+   [E]Elapsed time    [G]Goodbye
+
+ If the Caller has "Sysop" rights, an additional option, "[S]Sysop Functions"
+ is displayed.  It gives remote access to the Sysop Functions Menu.
+
+ At the "Enter your choice:" prompt, the caller enters one of the letters
+ indicated.
+
+ [F] displays a directory of files in the Send directory (as defined in Host
+ Options Setup).  A filespec can be entered, such as "*.EXE" to list all EXE
+ files.  If you've given the caller a "1" or "2" for "rights" (from the Sysop
+ Functions Menu) drive letters and subdirectory paths can be included in the
+ filespec.
+
+ [C]Chat allows the caller and host operator to type messages to each other
+ while online.  (Either user may press [C][Enter] at the prompt.)   Here's a
+ sample dialogue...
+
+         [*][Enter] exits Chat Mode --->      |Do you want me to try again?
+         [*][Enter] exits Chat Mode --->      |Yes, Joe
+         [*][Enter] exits Chat Mode --->      |Will do!
+         [*][Enter] exits Chat Mode --->      |*
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 41   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ [D]Download allows the caller to receive files from the Host system.
+ Downloads may be made from directories other than the send directory only if
+ the caller has the appropriate rights.  The following is displayed...
+
+ Download (receive) a file using...
+ [A]  ASCII                  (For text files only!)
+ [X]  Xmodem                 (Slow)
+ [C]  Xmodem-CRC             (Slow)
+ [Y]  Ymodem (Xmodem-1K)     (Faster)
+ [YB] Ymodem-Batch           (Faster)
+ [G]  Ymodem-G (Xmodem-1K-G) (Fastest - Recommended for MNP calls)
+ [GB] Ymodem-G-Batch         (Fastest - Recommended for MNP calls)
+ [Z]  Zmodem                 (Fast - Note: Host has crash recovery enabled.)
+ [M]  Return to Menu (Cancels request to download or upload)
+ Enter your choice:
+
+ After entering a valid choice, "File name:" appears and the caller must enter
+ a valid file name.
+
+ If YB, GB, or Z is selected, the name may include wildcard characters (such
+ as *.*), and the "File name:" prompt reappears so that more than one file can
+ be included in the batch.  The caller just presses [Enter] instead of a file
+ name after all desired files have been specified.
+
+ Then, Host Mode prompts the caller to begin the download procedure.  If
+ using COMit, the caller should press [PgDn] or [/R] at this point, and use
+ the Protocol Selection Menu to select the same protocol as was selected
+ above.  (This is done automatically if the caller selected Zmodem and the
+ caller's Terminal Options and Paths was set up for "Autodownload".)
+ Pressing [Ctrl-X] several times cancels a download that is in progress.
+
+ [U]Upload allows the caller to send files to the Host system.  Uploads may be
+ made to the Receive directory only (as specified in Host Mode Setup) unless
+ the caller has the appropriate rights.
+
+ The following is displayed:
+
+ Upload (send) file(s) using...
+ [X]  Xmodem                 (Slow)
+ [C]  Xmodem-CRC             (Slow)
+ [Y]  Ymodem (Xmodem-1K)     (Faster)
+ [YB] Ymodem-Batch           (Faster)
+ [G]  Ymodem-G (Xmodem-1K-G) (Fastest - Recommended for MNP calls)
+ [GB] Ymodem-G-Batch         (Fastest - Recommended for MNP calls)
+ [Z]  Zmodem                 (Fast - Note: Host has crash recovery enabled.)
+ [M]  Return to Menu (Cancels request to download or upload)
+ Enter your choice:
+
+ Then, for choices other than YB, GB, or Z, Host Mode requests the file name.
+ If the file already exists, the caller must choose a different name.
+ "Begin your upload procedure" is the signal for the caller to begin the
+ upload.  (If using COMit, the caller should press [PgUp] or [/][S] here.)
+ Pressing [Ctrl-X] several times cancels an upload that is in progress.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 42   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+ [T]Type a File (at the Host Mode Menu) displays an ASCII file for the caller
+ to read.  Host mode prompts the caller for the file name.  (This option should
+ not be used for non-ASCII files.)
+
+ [P]Test pattern simply displays a pattern of letters from A to Z, which is
+ useful for seeing the speed, and watching for any dropped characters.
+
+ [E]Elapsed time shows the time the caller has been online, and the timing for
+ the last file transfer in the session.
+
+ [G]Goodbye hangs up and ends the call.  It also displays elapsed time.
+
+
+ The Sysop Functions Menu
+ -------------------------
+ Sysop is short for "System Operator".  It refers to someone who is setting up
+ COMit to act as a Host system.
+
+ The Sysop Functions Menu gives you access to the COMIT.USR file, which
+ controls what users can call the system, and what rights each user has while
+ online.
+
+ Display it by selecting /OH from COMit's main menu, then press [U].  You can
+ also access it as a remote caller (if you have Sysop rights) by entering [S]
+ at the Host Mode Menu.
+
+ If the COMIT.USR file already exists, you must have Sysop rights (or rights as
+ high or higher than anyone else listed in the file.)  You are asked for your
+ name and password to verify your identity.
+
+ First & last name:
+ Password:
+
+ Then you see the Sysop Functions Menu itself:
+
+ [L]=List User File    [S]=Search & Update
+ [A]=Add a new user    [X]=Exit
+
+ If you've called COMit remotely, another option, "[Q]=Quit Answering," is
+ provided.  This allows you to "shut down" COMit's host mode after your call.
+
+ To use any of the options, press the indicated letter then [Enter].
+ [L][Enter] lists the user file.  The display shows all the users and their
+ rights.  Initially it is empty.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 43   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ Name................... Rights
+ DON GARNER                2
+ JOHN DOE                  1
+ JACK WILLIAMS             1
+ BILL WILLIAMS             0
+
+ Users with 0 for rights are restricted to the send and receive directories (as
+ specified in Host Options Setup).  Users with "1" for rights can access any
+ directory.  Users with "2" have "Sysop" rights.  They can access any directory
+ and are given access to the Sysop Functions Menu.
+
+ [A][Enter] from the Sysop Functions Menu adds a new user.  (This is the only
+ way a new user can be added if you requested "Private System" in Host Options
+ Setup.)  If it is not a private system, new users can add themselves, simply
+ by calling.  In the following example, Mary Williams is added as a user with a
+ password of XYZ123, and rights to access any directory.
+
+
+ Enter your choice: A
+ First & last name: Mary Williams
+ Password: xyz123
+ User's Rights:    0=Restricted to host mode directories
+                   1=Able to access any directory
+                   2=Sysop (All capabilities.)
+ Enter the number: 1
+
+ Note that for passwords and names, COMit treats all letters as upper case.
+ Passwords and names may be up to 25 characters each.
+
+ [S][Enter] from the Sysop Functions Menu can be used to search for a name and
+ to delete or update it.  Here's how a search for John Doe is done...
+
+ Enter your choice: s
+ First & last name: john doe
+
+
+ Name................... Rights
+ JOHN DOE                  1
+
+ [R]=Change User's rights    [D]=Delete
+ [P]=Change User's Password  [S]=Search again
+
+ After a successful search you can take any of the indicated choices.
+
+ [R][Enter] changes the users rights.
+ [D][Enter] deletes the user.
+ [P][Enter] gives the user a new password.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 44   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ There is no way within COMit to determine a user's current password.
+ (Passwords are coded as numbers within the user file, meaningful only to the
+ COMit program.)
+
+ If a user forgets his or her password, the only way to fix the problem is for
+ the Sysop to input a new one for the user.  If the Sysop's password is
+ forgotten, there is no way to get into the SysOp Functions Menu, other than to
+ delete the COMIT.USR file, and start it from scratch.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 45   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Chapter 10  Other Ways to Go Online
+ ===================================
+
+
+ The "Go Online" submenu gives a few other ways to communicate with a remote
+ computer, or directly with your modem.  It is selected by pressing /O from
+ COMit's Main Menu.
+
+      ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+      İ   Submenu                              Ş
+      İ   Go Online...                         Ş
+      İ  ÚÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ Ş
+      İ  ³D³Dial:  Tradewind Software        ³ Ş  <ÄÄÄ¿
+      İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş    ÚÄÁÄÄÄÄÄÄÄ¿
+      İ  ³T³To connection already in progress³ Ş    ³The name ³
+      İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş    ³at your  ³
+      İ  ³H³as Host now or when phone rings  ³ Ş    ³current  ³
+      İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş    ³position ³
+      İ  ³M³Manual commands / Terminal mode  ³ Ş    ³in the   ³
+      İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş    ³dialing  ³
+      İ  ³R³Review On-Line Session           ³ Ş    ³directory³
+      İ  ÀÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ Ş    ³is filled³
+      İ   Press [Esc] to return to prior menu  Ş    ³in here. ³
+      İ                                        Ş    ÀÄÄÄÄÄÄÄÄÄÙ
+      ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+
+
+ Chapter 7 discussed /OD (going online by dialing a phone number.)  Chapter 9
+ discussed /OH, (going online as host.)
+
+ Options /OT, /OM, and /OR are explained here.
+
+
+ Go Online - To connection already in progress
+ ---------------------------------------------
+ This option is selected by pressing /OT from COMit's Main Menu.
+
+ This is like Go Online - Dial except no dialing is done.  Instead, COMit
+ issues an ATD or ATX1D command to the modem.  (ATX1D is used if your
+ initialization string contains an X, in order to avoid the "No dialtone"
+ message.)  All the parameters for the currently highlighted dialing directory
+ entry are used (except the phone number.)
+
+ Use it...
+
+ - When you are connected modem to modem (without a phone.)
+ - When a (voice) phone connection is already established and you want to begin
+   DATA communications.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 46   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ The remote user must answer the "call" by entering ATA.  If using COMit, the
+ remote computer can answer by selecting /OH from COMit's Main Menu, then
+ pressing "A".  It is usually necessary for the remote user to do this a
+ second or so AFTER you have done the /OT on your computer.
+
+ If a CONNECT is not gotten, the Failed to Connect Menu is displayed.
+
+
+ Go Online - Manual commands / Terminal Mode
+ -------------------------------------------
+ This option is selected by pressing /OM from COMit's Main Menu.
+
+ It is to be used when...
+
+ - You want to enter commands directly to the modem.
+ - Or, you are connected to a remote computer via null-modem cable.
+
+ The parameters for the currently highlighted dialing directory entry are used
+ for the bits, rate, terminal, and echo.
+
+ With this selection...
+
+ - No initialization string is sent by COMit.
+ - No automatic dialing or answering is done.
+ - Data carrier is not monitored. (You must use [Alt-H] or [/][H] to hang up.)
+ - MNP is unavailable.
+ - A script, if present, is ignored.
+
+ As an alternative to this option, you can simply press [Enter] on a blank line
+ of the dialing directory screen.
+
+ Go Online - Review On-Line Session
+ ----------------------------------
+ Use this option to review your last call after hanging up.  It is the same as
+ using [Up-Arrow] or [/][B] while online.
+
+ When reviewing, you can use [PgUp], [PgDn], [Home], and [End] to more quickly
+ find what you want to see.  For a printout, turn on your printer, then
+ move the cursor bar to any line.  Press [C] to print it, or [E] to print it
+ and all lines that were displayed since.  The [Esc] key exits.
+
+ Note: This review is not available after exiting COMit.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 47   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Chapter 11  File Utilities
+ ==========================
+
+ COMit has many capabilities for managing the files on your disks.  To access
+ COMit's file utilities...
+
+ Select /F from COMit's Main Menu
+
+ or, while online...
+
+ Select /F from the Online Menu or press [Alt-F]
+
+ First, COMit displays the directory areas and drives available:
+
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+  ³For information about a drive, first make sure it is ready with a disk,   ³
+  ³then highlight the appropriate line and press [Enter].                    ³
+  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+  ³View Send (upload from) directory                                         ³
+  ³View Receive (download to) directory                                      ³
+  ³View Host Send (download from) directory                                  ³
+  ³View Host Receive (upload to) directory                                   ³
+  ³View Tagged Files List                                                    ³
+  ³View Drive A:                                                             ³
+  ³View Drive B:                                                             ³
+  ³View Drive C:                                                             ³
+  ³View Drive D:                                                             ³
+  ³View Drive E:                                                             ³
+  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ The cursor bar is originally on the current (default) drive.  You can move it
+ up or down to highlight the drive or directory you want to see, or you can
+ select "View Tagged File Utilities" (discussed later in this chapter.)
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 48   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ When you press [Enter] for a drive, a screen similar to the following is
+ shown...
+
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+  ³  Disk size in bytes........ 20,621,312                                   ³
+  ³- Bytes in use on disk...... 20,418,560                                   ³
+  ³                            ------------                                  ³
+  ³  Bytes available...........    202,752                                   ³
+  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+  ³Current directory of D:                                                   ³
+  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+  ³All directories on the drive                                              ³
+  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+  ³Sector and Cluster Information                                            ³
+  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+
+ The top part of the screen shows the disk capacity, how much you've used, and
+ how many bytes are free.
+
+ Move the cursor to the first line and press [Enter] to see the current
+ directory of the drive.  [Enter] on the second line provides a way to see the
+ entire subdirectory "tree" structure of the drive, and any directory on it.
+ [Enter] on the "Sector and Cluster" line displays information of interest to
+ technicians and programmers.
+
+ If you select "Current directory" or "All directories" the following prompts
+ are shown first, so you can tell COMit what files are to be included, and the
+ order in which they are to be listed...
+
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+  ³File name:     [*.*         ] <--MS-DOS (wild-card) file specification. ³
+  ³                                                                        ³
+  ³Sequenced by   [U]            <--D=Date S=Size N=Name E=Extension       ³
+  ³                                 U=Unsequenced                          ³
+  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ At "File name", enter *.* to see all files.  Or, if the list might be too long
+ you can enter a wildcard specification.   You may also want to enter a file
+ name without wildcards.  (If you selected "All directories" this is a
+ convenient way to find a file for which you don't know the path.)
+
+ At "Sequenced by" you can enter D, S, N, E, or U.  It's fastest to enter U,
+ which displays the files without sorting them.
+
+ Now: If you selected "Current directory" you see a File Directory Display
+      If you selected "All directories" you see the Tree Structure Display
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 49   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ File Directory Display
+ -----------------------
+ COMit's "file directory" display shows the files on your disk. If the disk is
+ organized into subdirectories, it shows the files in a particular
+ subdirectory. (The subdirectory name is shown near the bottom of the screen.)
+
+ The list looks similar to the following.  You can use the arrow keys to
+ highlight any file in the list.
+
+
+      û³Name    ³Ext³Size       ³Date    ³Time ³Attributes
+      ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+      û³MMENU   ³MNU³        955³07-26-90³1009a³
+       ³COLORSEL³MNU³        706³04-13-90³0643a³
+       ³GO      ³BAT³      4,940³08-15-90³1256p³Modified
+      û³COMIT01L³ASM³     46,415³06-05-90³0928p³
+       ³MMENU   ³OBJ³      1,435³07-26-90³1009a³Modified
+       ³MYFILE8L³DOC³     29,200³08-15-90³1252p³Modified
+       ³MYFILE5L³DOC³    175,940³08-15-90³1229p³Modified
+
+
+ The first column provides a place for a check mark which indicates the file is
+ "tagged". Press [Spacebar] to tag or untag a file.  To see all files that have
+ been tagged (on this and other drives), and (optionally) to perform operations
+ on all the tagged files, press [L] for Tagged File Utilities.
+
+ The second and third columns show file name and extension.  (Thus, MMENU.MNU
+ is the first file in the illustrated directory.)
+
+ Next, the size in bytes, date, and time (AM or PM) are displayed.
+
+
+ The attributes column shows "Modified" if the file has not been backed-up yet
+ (using the MS-DOS Backup command, or equivalent.)  It shows "Read Only" if the
+ file has been protected against deletion or updating. (You can use the MS-DOS
+ Attrib command to remove the Read Only status.)  Other files may be labeled
+ "Hidden" or "System". Hidden files cannot be seen with the MS-DOS Dir command,
+ but COMit lets you see them. System files are usually those used internally by
+ MS-DOS.
+
+ Viewing a File
+ --------------
+ To see the contents of any file, you can press [Enter] when the file's name is
+ highlighted.  Unless it is an ASCII file the contents may not be very
+ meaningful, but perhaps you'll be able to see data that's useful to you.
+ (Because characters below ASCII 32 are Control Codes which are undisplayable,
+ COMit replaces them with periods for viewing.)
+
+ If the file extension is ARC, ZIP, ZOO, or LZH the file is an archive (one
+ or more files compressed into a single file.)  COMit displays a list of the
+ files the archive contains.  (To use the files in an archive, you need an
+ appropriate program to unpack it.)
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 50   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ Tree Structure Display
+ ----------------------
+ COMit's "tree structure" display shows the subdirectories on your disk and how
+ they are organized.  This display is accessed by  selecting File Utilities and
+ following the prompts.
+
+ It looks similar to the following...
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ Root Level   Level1       Level2       Level3       Level4     Files K-Bytes
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ ÂÄÄÄÄÄÄÄÄÄÄÄÄ                                                      0      .0
+ ÃDBAÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄ                                         1    19.2
+ ³            ÃDATAÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄ                            3     5.3
+ ³            ³            ÃTHISMO                                  2    12.4
+ ³            ³            ÀLASTMO                                  4    11.2
+ ³            ÀPROGS                                                2   294.4
+ ÃBRAIN                                                             2   395.2
+ ÃWP                                                                5    65.5
+
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+ Initially, the cursor bar is on the first line, which indicates the root
+ directory of the drive.  [Down-Arrow] takes you to other subdirectories.  In
+ the illustration, the first [Down-Arrow] press takes you to D:\DBA.  Next is
+ D:\DBA\DATA, and then D:\DBA\DATA\THISMO.  These all represent places on your
+ disk where files may be stored.  To the left you see how many, and the total
+ size.  (Multiply by 1000 for size in bytes.)
+
+ (The count and size is just for the files matching the wildcard specification
+ you gave on the previous screen.)
+
+ Pressing [Enter] on any line gives a File Directory Display for the indicated
+ subdirectory.  (The files are listed in the sequence you requested on the
+ previous screen.)   After the directory display, [Esc] returns to the tree.
+
+ Pressing [L] takes you to Tagged File Utilities.  [Esc] from tagged file
+ utilities returns to the tree.  (Note that the file counts are not updated for
+ any deletions you may have made until you escape back to the screen for
+ selecting the wildcard and sequence.)
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 51   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ Tagged File Utilities
+ ---------------------
+ COMit's Tagged File Utilities make it convenient to perform operations such as
+ Printing, Test-Reading, Deleting, and Batch Uploading for individual files or
+ groups of files which may be in different directories and on different drives.
+ The tagged files list may be displayed by selecting [/][F] from COMit's Main
+ Menu or the online menu or by pressing [Alt-F] while online.  At the first
+ screen for File Utilities select "View Tagged Files List".  Or, when viewing a
+ file directory or tree structure, you may press [L] to get here.
+
+  A screen similar to the following is displayed...
+
+
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+  ³You may edit, add-to, and view the list of tagged files in the area below.³
+  ³Any MS-DOS file spec or wild-card can be used.  Press [/] for menu.       ³
+  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+  ³File Specification                                       ³                ³
+  ÆÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍØÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍµ
+  ³D:\DBA\DATA\THISMO\*.*                                   ³                ³
+  ³C:\WORK\*.BAK                                            ³                ³
+  ³C:\WORK\*.OLD                                            ³                ³
+  ³C:\WORK\RANDY.DOC                                        ³                ³
+  ³                                                         ³                ³
+  ³                                                         ³                ³
+  ³                                                         ³                ³
+  ³                                                         ³                ³
+  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+   Tagged Files List                                       Page 1 of 1
+
+
+ In the "File Specification" area you may type a list of filespecs.  In
+ addition, any file names "tagged" in a File Directory Display are
+ automatically included in the list for you.  If you change the list here, the
+ "check marks" on your next directory display will be updated accordingly.
+ Note that the list may be more than one page long.
+
+ Several special keys are available for editing the list. They are listed in
+ the message box at the bottom of the screen...
+
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+   []Up    [F3]=InsertBlankLine   [F4]DeleteLine  [/]=Tagged files menu
+   []Down  [F2]InsertLastDeleted  [Esc]Quit
+   ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+ If the filespecs listed are to be sent (uploaded) to a remote computer, COMit
+ will use the tagged files list when you select "YT", "GT", or "ZT" from the
+ Protocol Selection Menu at the appropriate point while online.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 52   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Other operations on the list may be done here at any time by pressing [/]
+ (or your Menu Access Key) for the "Tagged Files Menu".
+
+      ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+      İ                                        Ş
+      İ   Tagged Files Menu                    Ş
+      İ  ÚÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ Ş
+      İ  ³P³Print all tagged files           ³ Ş
+      İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+      İ  ³T³Test-read for disk errors        ³ Ş
+      İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+      İ  ³D³Delete all tagged files          ³ Ş
+      İ  ÀÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ Ş
+      İ   [Esc] exits without any action...    Ş
+      ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+
+
+ Printing Tagged Files
+ ----------------------
+ Option P lets you print all the tagged files on your line printer.  A submenu
+ lets you say whether or not a form feed is to be sent after each file.  Be
+ careful to include only ASCII Files for printing.  The exception is non-ASCII
+ files containing graphic images that can be interpreted by the make and model
+ of your printer you may have.
+
+ Test-Reading Tagged Files
+ -------------------------
+ Option T can be very useful.  It causes COMit to go through your tagged files
+ list.  Each file is read from beginning to end.  If any disk errors are
+ encountered or if a file is not found this is noted for you.  This  prevents
+ unexpected problems later, which can waste time and cost you money while
+ online.
+
+ As COMit test-reads each file, it computes the file's CRC and reports the
+ result.  For example:   OK, CRC -> 28,927.  The number may be from 0 to
+ 65,535, and is computed by performing a calculation on every byte in the file,
+ taking into account the byte's position.   Thus, there's a good chance that
+ two files with the same CRC have the same contents.  If there's any doubt
+ you've received a file correctly, or you're not sure you have the latest
+ version, you and (and a friend with COMit) can compute CRC's on the same file
+ before investing the time to resend it.
+
+ For the lines on your tagged files list having wildcard specifications
+ (instead of individual file names) the CRC reported is the combined CRC for
+ all files matching the specification.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 53   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Deleting Tagged Files
+ ---------------------
+ Option D lets you delete a group of files (or an individual file) from your
+ disk to make more space.  A submenu appears before deletion begins, which lets
+ you ask for "prompted" deletions.  If "prompted" is requested, you're asked
+ "Yes" or "No" before a file is erased.
+
+ Remember:  The tagged files list may be more than one page.  Be sure not to
+ accidentally delete any files "hidden" on another page.
+
+ Also note:  The tagged files list remains after deletion is completed. You may
+ want to press [F4] on each line to clean up the list.  Otherwise, if you exit
+ Tagged File Utilities back to a directory display, the deleted files will
+ still be shown.  (They go away when you exit the directory.)
+
+ One Other Note
+ --------------
+ Your tagged files list is only active during the current session.  You start
+ with a blank list each time you start COMit.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 54   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Chapter 12  Diagnostics
+ =======================
+
+ COMit has a wide array of diagnostics available to you.  The Diagnostics
+ Submenu is displayed by pressing /D from COMit's Main Menu.
+
+                   ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+                   İ   Submenu                              Ş
+                   İ   Diagnostics                          Ş
+                   İ  ÚÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ Ş
+                   İ  ³C³Check all COM ports              ³ Ş
+                   İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+                   İ  ³M³Show modem registers             ³ Ş
+                   İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+                   İ  ³S³System configuration             ³ Ş
+                   İ  ÀÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ Ş
+                   İ   Press [Esc] to return to prior menu  Ş
+                   İ                                        Ş
+                   ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+
+ Check all COM ports
+ -------------------
+ This option is available by selecting /DC from COMit's Main Menu.
+
+ It is useful when initially setting up COMit (See Chapter 5) or when you are
+ having trouble getting a modem to respond.
+
+ "Check all COM ports" tries every COM number and IRQ Number with each normal
+ Port Address to determine what modems and serial cards are present on your
+ computer.
+
+ The first step for each COM, IRQ, and Address combination is an internal
+ loopback test.  If it fails, "No serial card or internal modem found" is
+ reported.  If it succeeds, COMit attempts to initialize the modem.  If the
+ modem responds with "OK", COMit asks for the Modem's ID and reports it to you.
+
+ The LineStat and ModemStat columns of the display give information that may be
+ helpful to technicians.   The numbers can be interpreted from the following
+ table, but be aware that for non-existing serial cards or modems, the numbers
+ shown may be meaningless.
+
+      Line Status Register              Modem Status Register
+      --------------------              ---------------------
+      7 Timeout                         7 Data Carrier detect
+      6 Transmit shift register empty   6 Ring indicator
+      5 Transmit shift hold reg empty   5 Data set ready
+      4 Break detected                  4 Clear to send
+      3 Framing error                   3 Delta data carrier detect
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 55   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+      2 Parity error                    2 Delta ring indicator
+      1 Overrun error                   1 Delta data set ready
+      0 Data ready                      0 Delta clear to send
+
+ Show Modem Registers
+ --------------------
+ This option is available by selecting /DM from COMit's Main Menu.
+
+ Your modem has 16 or more storage registers where it keeps information about
+ how it is currently configured.
+
+ For the modem (if any) installed for the Port identified on the Dialing
+ Directory Screen, COMit requests the S-Register settings and reports them to
+ you.  Here's part of a typical display...
+
+  Register    ³Bits 7-0³Unit    ³Valid ³Default³Description
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+    S00 =  000³N.A.    ³Rings   ³0-255 ³    0  ³Ring to answer on  0=None
+    S01 =  000³N.A.    ³Rings   ³0-255 ³    0  ³Modem's counter for rings
+    S02 =  043³N.A.    ³ASCII   ³0-127 ³   43  ³Modem Escape Code 43="+"
+    S03 =  013³N.A.    ³ASCII   ³0-127 ³   13  ³Code for Carriage Return
+    ÄÂÄ    ÄÂÄ ÄÄÄÄÂÄÄÄ ÄÄÄÂÄÄÄÄ ÄÄÄÂÄÄ ÄÄÄ ÄÄÄ
+     ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ The S-Register number is
+            ³      ³       ³        ³             shown here.
+            ³      ³       ³        ³
+            ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Its current value is shown
+                   ³       ³        ³             here.
+                   ³       ³        ³
+                   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ For bit-mapped registers
+                           ³        ³             the bit values are shown
+                           ³        ³             here.
+                           ³        ³
+                           ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ This tells the unit of
+                                    ³             measure for the register:
+                                    ³             Rings, ASCII, Seconds, etc.
+                                    ³
+                                    ÀÄÄÄÄÄÄÄÄÄÄÄÄ This shows the range of
+                                                  valid values the register
+                                                  can have.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 56   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ System Configuration
+ --------------------
+ This option is available by selecting /DS from COMit's Main Menu.  The
+ following list of topics is displayed.  Simply move the highlight to the topic
+ you want to explore, and COMit performs the desired test and displays the
+ applicable data.
+
+  ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+  ³CPU, Video, and DOS Version                                               ³
+  ³Equipment Flags                                                           ³
+  ³Memory Availability                                                       ³
+  ³Memory Map and Resident Programs                                          ³
+  ³Memory Test                                                               ³
+  ³Speed and Performance Test                                                ³
+  ³Startup Parameters from DOS                                               ³
+  ³DOS Environment Strings                                                   ³
+  ³Config.sys File                                                           ³
+  ³Autoexec.bat File                                                         ³
+  ³Interrupt Vectors                                                         ³
+  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1990 Tradewind Software   Page 57   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Chapter 13  Writing and Using Scripts
+ =====================================
+ COMit allows you to write miniature programs called "scripts" to automatically
+ handle the progress of a call.  Scripts save time and money, and they make it
+ easy for inexperienced users to perform routine tasks.
+
+ When you think of it, most online communication sessions consist of waiting
+ for prompts from the host computer, and answering them appropriately. A
+ script, in its most simple form, waits for specific prompts and automatically
+ types the appropriate answers.  Beyond this you can add commands to control
+ file sending and receiving, hanging up, displaying local messages to the user
+ and getting responses, and jumping to different parts of the script based on
+ user requests or conditions that may be present.
+
+ Each dialing directory entry may have one (optional) script attached to it,
+ but as you'll see, you can create a "menu" within the script that makes it
+ handle all the special tasks that might be anticipated.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 58   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Script Entry Page
+ ------------------
+ Each dialing directory entry has a built in script entry page.  To see it,
+ press [S] when the cursor is on the dialing directory entry you want to use.
+
+ The script entry page shows all the script commands, and the script you've
+ written (if any.)   The example below shows a simple script that automatically
+ enters a name and account number.
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³T=Timeout(Seconds) M=Message(String)   I=If(#=String)    S=Send(How,file)  ³
+ ³W=Waitfor(String)  K=KbdInput(#)       G=Goto(Label)     R=Recv(How,file)  ³
+ ³O=Output(String)   P=Pause(Halfsecs)   E=Else            H=Hangup          ³
+ ³Q=Quit(file)       D=Dial              L=Label(String)                     ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+ ÚÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³C³Parameters                                                               ³
+ ÆÍØÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍµ
+ ³w³Name:            ;Wait for name request                                  ³
+ ³o³John Doe^M       ;output my name with a carriage return                  ³
+ ³w³unt Number:      ;Wait for acct# request                                 ³
+ ³o³5545^M           ;output my account number with carriage return          ³
+ ³q³                 ;take over manually                                     ³
+ ³ ³                                                                         ³
+ ³ ³                                                                         ³
+ ÃÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+ ³Script          PC BBS                                     Page 1 of 1     ³
+ ³[ ]Up    [F3]=InsertBlankLine   [F4]DeleteLine  [Alt-S]=Script last call   ³
+ ³[ ]Down  [F2]InsertLastDeleted  [Esc]Return to Dialing Directory           ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ The letters (w, o, w, o, q) in the leftmost column are the script commands.
+ The parameters for the commands are in the next column.  Optional comments
+ follow the semicolons.
+
+ Script last call
+ ----------------
+ The easiest way to write a script is to let COMit write scripts automatically.
+
+ Whenever you make a call with COMit, it "remembers" the sequence of keys you
+ used and the prompts that were "seen" immediately preceding your keystrokes.
+
+ From this information, COMit can write a script that can make future calls to
+ the same dialing directory entry completely automatic.  Or, you can customize
+ the the script to do other things.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 59   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ For automatic scriptwriting...
+
+ 1. Use COMit to make the call.
+ 2. After you've finished the call, go to the script page by pressing [S] at
+ the appropriate dialing directory line.
+
+ 3. Press [Alt-S].
+ The automatically-written script is displayed.  (If you already had a script,
+ the automatic script is added to the end of it.)
+
+ If you want a script that will just "log you on," use the down and up arrow
+ keys to find the line in the script just past the last thing to be outputted
+ automatically.  Use [F4] to delete all lines past it.
+
+ When you exit the script writing page by pressing [Esc], the script is saved
+ to as part of your dialing directory data file, COMIT.CDF.
+
+
+ Script Commands
+ ----------------
+ All COMit script commands are a single letter followed by (optional)
+ parameters.  Each command is on a separate line.  Invalid command letters and
+ blank lines are ignored.  Your may use upper and/or lower case letters.
+
+ You may add comments to any script command line by adding a semicolon (;) as
+ shown in many of the examples below. If a semicolon is required as part of a
+ script parameter use ";;"
+
+ The scripting commands are...
+
+ T Timeout         M Message         I If            S Send
+ W Waitfor         K KbdInput        G Goto          R Receive
+ O Output          P Pause           E Else          H Hangup
+ Q Quit            D Dial            L Label
+
+
+ They are discussed on the following pages, in alphabetical order.  You'll
+ probably want to learn them in a more logical order...
+
+ - Start with W and O (the two most important script commands) first.
+ - Then look at S, R, H, (the commands for sending files, receiving files, and
+   hanging up.)
+ - The Q, P, and T commands are good to learn next.
+ - Finally, you'll want to learn M, K, D, I, G, E, and L.  These commands
+   display messages to the operator, get responses, and do if-then branching
+   for very advanced capabilities.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 60   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ "D" Dial
+ --------
+ Normally, you'll put all your "M" (message) and "K" (keyboard input) commands
+ at the start of a script.  This allows the local operator to prepare data for
+ the call and/or make choices from a menu you've created.  The call is not
+ actually dialed until a "W", "O", "S", "R", or "D" command is encountered in
+ the script.  The "D" command is provided as a way to make dialing begin before
+ it normally would.  For example...
+
+ M We're going to dial...
+ D
+ M We've dialed now...
+
+ There are no parameters for the dial command.
+
+ "E" Else
+ ------
+ The "E" (else) command is used with the "I" (if) command.  You'll normally
+ have an "I" command, followed by one or more commands that tell what the
+ script is to do if the "if" condition is true.  The "E" command signifies the
+ end of the things to be done if the condition is true.  Script execution
+ resumes at the command following the "E" if the "if" condition is false.  See
+ the "I" command for an example.
+
+ You may nest "if and else" commands between other "if and else" commands.
+
+ The "E" command has no parameters.
+
+ "G" Goto(Label)
+ -------------
+ The "G" (goto) command causes COMit to search the script for a particular
+ label (defined by the "L" command.  Execution of the script resumes at the
+ command following the label.  For example:
+
+ G GETNAME              ;Go to the GETNAME label.
+ M Enter your Name:     ;Display "Enter your name:"
+ L GETNAME              ;This is the GETNAME label
+ K 5                    ;Get input and store it in memory 5
+
+ In this case "Enter your Name" is never displayed, because the G command
+ causes the script to "jump over" it.
+
+ If the "goto" label is not found, the script terminates and the operator can
+ take over manually.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 61   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ "H" Hangup(Errorlevel)
+ ----------------------
+ The hangup command signifies the end of a script.  It causes the phone to be
+ hung up, and you are returned to the dialing directory.
+
+ Errorlevel is an optional parameter (a number from 0 to 255).  It may be used
+ to pass back a result code to an MS-DOS batch file if COMit is being run
+ automatically.  See Startup Parameters for more information.
+
+ "I" If(#,String)
+ ----------------
+ The "I" (if) command allows your script to make decisions based on conditions
+ or operator input.  Here's an example...
+
+ L GETCHOICE            ;this is a label for use by the "G" command
+ M Enter your choice:   ;request a choice
+ K 1                    ;get it and store in memory 1
+ I 1,R                  ;if memory 1 now contains "R"...
+ G RATEREQUEST          ;go to the RATEREQUEST label in the script
+ E                      ;otherwise (else)
+ I 1,Q                  ;if memory 1 contains "Q"
+ G QUOTEREQUEST         ;go to the quote request label in the script
+ E                      ;otherwise (else)
+ I 1,BYE                ;if the operator typed BYE
+ H                      ;then hang up
+ E                      ;otherwise (else)
+ M Bad choice           ;if none of the above, display "Bad choice"
+ G GETCHOICE            ;and go back to the GETCHOICE label
+
+ Upper and lower case is not significant in "if" commands.
+
+ "K" KeyboardInput(#)
+ --------------------
+ The "K" command waits for the local user to input something at the keyboard,
+ followed by [Enter], and it stores whatever is typed in a memory, numbered
+ from 1 to 99.  Later, the contents of that memory can be used in an "I"
+ (If) command, or outputted with an "O" (Output) command.
+
+ For example:
+
+ M Enter your name:            ;ask for name
+ K 1                           ;get it and store it in memory 1
+ M Enter your account number:  ;ask for account number
+ K 2                           ;get it and store it in memory 2
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 62   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ "L"  Label(String)
+ ------------------
+ The "L" (label) command identifies a position in your script which is the
+ target of a "G" (goto) command.  The label can be any word or group of words.
+ Upper and lower case is not significant.  See the the "G" and "I" commands for
+ examples.
+
+
+ "M" Message(String)
+ -------------------
+ The message command displays a message for the local user, but does not
+ send it to the remote computer.  For example...
+
+ M Press [Enter] to begin...
+
+ displays "Press [Enter] to begin...".   Note that the "M" command doesn't
+ actually wait for you to press [Enter].  That's the job of the "K" command.
+
+ "M" commands can be used to create a menu at the start of the script.
+ For example:
+
+ M [D] Download a file.
+ M [U] Upload a file.
+ M [R] Read your mail.
+ M Enter your choice...
+ K 1
+
+
+ "P" Pause(Halfsecs)
+ -------------------
+ The "P" command pauses the script for the indicated number of half seconds.
+
+ For example...
+
+ O Joe^M    ;Output first name
+ P 3        ;wait 1 1/2 seconds
+ O Brown^M  ;Output last name
+
+
+ "O"  Output(String)
+ -------------------
+ The "O" command tells the script to "type" something, just as if you had
+ manually typed it at the keyboard.  For example...
+
+ O BYE^M
+
+ This outputs the the word BYE, followed by a carriage return.  If the string
+ is # followed by a number from 1 to 99, the results of a previous keyboard
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 63   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ input as stored in a memory are outputted.  For example...
+
+ O #5
+ O ^M
+
+ Outputs the contents of memory 5, then a carriage return.  (See the "K"
+ KbdInput command.)
+
+
+ "Q" Quit(file)
+ --------------
+ The "Q" command quits the script and allows you to continue the online session
+ manually at the keyboard.  (Note that it is different from the "H" command,
+ which quits the script and hangs up.)
+
+ If you provide a file name with the quit command, that file is loaded into
+ memory and executed as a script.  This is called "quitting to an external
+ script."  For example:
+
+ Q C:\COMIT\MYSCRIPT
+
+ In this case, the COMIT subdirectory on drive C is searched for a file named
+ "MYSCRIPT".  The file must contain valid script commands (each line having a
+ letter, a blank, and the required parameters.)  If the file is not found, the
+ Q command works as if no file name was specified.  (You'll have to take over
+ manually.)  External script files can be created with any word processor that
+ is able to save text as an ASCII file.
+
+ "R" Receive (How,file)
+ ----------------------
+ The "R" (receive) command is like the "S" (send) command, except it is used
+ for downloads from a remote computer to you.  The following downloads a file
+ to be called "PATCHES" using XMODEM protocol...
+
+ R X,PATCHES
+
+ If the protocol is GB, YB, or Z you need not specify a file name.  (The
+ name is provided by the remote computer.)  For example:
+
+ R GB
+
+ Besides X, C, Y, YB, G, GB, and Z (for the transfer protocol) you can
+ specify "L" as the transfer protocol for the Receive command.  This opens
+ the log file (using the specified file name.)  For example:
+
+ R L,C:\COMIT\CAPTURE         ;Opens a log file called "CAPTURE"
+
+ To close the log file (after it's been opened, use "R" with "L" again, but
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 64   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ without any file name.  For example...
+
+ R L                          ;Close the log file
+
+
+ "S"  Send(How,file)
+ -------------------
+ The "S" (send) command is used for file uploads.  "How" is to be replaced by
+ letter(s) to indicate the transfer protocol:
+
+ X  = XMODEM
+ C  = XMODEM CRC
+ Y  = YMODEM (XMODEM-1K)
+ YB = YMODEM BATCH
+ G  = YMODEM-G (XMODEM-1K-G)
+ GB = YMODEM-G BATCH
+ Z  = ZMODEM
+ A  = ASCII
+
+ The file name can include a drive and path, if necessary.  For example:
+
+ S GB,D:\SPREAD\BUDGET.WKS
+
+ causes the file, BUDGET.WKS to be uploaded from the SPREAD subdirectory on
+ Drive D, using YMODEM-G Batch.
+
+ Before an "S" command, be sure your script waits for whatever the remote
+ computer displays to indicate it is ready to receive.
+
+
+ "T"   Timeout(Seconds)
+ ----------------------
+ This sets the maximum amount of time any subsequent "W" (Waitfor) commands
+ will wait before "giving up" and quitting the script.  For example:
+
+ T 60      ;Set timeout to 60 seconds
+ W file:   ;Start timer and wait for the word "file:"
+
+ In this case, if 60 seconds elapse before the word "file:" is received from
+ the remote computer, the script will terminate the call. (A message displays
+ and you have 5 seconds to press a key if you want to continue manually.)
+
+ You may use the "T" command once at the start of your script, or you may put
+ it various places within your script to customize the wait time for each
+ situation.
+
+ Using a "T" command with 0 as the number of seconds (or not using a "T"
+ command at all) makes COMit wait as long as necessary at each "W" command.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 65   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ "W"  Waitfor(String)
+ --------------------
+ The Waitfor script command command tells the script to wait until it "sees" a
+ specific string of characters come in from the remote computer.  For
+ example...
+
+ W download file
+
+ waits for the the words "download file".  When they are received, the next
+ line of the script is executed.
+
+ You can put control characters in the waitfor string.  For example...
+
+ W ^G
+
+ waits for the bell to ring.
+
+ W request:^M^J
+
+ waits for the word "request:" followed by a carriage return and line feed.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 66   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Chapter 14 - Transfer Protocols
+ ===============================
+
+
+ Sending and receiving files is one of the most important capabilities to be
+ handled by a communications program.  To do so, a connection must be made
+ between the two computers, preferably with one computer in host mode, and
+ the other computer calling it.  Then, to transfer files, one computer
+ sends (uploads) and the other is receives (downloads.)  The transfer
+ protocol coordinates the process by defining when the transfer starts
+ and ends, how errors are sensed and what to do if they occur, whether data
+ is passed in blocks or a continuous stream, and how to relay the information
+ about file naming, sizes, and dates.  COMit supports the most popular file
+ transfer protocols.  In most cases, you'll simply choose the most
+ sophisticated protocol available to both computers.
+
+
+ ASCII Transfer Protocol
+ -----------------------
+ ASCII is the most primitive (in fact, most experts wouldn't consider it a
+ protocol at all) but it is the most universally available. No error
+ detection is employed (unless you're using MNP.)  The end of file is signified
+ by a Ctrl-Z character (ASCII 26).  Because binary files might have Ctrl-Z's
+ and other control characters anywhere, they can't be sent reliably with ASCII.
+
+ Unless the data to be sent is pure text, don't use ASCII. Even for text files,
+ use ASCII transfers only when no other protocol is available.
+
+ XMODEM
+ -------
+ In XMODEM transfers, a file is sent in blocks of 132 bytes.  The transfer is
+ started by the receiver, which sends a NAK character (ASCII 21) at 10-second
+ intervals until the sender responds with the first block.  Validity checking
+ is done by evaluating the checksum and the other non-data bytes in the block.
+
+ The receiver expects no more than a 1 second interval between bytes.  If
+ an error is detected, the receiver sends a NAK and the block may be resent up
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 67   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ to 10 times.  Otherwise, an ACK (ASCII 6) is sent to acknowledge correct
+ receipt.  An EOT character (ASCII 4) instead of another block indicates end of
+ file, and the receiver responds with a final ACK.  The Ctrl-X character (ASCII
+ 24) between blocks by sender or receiver requests cancellation of the
+ transfer.
+
+   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+   ³  An XMODEM Block                     ³
+   ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+   ³  1 Byte  SOH (ASCII 1)               ³
+   ³  1 Byte  Sequence Number  0-255      ³
+   ³  1 Byte  Complement (255-seq number) ³
+   ³128 Bytes Data                        ³
+   ³  1 Byte  Checksum                    ³
+   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ XMODEM-CRC
+ -----------
+ The XMODEM-CRC protocol improves on XMODEM by using CRC instead of a checksum
+ for validity checking.  This provides a much better chance that errors due to
+ a bad phone line will be caught.  Instead of the initial NAK character(s), the
+ receiving computer sends "C" until the first block is received.  (After
+ sending 3 C's without a response, the receiver assumes the sender is unable to
+ handle CRC, so it sends NAK characters, and regular XMODEM is attempted.)
+
+ YMODEM
+ ------
+ The YMODEM protocol, sometimes called XMODEM-1K, is like XMODEM-CRC, but
+ faster transfers can be achieved (when a phone connection is good) because
+ 1024 bytes of data are sent per block.  The sender may also use 128 byte
+ blocks, at its discretion.  Blocks with 1024 bytes have STX (ASCII 2) as the
+ start of block character instead of SOH.
+
+ YMODEM-BATCH
+ ------------
+ One (usually insignificant) problem of XMODEM, XMODEM-CRC, and YMODEM
+ transfers is that the file size on the receiving computer is always an even
+ multiple of 128 bytes.  (ASCII zeros are padded onto the end.)   YMODEM Batch
+ solves this problem and allows more than one file to be to be sent in a
+ single transfer by including file name(s) and size(s) along with the data.
+ After requesting file(s) from the sender, the receiver only needs to specify
+ the drive and path for local storage.
+
+ In batch transfers the initial block number is zero (instead of one) to
+ indicate that it contains a file name and size.  After each file, another
+ "filename block" is expected.  A filename block with ASCII zeros instead of a
+ file name indicates the end of the batch.
+
+ Because file naming is handled automatically, YMODEM-Batch is well suited
+ suited for unattended operation in scripts.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 68   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ YMODEM-G & YMODEM-G-BATCH
+ -------------------------
+ These protocols correspond to YMODEM and YMODEM-BATCH but can be much faster
+ because the sender does not wait for an ACK character before sending each
+ block.  In addition, the timing is relaxed to make it more suitable for use on
+ some transmission links where data is sent in bursts, with (sometimes) more
+ than one-second delays.
+
+ YMODEM-G and G-BATCH should be used only with MNP, V.42, or V.42bis, where
+ an error-free connection is assured, because these "G" protocols abort
+ (without resending a block) the instant an error is detected.  If the
+ MNP, V.42 or V.42bis is implemented in the modem's hardware, there is still
+ the potential for error (and an aborted transfer) because the data path
+ between modem and computer is not error-corrected.  The chance of errors is
+ reduced if you make sure your modem's initialization string calls for RTS/CTS
+ local flow control.  (The "standard" init strings in COMit's setup do this
+ where possible.)
+
+ To start a YMODEM-G or G-Batch transfer, the receiver sends "G" instead of "C"
+ to say it's ready.  (After 3 G's and no response, C's are sent and regular
+ YMODEM or YMODEM-Batch is attempted.)
+
+ One disadvantage of the "G" protocols is that cancellation (using Ctrl-X) is
+ sometimes messy.  By the time the sender receives the Ctrl-X, a lot of data
+ may already be in transit.  You may may need to ignore several pages of
+ unintelligible data on the screen before the sender's menu is redisplayed.
+
+ ZMODEM
+ ------
+ ZMODEM has many features that make it preferable in many situations, and the
+ features are automatically negotiated, based on the capabilities and needs of
+ both systems.  Among them are...
+
+  - 32-bit (instead of 16-bit) CRC for better error detection.
+  - Ability to pass the file date and time, as well as the name and size.
+  - Optional ability to overwrite existing files.
+  - Optional crash recovery. This, in essence, is the ability to skip files
+    the receiver already has, and to append data to files having the same
+    name, date and time, but shorter length.
+  - Optional Autodownload. The receiving computer, when it "sees" a specific
+    string of characters, knows that the sender is ready to start.  The
+    operator, after requesting the files from the host computer, doesn't need
+    to take any special steps, such as [PgDn] and selecting the protocol.
+  - Ability for the sending computer to tell the receiver how many files and
+    bytes remain in the whole batch.  (YMODEM-Batch is only able to report
+    bytes remaining in the current file.)
+
+ Rather than block numbers, ZMODEM deals with file positions.  Thus, the
+ receiving computer, if it senses an error, can issue a "position request" to
+ the sender.  The sender goes back to the requested position and retransmits.
+ This same capability allows skipping of data the receiver already has.  In
+ crash recovery, the receiver does a position request to its end-of-file, and
+ the sender starts there if additional data remains.
+
+ See Terminal Options & Paths (Chapter 5) for how to set the ZMODEM options.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 69   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Chapter 15  Errors & Troubleshooting
+ ====================================
+
+ Modem Not Working
+ -----------------
+ One of the most common problems with modems is having more than one device on
+ the same COM port (even if the other device is not in use.)  This may causes
+ "hanging up" the phone as soon as a call is dialed or answered, or other
+ erratic behavior.
+
+ To troubleshoot this for an internal modem, try running option /DC from
+ COMit's Main Menu WITHOUT the modem installed.  If any serial ports or modems
+ are listed, you'll need to set your (new) modem to a different COM# and/or
+ IRQ, or remove or reconfigure the conflicting devices.
+
+ For an external modem, disconnect it.  Option /DC should show "Serial port
+ exists but no modem found" for the COM number to be used.
+
+
+ Modem Diagnostic Lights
+ -----------------------
+ If you press [Alt-R] when online or when COMit is intitializing the modem
+ or dialing, a set of three "lights" replaces the rate area of the status
+ line at the bottom of your screen.  They appear as "RxTxCd".  When any
+ of the lights is ON the color changes to bright white on green (or white on
+ black, if monochrome.)  When OFF, the color is black on a white background.
+ [Alt-R] again, toggles back to rate display.  (For modems that utilize
+ the software V.42 driver, this feature is unavailable during a call while the
+ driver is active.)
+
+ Rx Light - This light goes ON when data is received from the modem.  When
+ COMit is doing disk access, or when the receive buffer is full, COMit tells
+ the modem to stop giving it incoming data.  The "Rx" legend is replaced by
+ "--" at these times to indicate RTS (request to send) is OFF.
+
+ If the light goes ON (in the RX position) while "--" is displayed, it means
+ the modem is violating flow control.  (It is still providing data after
+ COMit has told it to stop.)  If COMit senses this during a disk access, "??"
+ replaces the "--".  If you see this, you should modify your initialization
+ string to ensure RTS/CTS flow control is enabled.
+
+ Tx Light - This light flashes ON when COMit sends data to the modem.  If
+ "--" replaces the "Tx" legend, it means the modem has told COMit to stop
+ sending by turning CTS (clear to send) OFF.  The dashes at the Tx position
+ may also mean the modem (if external) is OFF or not connected.
+
+ Cd Light - This light is ON to indicate carrier detect.  (The local modem
+ is sensing the signal from the remote modem.)  Upper case "CD" (instead of
+ "Cd") indicates the data set ready signal is also high.  Normally, CD should
+ light up soon after a connection is made, and turn off when either modem
+ hangs up.  "&C2" is included in most initialization strings to ensure this
+ is the case, so that COMit knows when an online session has terminated.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 70   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Failed to Connect! Menu
+ ------------------------
+  This menu appears when a dialing attempt or request to go online as host
+  has failed.
+
+   İßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßİ
+   İ   Failed to Connect!                   Ş
+   İ  ÚÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ Ş
+   İ  ³C³Cancel the attempt               ³ Ş
+   İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+   İ  ³R³Retry once                       ³ Ş
+   İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+   İ  ³S³Try until successful             ³ Ş
+   İ  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Ş
+   İ  ³M³Take over manually               ³ Ş
+   İ  ÀÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ Ş
+   İ                                        Ş
+   İ                                        Ş
+   ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+
+ Use [R] for a single retry.  If it fails again, you'll be returned to this
+ menu.
+
+ Use [S] to try until successful.  (Be sure the Connect is failing due to a
+ self-correctable condition, such as a busy-signal on the other end.)  When you
+ want to cancel the retrying, press [Esc].
+
+ Use [M] to take over manually.  This gives you command mode where you can
+ manually enter commands to the modem.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 71   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+ Modem needs resetting
+ ---------------------
+ It is possible to get the modem into a state where it doesn't seem to want to
+ accept your commands.
+
+ The first thing to try is COMit's Main Menu option /DC.  This may bring an
+ incorrect Port setting to your attention.  It also makes multiple attempts to
+ reset the modem, and usually succeeds.
+
+ If your modem has a reset button, try it.
+
+ Next, try powering down your entire system, then turning it back on.
+
+ In other cases, you may get the modem to respond by issuing one of the
+ reset commands.  First go to modem command mode (/OM from the main menu) then
+ try one or both of these commands:
+
+      ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+      ³ATZ [Enter]   ³Reset modem and revert to switch settings     ³
+      ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+      ³AT&F [Enter]  ³Reset modem and revert to factory defaults (*)³
+      ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+                                         * Not valid on some modems.
+
+
+ An easy way to see if the modem is responding is to type ATI [Enter].
+ The modem's identification number should display.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 72   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Modem not connected to phone
+ ----------------------------
+ This is a problem more often than you might think.
+
+ Check your connections.  Make sure the cable that goes to the wall outlet is
+ plugged into the correct jack at the back of the modem.
+
+ Hearing touch tone sounds doesn't necessarily mean the modem is connected.
+ (You need to hear a dial tone first!)
+
+ Modem not waiting long enough
+ -----------------------------
+ COMit, when dialing, waits a certain number of seconds while it watches for
+ a "connect" message from the modem.  Depending on the phone system in use,
+ the number of rings required for the remote system to answer, and the time
+ the two modems require for their initial "handshake", the wait before "giving
+ up" may need to be changed.  See Terminal Options & Paths (Chapter 5) for how
+ to change the wait time.
+
+ When you change the wait time, COMit automatically changes the time it tells
+ the modem to wait.  It does this by sending ATS7= (with the wait time) just
+ after your initialization string.  (If your initialization string contains
+ an ATS7 request, COMit bypasses this step.)  A countdown indicator (at the
+ lower right of the screen) shows how many seconds until COMit will stop
+ waiting.
+
+ In case of problems you can time the delay needed by calling the remote system
+ (on a voice line) and count how long it takes between the last digit dialed
+ and the moment you first hear a whistling sound.  Add 15 seconds or more,
+ especially when you are communicating at 9600bps or above and using MNP or
+ or V.42, because in these cases, the handshake can take longer.
+
+
+ Modem disconnects soon after connection established
+ ---------------------------------------------------
+ This can be because the remote system has rejected the protocol or rate you
+ are using. (Perhaps it requires MNP, V.42, or a particular bps rate, which,
+ if available on your modem, can be selected by changing the MNP setting or
+ initialization string.)   It may also happen if your initialization string is
+ requesting hardware MNP (or V.42bis) and you've requested software MNP
+ (instead of NONE) in the dialing directory entry or (in host mode) you've
+ answered "Y" to "use MNP".
+
+ Another possibility is that the data carrier signal is being dropped,
+ briefly or continuously.  This is sometimes handled by changing the
+ initialization string to include &C0 and/or &D0, (instead of &C1&D2), or by
+ adding "@" as the first character of the phone number or dial prefix.
+ (If you do this, you will need to manually hang up each call by pressing
+ /H after an on-line session.)
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1990 Tradewind Software   Page 73   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Wrong number
+ ------------
+ Consider whether or not a 1 and/or area code is required before the number.
+ Try dialing the number on a voice line.  You should hear a "whistle tone"
+ when the remote computer answers.
+
+ Problems with MNP
+ -----------------
+ Whenever using COMit's (software) MNP, the modem's (hardware) MNP (if it
+ exists) must be turned off.  This is done by selecting an initialization
+ string that does so (usually through an &Q0, \N0 or \N1 command.)  The modem's
+ XON/XOFF flow control should also be disabled with a code in the init string,
+ if flow control is not disabled by default.
+
+ For software MNP or V.42, the rate to be used should normally be the
+ connect rate (not faster.)  "Adjust to caller's rate" under Host Options and
+ Paths should be set to "Y".  Modems capable of "speed buffering" are a
+ possible exception.  If &Q6 requests "speed buffering" (see your modem manual)
+ you can add this to your initialization string and use a higher rate, with
+ "adjust to caller's rate" set to "N".
+
+ Conversely, if you want to use the modem's MNP and/or V.42 capabilities,
+ your dialing directory entry should say "NONE" in the MNP column, and for
+ Host Mode, "N" for "use MNP" in Host Options and Paths.  "Adjust to
+ caller's rate" under Host Options and Paths should normally be "N" in this
+ case.  Be sure, if you customize the initialization string, that RTS/CTS
+ flow control is enabled. (This is done with &K3 on some modems, &R1*LR2*LG2
+ on some others.  Consult your modem manual.)
+
+
+ Problems Starting an Upload or Download
+ ---------------------------------------
+ The most common cause of a problem is initiating your local procedure
+ (by pressing [PgUp], [PgDn], [/][S] or [/R]) at the wrong time.  Wait
+ until the host system prompts you to start your download or upload.
+
+ Also, make certain you choose the same protocol locally (on the Protocol
+ Selection Menu) as the protocol you requested in response to the host's
+ prompts.  Be sure you've selected receive (download) or send (upload)
+ on your local menu to correspond with what you told the host you wanted
+ to do.
+
+ In case of errors, press [Ctrl-X] several times, or (on some systems,
+ [Ctrl-C]) to get the host's attention again.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 74   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Appendix 1 - COMit Files
+ ========================
+
+ For simplicity, COMit has been designed to use just a few files.  They
+ are listed below.
+
+ Files provided with COMit...
+ -------------------------------------------------------------------------
+ COMIT.EXE          This is the COMit Program.
+ COMIT.CDF          This is the COMit data file which contains a dialing
+                    directory, setup parameters, scripts, and other items
+                    which will be customized for your own use when you
+                    run COMit. (If not present, it is created the first
+                    time you run COMit.)
+ HELP.EXE           This is the Help "Driver" Program.
+                    It is only required when you want "built-in" help for
+                    COMit, or when you want to study COMit's capabilities
+                    while not running COMit.
+ COMIT.H!           This is the manual in a special format for use by the
+                    HELP.EXE program.
+ COMITH.BAT         This is a batch file that loads COMit and help together.
+ COMITHP.BAT        This is a batch file that loads COMit and help together,
+                    for use in cases where other memory resident programs
+                    conflict.
+ INSTALL.BAT        This installs COMit from its original disk onto your
+                    hard disk.
+ README             This file, if present contains last-minute updates to the
+                    manual.  To display it, use TYPE README from the DOS
+                    prompt.  (Or use COMit's file utilities to see and print
+                    it.)
+ PRINTMAN.EXE       Prints this manual.
+
+ Files Created during a COMit Session...
+ ----------------------------------------------------------------------------
+ COMIT.CDB          The first time you "Save" during a COMit session,
+                    COMit makes a backup copy of your COMIT.CDF (data)
+                    file.  If any errors occur during the session, you
+                    can delete COMIT.CDF, and rename COMIT.CDB to COMIT.CDF,
+                    then start over with your original data.
+ COMIT.USR          This file holds user name and password information
+                    which is created when you ask COMit to act as a "Host"
+                    for answering calls.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1992 Tradewind Software   Page 75   ³
+ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+VT52 Terminal Emulation.
+------------------------
+
+COMit provides emulation of most features of Digital Equipment's VT52
+VT100 terminals.  Simply request VT52 in the "Term" column of any dialing
+directory entry that requires it.  The following actions are supported
+for VT52 emulation, in response to escape sequences the host may send:
+
+   Cursor up, down, left,right
+   Erase to end of screen, erase to end of line
+   Cursor to line n, column m.
+   Identify. (Esc/Z)
+   Enter, exit alternate keypad mode.
+   Enter, exit auto print mode.  (Data is printed and displayed.)
+   Enter, exit printer controller mode. (Data is printed, non-display.)
+
+   Graphics mode is not supported.
+
+COMit redefines the following keys to send appropriate codes to the host:
+Up arrow, down arrow, left arrow, and right arrow.  F1, F2, F3, and F4 act
+as PF1, PF2, PF3, and PF4.
+
+When in alternate keypad mode, the keys on the numeric keypad (including the
+[-], [+] and [.]) correspond to those on the VT52 as closely as possible.
+(It may be necessary to press NumLock in some cases.)
+
+
+VT100 Terminal Emulation
+------------------------
+For emulation of Digital Equipment's VT100 terminal, simply select VT100
+in the "Term" column.
+
+   Cursor up, down, left, right. (Multiple times or once.)
+   Line feed, reverse line feed, index, reverse index.
+   Two character sets, G0 & G1, plus DEC Special Graphics Character Set.
+   IBM graphics characters are available for codes over ASCII 127.
+   Erase to end of screen, end of line, start of line, start of screen.
+   Normal, bold, reverse, blinking, underline.  ANSI Color display.
+   Top and bottom scrolling margins.  Save, restore cursor.
+   Horizontal tabs, tab setting, and clearing.
+   Single or multiple character and line insert and delete.
+   Screen print, single line print, printer status reporting.
+   Auto Print Mode. (All characters displayed are printed.)
+   Printer Controller Mode. (Characters printed without on-screen display.)
+   Status reporting (printer, cursor postion, OK.)
+   4 keyboard lights.  (The letters in "Menu" flash to represent LED's 1-4.)
+   Identify. "Esc[?6c" is sent to the host to identify as VT102.
+   Application mode with cursor keys "set" or "reset".
+   Autowrap ON or OFF.  (Default is off.)
+   Many other features.
+
+
+
+
+
+ ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ³COMit Operating Manual    Copyright (C) 1990 Tradewind Software   Page 76   ³
+
+ The capabilities not supported for VT100 include dot graphics, 132 column
+ printing, double width characters, keyboard locking, and keyboard non-repeat
+ mode.
+
+ When the host requests application keypad mode, "A" flashes on the status
+ line of your display.  In this situation, the F-keys are redefined as in the
+ following chart:
+
+    VT100 Keypad                F-Keys on your PC
+   ÚÄÄÄÄÄÂÄÄÄÄÄÂÄÄÄÄÄÂÄÄÄÄÄ¿   ÚÄÄÄÄÄÂÄÄÄÄÄÂÄÄÄÄÄÂÄÄÄÄÄ¿
+   ³PF1  ³PF2  ³PF3  ³PF4  ³   ³F1   ³F2   ³F3   ³F4   ³
+   ÃÄÄÄÄÄÅÄÄÄÄÄÅÄÄÄÄÄÅÄÄÄÄÄ´   ÃÄÄÄÄÄÅÄÄÄÄÄÅÄÄÄÄÄÅÄÄÄÄÄ´
+   ³ 7   ³ 8   ³ 9   ³ -   ³   ³F5   ³F6   ³F7   ³F8   ³
+   ÃÄÄÄÄÄÅÄÄÄÄÄÅÄÄÄÄÄÅÄÄÄÄÄ´   ÃÄÄÄÄÄÅÄÄÄÄÄÅÄÄÄÄÄÅÄÄÄÄÄ´
+   ³ 4   ³ 5   ³ 6   ³ ,   ³   ³F9   ³F10  ³Sh-F1³Sh-F2³
+   ÃÄÄÄÄÄÅÄÄÄÄÄÅÄÄÄÄÄÅÄÄÄÄÄ´   ÃÄÄÄÄÄÅÄÄÄÄÄÅÄÄÄÄÄÅÄÄÄÄÄ´
+   ³ 1   ³ 2   ³ 3   ³     ³   ³Sh-F3³Sh-F4³Sh-F5³Sh-F6³
+   ÃÄÄÄÄÄÁÄÄÄÄÄÅÄÄÄÄÄ´     ³   ÃÄÄÄÄÄÁÄÄÄÄÄÅÄÄÄÄÄ´     ³
+   ³ 0         ³ .   ³Enter³   ³Sh-F7      ³Sh-F8³     ³
+   ÀÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÁÄÄÄÄÄÙ   ÀÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÁÄÄÄÄÄÙ
+
+
+
+Other Considerations in VT52 and VT100 Emulation
+-------------------------------------------------
+Your definitions for the F-Keys are available by pressing [Alt] plus the
+F-key you've defined (under F-Key Setups.)
+
+Up Arrow (for review scrolled lines) is not available.  Instead, use [/][B]
+at the online menu to do this.  Depending on the status of the numeric keypad
+it may be necessary to use [/][R] or [/][S] instead of [PgUp] and [PgDn] for
+uploading and downloading.  (Substitute your Menu Access Key if you've
+used the F-Key Setup screen to override the default [/].)
+
+Because the host computer has control over your printer in VT emulations, it
+is important to have a printer connected to LPT1 (online and ready with paper)
+if any printing is to be done.  COMit displays no message to tell you the host
+is attempting to print.  Logging data (Alt-L) works as in non-VT52 and VT100,
+emulation, and data sent to the printer is included in the log file.  You may
+also use [Alt-C] for printer capture.
+
+Scripting and other features should work normally.  Note that the arrow and
+F-keys (when used in scripts) are specified by the escape codes they generate.
+For example, VT52 up arrow is shown as the 3-character sequence: "^[A".
+
+VT100 automatic printing functions, and reporting to the host of printer
+availability and status are available for the LPT1 printer port only.
+
+If you need to change the codes sent by the [Enter] and [Backspace] keys,
+you can press [Alt-T], then press 0, 1, 2, or 3 at the prompt to meet
+your requirements.  For example, press 1 to make [Enter] send a carriage return
+and a line feed, instead of just a carriage return.

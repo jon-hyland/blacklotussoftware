@@ -1,0 +1,110 @@
+
+                                     ****************
+                                     * GRAPH-TI.TXT *
+                                     ****************
+
+ABOUT GRAPH-TI.TXT
+
+This file contains information about the graphics calculator e-mail
+interest group.  It tells how educators can join and use this network,
+where they can exchange information and programs for graphing calculators,
+including many programs for the TI-85.  To print this file, enter 
+PRINT drv:GRAPH-TI.TXT from the DOS prompt on your PC.
+
+***Note: The information in this file was current as of October 1992.
+If you have difficulty accessing any of the e-mail addresses, call
+1-800-TI-CARES for an update of the information.
+
+GRAPHICS CALCULATOR INTEREST GROUP AVAILABLE BY E-MAIL
+
+The Mathematics Department of The Ohio State University is pleased to
+announce the formation of an electronic mail (e-mail) interest group for
+educators and other users of graphics calculators.
+
+Internet mailing lists work by providing an easy method to send e-mail to
+all other members of the interest group.  The mail may be an idea, a
+question, or the response to a question.  Long discussions on a topic often
+take place and all members can "listen" to the e-mail conversation and
+benefit from it.
+
+The list is available to anyone with access to electronic mail on Internet,
+BITNET, and connected networks.  Most colleges and universities have this
+access and an increasing number of secondary schools have this access or
+are getting it.
+
+This list was conceived to allow users of Texas Instruments graphics
+calculators to share ideas and solve problems together.  It is provided by
+the Mathematics Department of The Ohio State University with support from
+Texas Instruments Incorporated.
+
+Users of the list will discuss such things as:
+  - Applications of graphics calculators in math, science, and engineering
+  - Sources of additional information
+  - Instructional issues using graphics calculators
+
+To sign up for the mailing list send an e-mail message (note that file 
+names are case-sensative):
+
+  TO: LISTSERV@OHSTVMA.BITNET  (or use LISTSERV@OHSTVMA.ACS.OHIO-STATE.EDU) 
+  Subject: (not necessary, ignored)
+  Contents: SUBSCRIBE GRAPH-TI firstname lastname
+
+If you are unsure about e-mail at your school or if you are a new user of
+e-mail, see your computer coordinator or an expert user in your area for
+help.  If you are an e-mail user but have some difficulty, please contact
+Ohio State or Texas Instruments at the following e-mail addresses:
+
+  Ohio State University: waitsb@function.mps.ohio-state.edu
+  Texas Instruments:     support@cpdvax.csc.ti.com
+
+Many secondary school teachers without e-mail have found that a local
+college or university can be very cooperative about providing that service
+for local teachers.
+
+DATA EXCHANGE VIA GRAPH-TI
+
+What else can you do with GRAPH-TI?
+
+GRAPH-TI has, in addition to its running dialogue of various topics, an
+archive of TI-85 programs and data that have been submitted to GRAPH-TI.
+Below is a description of the extra functions available from GRAPH-TI.
+
+To receive instructions on using GRAPH-TI, send an e-mail message:
+
+  TO: GRAPH-TI@function.mps.ohio-state.edu
+  Subject: (not necessary, ignored)
+  Contents: HELP
+
+To receive a list of all the TI-85 data files available from GRAPH-TI,
+including a two-line abstract of each file, send an e-mail message:
+
+  TO: GRAPH-TI@function.mps.ohio-state.edu
+  Subject: (not necessary, ignored)
+  Contents: LIST
+
+To receive a short list of all the TI-85 data files available from GRAPH-TI
+(a list that does not include the two-line abstract), send an e-mail message:
+
+  TO: GRAPH-TI@function.mps.ohio-state.edu
+  Subject: (not necessary, ignored)
+  Contents: LIST SHORT
+
+To receive a specific file from the GRAPH-TI list of available files, send
+an e-mail message (note that file names and extensions are case sensitive):
+
+  TO: GRAPH-TI@function.mps.ohio-state.edu
+  Subject: (not necessary, ignored)
+  Contents: GET filename
+
+To submit a file to GRAPH-TI for others to use, send an e-mail message:
+
+  TO: GRAPH-TI@function.mps.ohio-state.edu
+  Subject: (not necessary, ignored)
+  Contents: PUT filename <file body>
+
+GUIDELINES FOR SUBMITTING TI-85 FILES TO GRAPH-TI
+
+The file body must include a UUE-format version of the TI-85 file (see
+FREEWARE.TXT on this disk).  Submitted data files will be "checked" by the 
+GRAPH-TI operator and then manually transferred to the archive, where the 
+contents are available via the LIST command described above.

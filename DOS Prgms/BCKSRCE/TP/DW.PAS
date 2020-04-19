@@ -1,0 +1,5 @@
+program DiasyWheel;
+
+uses
+ Crt;
+

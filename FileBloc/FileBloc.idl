@@ -1,0 +1,38 @@
+// FileBloc.idl : IDL source for FileBloc.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (FileBloc.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(CDC13189-123D-4903-81DE-278BBCD8207C),
+		dual,
+		helpstring("IInterface Interface"),
+		pointer_default(unique)
+	]
+	interface IInterface : IDispatch
+	{
+	};
+
+[
+	uuid(28214EF4-3E10-4C53-81EA-F3CFAF0D62CC),
+	version(1.0),
+	helpstring("FileBloc 1.0 Type Library")
+]
+library FILEBLOCLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(EC0C82E0-77FE-4C55-AC85-D1F574A27C43),
+		helpstring("Interface Class")
+	]
+	coclass Interface
+	{
+		[default] interface IInterface;
+	};
+};

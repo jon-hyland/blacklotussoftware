@@ -1,0 +1,1 @@
+Cool Draw v2.2.  This utility was written for help in designing graphics for ANSI character games and applications.  Software developers will be amazed by this.  (c) 1996 Jon Hyland.

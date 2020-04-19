@@ -1,0 +1,389 @@
+{MasterMind - This version started and finished 12/25/97.
+ For the Stevens family, Christmas '97.
+ (c) 1997 by Jon Hyland - Black Lotus Software }
+program MasterMind;
+
+uses
+ Crt;
+
+const
+ VerNum = 'v1.0';
+
+type
+ BlockType = array[0..10, 1..4] of integer;
+ InfoType  = array[1..10] of integer;
+
+var
+ Clr    : BlockType;
+ Right  : InfoType;
+ Perf   : InfoType;
+ Try    : integer;
+ Piece  : integer;
+ Key    : char;
+ j      : integer;
+
+procedure Clear;
+ begin
+  textcolor(white);
+  textbackground(black);
+  clrscr;
+  textcolor(black);
+  gotoxy(1,25);
+  write(#219);
+  textcolor(white);
+  gotoxy(1,1);
+ end;
+
+procedure Cursor;
+ begin
+  gotoxy(1,25);
+ end;
+
+procedure DrawWindow(x1, y1, x2, y2, Color : integer; Title : string);
+ var
+  j, k : integer;
+ begin
+  textcolor(white);
+  textbackground(Color);
+  for k := y1 to y2 do
+   begin
+    gotoxy(x1, k);
+    for j := x1 to x2 do
+     write(' ');
+   end;
+  for j := x1+1 to x2-1 do
+   begin
+    gotoxy(j, y1);
+    write(#205);
+    gotoxy(j, y2);
+    write(#205);
+   end;
+  for k := y1+1 to y2-1 do
+   begin
+    gotoxy(x1, k);
+    write(#186);
+    gotoxy(x2, k);
+    write(#186);
+   end;
+  gotoxy(x1,y1);
+  write(#201);
+  gotoxy(x2,y1);
+  write(#187);
+  gotoxy(x1,y2);
+  write(#200);
+  gotoxy(x2,y2);
+  write(#188);
+  gotoxy(trunc((x1+((x2-x1+1)/2)-1)-((length(Title)+4)/2))+1, y1);
+  write(#181, ' ', Title, ' ', #198);
+  textcolor(darkgray);
+  textbackground(black);
+  for k := y1+1 to y2+1 do
+   begin
+    gotoxy(x2+1, k);
+    write(#176, #176);
+   end;
+  for j := x1+2 to x2 do
+   begin
+    gotoxy(j, y2+1);
+    write(#176);
+   end;
+  textcolor(white);
+  textbackground(Color);
+  Cursor;
+ end;
+
+var
+ BkGrClr1 : integer;
+ BkGrClr2 : integer;
+procedure Background(Reset : boolean);
+ var
+  i, j, k : integer;
+ begin
+  randomize;
+  textbackground(black);
+  if Reset then
+   repeat
+    BkGrClr1 := random(15)+1;
+    BkGrClr2 := random(15)+1;
+   until BkGrClr1 <> BkGrClr2;
+  for k := 1 to 24 do
+   for j := 1 to 40 do
+    begin
+     if j = 1 then
+      if (k mod 2) = 0 then i := 1 else i := 2;
+      case i of
+       1    : textcolor(BkGrClr1);
+       2, 4 : textcolor(black);
+       3    : textcolor(BkGrClr2);
+      end; {case}
+     gotoxy(j*2-1, k);
+     write(#176, #176);
+     i := i + 1;
+     if i > 4 then i := 1;
+    end;
+ end;
+
+procedure ClearBuffer;
+ var
+  Jnk : char;
+ begin
+  while Keypressed do
+   Jnk := readkey;
+ end;
+
+procedure Title;
+ begin
+  Clear;
+  Background(true);
+  DrawWindow(25,8,55,16,1,'Program Info');
+  textcolor(yellow);
+  gotoxy(30,9);
+  write('- Master Mind  ', VerNum, ' -');
+  textcolor(lightcyan);
+  gotoxy(27,11);
+  write('Dedicated to Chuck, Theresa,');
+  gotoxy(28,12);
+  write('Matthew, and Greg Stevens.');
+  textcolor(lightred);
+  gotoxy(32,13);
+  write('Merry Christmas!');
+  textcolor(lightgray);
+  gotoxy(29,15);
+  write('(c) 1997 by Jon Hyland');
+  Cursor;
+  ClearBuffer;
+  readkey;
+ end;
+
+procedure Init;
+ var
+  j, k : integer;
+ begin
+  for j := 1 to 4 do
+   Clr[0,j] := random(6)+1;
+  for k := 1 to 10 do
+   for j := 1 to 4 do
+    Clr[k,j] := 0;
+  for k := 1 to 10 do
+   begin
+    Right[k] := 0;
+    Perf[k] := 0;
+   end;
+  Try := 1;
+  Piece := 1;
+ end;
+
+procedure UpdatePieces;
+ var
+  j, k : integer;
+ begin
+  textbackground(blue);
+  for k := 1 to 10 do
+   for j := 1 to 4 do
+    begin
+     gotoxy((j*4)+2, 23-(k*2));
+     textcolor(Clr[k,j]+8);
+     write(#219, #219);
+    end;
+ end;
+
+procedure UpdateData;
+ begin
+  textbackground(cyan);
+  textcolor(yellow);
+  gotoxy(40,5);
+  if (Try in [1..10]) then write(Try) else write('N/A');
+  gotoxy(40,6);
+  if (Try in [1..10]) then write(Piece) else write('N/A');
+  gotoxy(48,7);
+  write('   ');
+  gotoxy(48,8);
+  write('   ');
+  if Try < 2 then
+   begin
+    gotoxy(48,7);
+    write('N/A');
+    gotoxy(48,8);
+    write('N/A');
+   end
+  else
+   begin
+    gotoxy(48,7);
+    write(Right[Try-1]);
+    gotoxy(48,8);
+    write(Perf[Try-1]);
+   end;
+ end;
+
+procedure UpdateStats;
+ var
+  k  : integer;
+ begin
+  textbackground(green);
+  textcolor(white);
+  for k := 1 to Try-1 do
+   begin
+    gotoxy(65, 23-(k*2));
+    write(Right[k]);
+    gotoxy(71, 23-(k*2));
+    write(Perf[k]);
+   end;
+ end;
+
+procedure DrawScreen;
+ var
+  j  : integer;
+ begin
+  Background(false);
+  DrawWindow(4,2,21,22,1,'Pieces');
+  DrawWindow(61,2,75,22,2,'Stats');
+  DrawWindow(29,4,52,9,3,'Data');
+  gotoxy(31,5);
+  write('Try #:');
+  gotoxy(31,6);
+  write('Piece #:');
+  gotoxy(31,7);
+  write('Last Try: Right:');
+  gotoxy(39,8);
+  write('Perfect:');
+  DrawWindow(28,15,53,20,4,'Message');
+  for j := 1 to 6 do
+   begin
+    gotoxy(j*4+26, 16);
+    textcolor(j+8);
+    write(j);
+   end;
+  gotoxy(33,18);
+  write('Press number key');
+  gotoxy(30,19);
+  write('corresponding to color.');
+  Cursor;
+ end;
+
+procedure CalcStats;
+ var
+  j, k   : integer;
+  r, p   : integer;
+  c1, c2 : array[1..4] of integer;
+ begin
+  for j := 1 to 4 do
+   begin
+    c1[j] := Clr[0,j];
+    c2[j] := Clr[Try,j];
+   end;
+  p := 0;
+  for j := 1 to 4 do
+   if (c2[j] <> 0) and (c1[j] <> 0) then
+    if c2[j] = c1[j] then
+     begin
+      p := p + 1;
+      c1[j] := 0;
+      c2[j] := 0;
+     end;
+  r := 0;
+  for j := 1 to 4 do
+   for k := 1 to 4 do
+    if (c2[j] <> 0) and (c1[k] <> 0) then
+     if c2[j] = c1[k] then
+      begin
+       r := r + 1;
+       c1[k] := 0;
+       c2[j] := 0;
+      end;
+  Right[Try] := r;
+  Perf[Try] := p;
+ end;
+
+begin
+ Title;
+  repeat  {begin of new game}
+   Init;
+   DrawScreen;
+    repeat  {begin of try}
+      repeat {begin of piece}
+       UpdatePieces;
+       UpdateData;
+       UpdateStats;
+       if Key = '?' then
+        begin
+         gotoxy(1,1);
+         write(Clr[0,1], Clr[0,2], Clr[0,3], Clr[0,4]);
+        end;
+       Cursor;
+       Key := readkey;
+        case Key of
+         '1'..'6' :
+          begin
+           Clr[Try, Piece] := ord(Key) - 48;
+           Piece := Piece + 1;
+          end;
+        end; {case}
+      until (Piece > 4) or (Key = #27); {end piece}
+     if Key <> #27 then
+      begin
+       CalcStats;
+       Piece := 1;
+       Try := Try + 1;
+      end;
+    until (Perf[Try-1] >= 4) or (Key = #27) or (Try > 10); {end try}
+   if (Perf[Try-1] >= 4) then {player won}
+    begin
+     UpdatePieces;
+     UpdateData;
+     UpdateStats;
+     textcolor(yellow);
+     textbackground(cyan);
+     gotoxy(40,5);
+     write('N/A');
+     gotoxy(40,6);
+     write('N/A');
+     textbackground(red);
+     textcolor(white);
+     gotoxy(32,18);
+     write('You guessed right!');
+     textcolor(yellow);
+     gotoxy(30,19);
+     write('   Play again? (Y/N)   ');
+     ClearBuffer;
+     Cursor;
+      repeat
+       Key := readkey;
+       Key := upcase(Key);
+      until Key in ['Y', 'N'];
+     if Key = 'N' then Key := #27;
+    end {end won}
+   else
+    begin {begin game over}
+     UpdatePieces;
+     UpdateData;
+     UpdateStats;
+     textbackground(red);
+     gotoxy(30,16);
+     write('                     ');
+     for j := 1 to 4 do
+      begin
+       gotoxy((j*4)+30, 16);
+       textcolor(Clr[0,j]+8);
+       write(#219, #219);
+      end;
+     textcolor(yellow);
+     gotoxy(30,18);
+     write(' Game Over - You Lose  ');
+     gotoxy(30,19);
+     write('                       ');
+     if Key <> #27 then
+      begin
+       gotoxy(30,19);
+       write('   Play again? (Y/N)   ');
+       Cursor;
+        repeat
+         Key := readkey;
+         Key := upcase(Key);
+        until Key in ['Y', 'N'];
+       if Key = 'N' then Key := #27;
+      end;
+     Cursor;
+    end; {end game over}
+  until (Key = #27);
+ Clear;
+end.

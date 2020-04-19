@@ -1,0 +1,202 @@
+[Root]
+Most Recent Package=Cooldraw Package
+Most Recent Deploy=Cooldraw Deploy
+
+
+[Package|Cooldraw Package|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Jons\CD\Package
+
+[Package|Cooldraw Package|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Cooldraw Package|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Cooldraw Package|Files Found]
+
+[Package|Cooldraw Package|Files Released]
+
+[Package|Cooldraw Package|Missing Dependency Information]
+
+[Package|Cooldraw Package|Out-of-Date Dependency Information]
+
+[Package|Cooldraw Package|Files Added]
+C:\Jons\CD\ARENA.PIC=
+C:\Jons\CD\ARENA2.PIC=
+C:\Jons\CD\BENMENU.PIC=
+C:\Jons\CD\BUGS.PIC=
+C:\Jons\CD\CDTIT.PAS=
+C:\Jons\CD\CDTIT.PIC=
+C:\Jons\CD\CHARSET.DAT=
+C:\Jons\CD\CHART.PIC=
+C:\Jons\CD\CHECKER.PIC=
+C:\Jons\CD\CHECKERS.PIC=
+C:\Jons\CD\COOLDRAW.EXE=
+C:\Jons\CD\COOLDRAW.PAS=
+C:\Jons\CD\DEATH.PIC=
+C:\Jons\CD\FACE.PIC=
+C:\Jons\CD\FLIPTEST.PIC=
+C:\Jons\CD\PASSWORD.PIC=
+C:\Jons\CD\PHONE.PIC=
+C:\Jons\CD\README.TXT=
+C:\Jons\CD\SLAYPIT.PIC=
+C:\Jons\CD\SLUGS.PIC=
+C:\Jons\CD\SPACE.PIC=
+C:\Jons\CD\SPACEWAR.PIC=
+C:\Jons\CD\SPILTEST.PIC=
+C:\Jons\CD\TEST.PIC=
+C:\Jons\CD\TETRIS.PIC=
+C:\Jons\CD\TOLLMENU.PIC=
+C:\Jons\CD\TOOLMENU.PIC=
+
+[Package|Cooldraw Package|Files Removed]
+
+[Package|Cooldraw Package|Files In Project]
+C:\Jons\CD\Cooldraw.dll=Yes
+C:\WIN98\SYSTEM\MSVBVM60.DLL=Yes
+C:\WIN98\SYSTEM\OLEAUT32.DLL=Yes
+C:\WIN98\SYSTEM\OLEPRO32.DLL=Yes
+C:\WIN98\SYSTEM\ASYCFILT.DLL=Yes
+C:\WIN98\SYSTEM\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WIN98\SYSTEM\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Jons\CD\ARENA.PIC=Yes
+C:\Jons\CD\ARENA2.PIC=Yes
+C:\Jons\CD\BENMENU.PIC=Yes
+C:\Jons\CD\BUGS.PIC=Yes
+C:\Jons\CD\CDTIT.PAS=Yes
+C:\Jons\CD\CDTIT.PIC=Yes
+C:\Jons\CD\CHARSET.DAT=Yes
+C:\Jons\CD\CHART.PIC=Yes
+C:\Jons\CD\CHECKER.PIC=Yes
+C:\Jons\CD\CHECKERS.PIC=Yes
+C:\Jons\CD\COOLDRAW.EXE=Yes
+C:\Jons\CD\COOLDRAW.PAS=Yes
+C:\Jons\CD\DEATH.PIC=Yes
+C:\Jons\CD\FACE.PIC=Yes
+C:\Jons\CD\FLIPTEST.PIC=Yes
+C:\Jons\CD\PASSWORD.PIC=Yes
+C:\Jons\CD\PHONE.PIC=Yes
+C:\Jons\CD\README.TXT=Yes
+C:\Jons\CD\SLAYPIT.PIC=Yes
+C:\Jons\CD\SLUGS.PIC=Yes
+C:\Jons\CD\SPACE.PIC=Yes
+C:\Jons\CD\SPACEWAR.PIC=Yes
+C:\Jons\CD\SPILTEST.PIC=Yes
+C:\Jons\CD\TEST.PIC=Yes
+C:\Jons\CD\TETRIS.PIC=Yes
+C:\Jons\CD\TOLLMENU.PIC=Yes
+C:\Jons\CD\TOOLMENU.PIC=Yes
+
+[Package|Cooldraw Package|Configure Registry Files]
+Applicable=No
+
+[Package|Cooldraw Package|Configure Remote Servers]
+Applicable=No
+
+[Package|Cooldraw Package|Install Locations]
+C:\Jons\CD\Cooldraw.dll=$(AppPath)
+C:\WIN98\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WIN98\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WIN98\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Jons\CD\ARENA.PIC=$(AppPath)
+C:\Jons\CD\ARENA2.PIC=$(AppPath)
+C:\Jons\CD\BENMENU.PIC=$(AppPath)
+C:\Jons\CD\BUGS.PIC=$(AppPath)
+C:\Jons\CD\CDTIT.PAS=$(AppPath)
+C:\Jons\CD\CDTIT.PIC=$(AppPath)
+C:\Jons\CD\CHARSET.DAT=$(AppPath)
+C:\Jons\CD\CHART.PIC=$(AppPath)
+C:\Jons\CD\CHECKER.PIC=$(AppPath)
+C:\Jons\CD\CHECKERS.PIC=$(AppPath)
+C:\Jons\CD\COOLDRAW.EXE=$(AppPath)
+C:\Jons\CD\COOLDRAW.PAS=$(AppPath)
+C:\Jons\CD\DEATH.PIC=$(AppPath)
+C:\Jons\CD\FACE.PIC=$(AppPath)
+C:\Jons\CD\FLIPTEST.PIC=$(AppPath)
+C:\Jons\CD\PASSWORD.PIC=$(AppPath)
+C:\Jons\CD\PHONE.PIC=$(AppPath)
+C:\Jons\CD\README.TXT=$(AppPath)
+C:\Jons\CD\SLAYPIT.PIC=$(AppPath)
+C:\Jons\CD\SLUGS.PIC=$(AppPath)
+C:\Jons\CD\SPACE.PIC=$(AppPath)
+C:\Jons\CD\SPACEWAR.PIC=$(AppPath)
+C:\Jons\CD\SPILTEST.PIC=$(AppPath)
+C:\Jons\CD\TEST.PIC=$(AppPath)
+C:\Jons\CD\TETRIS.PIC=$(AppPath)
+C:\Jons\CD\TOLLMENU.PIC=$(AppPath)
+C:\Jons\CD\TOOLMENU.PIC=$(AppPath)
+
+[Package|Cooldraw Package|Configure Shared Files]
+Applicable=Yes
+C:\Jons\CD\Cooldraw.dll=No
+C:\Jons\CD\ARENA.PIC=No
+C:\Jons\CD\ARENA2.PIC=No
+C:\Jons\CD\BENMENU.PIC=No
+C:\Jons\CD\BUGS.PIC=No
+C:\Jons\CD\CDTIT.PAS=No
+C:\Jons\CD\CDTIT.PIC=No
+C:\Jons\CD\CHARSET.DAT=No
+C:\Jons\CD\CHART.PIC=No
+C:\Jons\CD\CHECKER.PIC=No
+C:\Jons\CD\CHECKERS.PIC=No
+C:\Jons\CD\COOLDRAW.EXE=No
+C:\Jons\CD\COOLDRAW.PAS=No
+C:\Jons\CD\DEATH.PIC=No
+C:\Jons\CD\FACE.PIC=No
+C:\Jons\CD\FLIPTEST.PIC=No
+C:\Jons\CD\PASSWORD.PIC=No
+C:\Jons\CD\PHONE.PIC=No
+C:\Jons\CD\README.TXT=No
+C:\Jons\CD\SLAYPIT.PIC=No
+C:\Jons\CD\SLUGS.PIC=No
+C:\Jons\CD\SPACE.PIC=No
+C:\Jons\CD\SPACEWAR.PIC=No
+C:\Jons\CD\SPILTEST.PIC=No
+C:\Jons\CD\TEST.PIC=No
+C:\Jons\CD\TETRIS.PIC=No
+C:\Jons\CD\TOLLMENU.PIC=No
+C:\Jons\CD\TOOLMENU.PIC=No
+
+[Package|Cooldraw Package|Distribution]
+Type=single
+Size=
+Title=Black Lotus Cool Draw v2.2
+
+[Package|Cooldraw Package|IconGroups]
+Group0=Black Lotus Console
+PrivateGroup0=False
+Parent0=$(Programs)
+
+[Package|Cooldraw Package|Black Lotus Console]
+Icon1=COOLDRAW.EXE
+Title1=Cool Draw v2.2
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Cooldraw Package|Package]
+PackageFolder=C:\Jons\CD\Package
+ProjectFolder=C:\Jons\CD
+ServerSideCab=
+File1=C:\Jons\CD\Package\setup.exe
+File2=C:\Jons\CD\Package\Setup.Lst
+File3=C:\Jons\CD\Package\Cooldraw.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Deploy|Cooldraw Deploy|Root]
+Package=Cooldraw Package
+Handler=PDWizard.FolderDplySubWiz
+Folder=C:\Jons\CD\Deploy

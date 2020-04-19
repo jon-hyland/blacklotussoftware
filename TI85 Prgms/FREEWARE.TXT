@@ -1,0 +1,363 @@
+
+				     ****************
+				     * FREEWARE.TXT *
+				     ****************
+
+ABOUT UUE20, UUD20, AND ASCII85P
+
+The directory \FREEWARE on the LINK-85 disk contains three public domain 
+programs to help you exchange TI-85 programs, data, and documentation, 
+particularly on the TI graphics calculator special interest e-mail network.
+The use of these programs is explained below.  To print this file, enter 
+PRINT drv:\FREEWARE\FREEWARE.TXT from the DOS prompt on your PC.
+
+ABOUT GRAPH-TI
+
+From our attendance at many math conferences and institutes, the Texas
+Instruments Graphics Team has learned that teachers want to keep in touch
+with each other and keep current with the use of graphics calculators in 
+the classroom. 
+
+To aid this worldwide communication and sharing, The Ohio State University
+has formulated an electronic mail (e-mail) TI graphics calculator interest
+group (GRAPH-TI) for educators, which is available on Internet, BITNET, and
+connected networks.
+
+For a complete description of GRAPH-TI and instructions on how to use
+GRAPH-TI to share programs and data, see the file GRAPH-TI.TXT on this
+disk.  For other questions, feel free to contact TI so we can help at
+1-800-TI-CARES.
+
+Now that you have the LINK-85 accessory, you can take full advantage of
+GRAPH-TI by having access not only to running dialogue about the products
+and pedagogical hints, but also to the growing number of programs, data,
+and interesting problems that are being collected in the GRAPH-TI library. 
+The TI-85 programs and data that have been accumulated are available to you
+for loading into your TI-85.
+
+In order to take full advantage of GRAPH-TI, you need to know about and
+understand how to use three software utilities that are included on this
+disk:  UUE20.COM, UUD20.COM, and ASCII85P.EXE.  These utilities are
+necessary for using GRAPH-TI for TI-85 program and data sharing.
+
+UUE20.COM and UUD20.COM are utilities from the software public domain. 
+They are available free of charge from the public domain and are included
+here simply for your convenience.  The TI Graphics Team wishes to thank the
+authors, David Kirschbaum and Ted Kaldis, for their permission to place
+these utilities on this disk.
+
+ASCII85P.EXE was developed by Steve Reid of the TI Graphics Team and is 
+released into the public domain.
+
+WHY DO YOU NEED UUE20, UUD20, AND ASCII85P?
+
+GRAPH-TI is set up on Internet using electronic mail.  e-mail communication
+is based on the ASCII character set. TI-85 program and data files are
+binary and will not transfer as-is via e-mail.  This disk contains programs
+providing two different methods of turning binary files into ASCII files
+and then reversing the process.  Using either method, a TI-85 program file
+can be included in an e-mail message to a colleague(s).  Programs to be
+submitted to the TI-85 library on GRAPH-TI should be in a specified format
+(described below), which incorporates both methods.
+
+You can use UUE20.COM to convert binary TI-85 programs (.85P) and data 
+(.85L, .85M, for example) into an ASCII format for transfer via e-mail.  
+The recipient can use UUD20.COM to reverse the process by converting the 
+"encoded" ASCII version of the file back to binary (.85P, .85L, .85M, ...)
+for loading into a TI-85.  (Note: You can use UUE20 and UUD20 with any 
+binary file, not just TI-85 data files.)
+
+You can use ASCII85P.EXE to convert binary TI-85 program files (.85P, not 
+data files such as .85L, .85M) into a human-readable ASCII equivalent,
+which can be converted back to a binary TI-85 program file (also using 
+ASCII85P.EXE) for loading into the TI-85.
+
+CREATING A STANDARD-FORMAT GRAPH-TI FILE
+
+Suppose you have a program and associated data files on your TI-85 that you
+want to submit to GRAPH-TI for others to use.  You would follow the steps 
+outlined below.  (We'll use TAYLOR with Mobius list mSERIES as an example.)  
+
+The GRAPH-TI submission format for any programs, with or without data, is:
+
+     --------------------------------------- 
+    |PUT filename.ext                       |
+    |two-line, mini-abstract for the        |
+    |GRAPH-TI LIST command                  |
+    |----begin documentation----            |
+    |User documentation should include      |
+    |any information users should know      |
+    |about the program, such as memory or   |
+    |system requirements and any variables  |
+    |that must be defined outside of the    |
+    |program.                               |
+    |----end documentation----              |
+    |----begin ASCII----                    |
+    |ASCII version of the program obtained  |
+    |from the ASCII85P utility on the disk. |
+    |----end ASCII----                      |
+    |----begin UUE----                      |
+    |UUE20 encoded version of the grouped   |
+    |file obtained from the UUE20 utility   |
+    |on the disk.                           |
+    |----end UUE----                        |
+    |eof  (end of file)                     |
+     ---------------------------------------
+1.  Use LINK-85 to transfer the program and list to the PC and save
+    them as binary files, TAYLOR.85P and mSERIES.85L.
+
+2.  We want to keep TAYLOR.85P and mSERIES.85L together in the
+    GRAPH-TI library file, so use the Group Data Files command from
+    the LINK-85 Util menu to combine them into a single file,
+    TAYLOR.85G.
+
+3.  (optional) In order to include a human-readable form of the
+    program in the GRAPH-TI file, you must use ASCII85P to translate
+    the file into an ASCII equivalent file.  At the DOS prompt, enter
+    ASCII85P TAYLOR.85P.  This produces an ASCII file, TAYLOR.ASC,
+    which substitutes strings of "typewriter" characters for the special 
+    TI-85 characters.
+
+4.  Because both TAYLOR.85P and mSERIES.85L (included in TAYLOR.85G) 
+    are binary, they cannot be sent via e-mail.  Use UUE20 to create an 
+    ASCII version of the group file, TAYLOR.85G.  At the DOS prompt, enter 
+    UUE20 TAYLOR.85G.  This produces an encoded ASCII file, TAYLOR.UUE.  
+    Although the .UUE file is ASCII, it is far from readable because
+    of the encoding scheme used.  However, UUD20 can "decode" it for 
+    transfer to a TI-85 (see below).
+
+5.  In any text editor, open the file TAYLOR.UUE.  You will not be
+    able to read any of the text, but you should see a lot of strange
+    "typewriter" characters.  Place the cursor at the very beginning
+    of the file.
+
+6.  The first line of a GRAPH-TI library file is the command to submit
+    the file to GRAPH-TI.  Type PUT filename.ext.  The file name is case-
+    sensative.  This is the name that will be used by the GRAPH-TI archive.
+
+7.  The second part of a GRAPH-TI library file is a 2-line, mini-abstract
+    to be read by the GRAPH-TI LIST command.  Type the abstract lines as
+    lines 2 and 3.  (Each line should be 75 characters or less.)
+
+8.  The third part of the file is any documentation that you feel
+    necessary for the future users.  This may include program
+    instructions, system requirements, and information about the
+    mathematical application.
+
+    Type the fourth line "----begin documentation----".  Begin your
+    documentation on the fifth line. At the end of your documentation, 
+    type a line "----end documentation----".
+
+9.  The fourth part of the file contains the human-readable ASCII
+    listings of the program(s) included in your file.  This allows
+    GRAPH-TI users to read the program for reference or to type it
+    directly into their TI-85 if LINK-85 is not readily available to
+    them.  (This section is optional; if your program is quite large,
+    for example, you may decide not to include it.)
+
+    Type a line "----begin ASCII----".  Now insert the file
+    TAYLOR.ASC created in step 3.  Type a line "----end ASCII----".
+
+10. The fifth part of the file contains the UUE encoded TI-85 group. 
+    This is the section that UUD (see below) will pick out of the
+    e-mail file and decode as TAYLOR.85G.
+
+    Type a line "----begin UUE----".  The .UUE group file created in
+    step 4 is already in the file you are editing, because it is the file 
+    you loaded into the editor.  Move the cursor to the end of the file 
+    and type a line "----end UUE----".
+
+11. Save the file, which is entirely in ASCII, as TAYLOR.UUE (this
+    will replace your original .UUE file), and you are ready to submit
+    it to GRAPH-TI or to share it with other users!
+
+The file TAYLOR.UUE that was the result of this example is in directory
+\SAMPLES for you to refer to.
+
+CREATING A STANDARD-FORMAT NONPROGRAM GRAPH-TI FILE
+
+For sharing data, but not programs, the submission format is the same
+as above, except that there is no ASCII version of the data in the
+file.  In the procedure outlined above, you would skip steps 3 and 9.
+
+"DECODING" A GRAPH-TI FILE
+
+If you request and receive a file from GRAPH-TI, it will be in this format. 
+To load the program or data into your TI-85, you simply need to run the
+UUD20 utility on the new .UUE file you got from GRAPH-TI.  The UUD20
+utility knows to ignore all the extra stuff in the file (mini-abstract,
+user documentation, ASCII section if have a program file) and extracts and
+decodes just the UUE20 section of the file, leaving all other sections
+intact.  Loading a GRAPH-TI application into your TI-85 is a simple
+two-step process.  For example, the recipient of TAYLOR.UUE would:
+
+1. Enter UUD20 TAYLOR.UUE at the DOS prompt.  The group file TAYLOR.85G is
+   created on his/her disk.  (UUE20 "knows" the name of the original file.)
+
+2. Use LINK-85 to transmit TAYLOR.85G to his/her TI-85.  (LINK-85 "knows" 
+   to send the individual elements in the group separately.)
+
+OTHER USES OF ASCII85P
+
+Above we mentioned that ASCII85P could be used to produce an ASCII version
+of a TI-85 program to be included in the file submitted to GRAPH-TI.  Upon
+receipt of a TI-85 library file from GRAPH-TI, you can use ASCII85P to
+produce a .85P file for loading into your TI-85.  ASCII85P (like UUD)
+"knows" to ignore all the other stuff in the GRAPH-TI file (mini-abstract,
+user documention, and UUE20 section) and just operates on the .ASC section
+of the file.  The output will be filename.85P (ASCII85P "knows" the name of
+the original program) and can be loaded into your TI-85 using LINK-85.
+
+Another use of ASCII85P is simply for e-mail communication of programs or
+sample sections of code.  With ASCII85P any existing TI-85 program can be
+converted for e-mail distribution. 
+
+In addition, the GRAPH-TI interest group e-mail often has some interesting
+program or programming ideas tossed around for people to ponder.  These
+usually require some of the special TI-85 characters.  The ASCII85P 
+conversion set is listed below to help establish a standard for 
+representation of the non-ASCII characters and symbols as they are used in
+GRAPH-TI communications.  This should be a time-saver for TI-85 and 
+GRAPH-TI users also.
+
+The ASCII representation of special TI-85 characters uses the \ (back-slash)
+character at the beginning and end to identify and separate the multi-
+character strings that represent the special characters, as listed below.
+
+Functions and instructions
+    ->   store                     \->\
+    pi                             \pi\
+    <  angle for complex numbers   \angle\
+    >= greater than or = to        \>=\
+    <= less than or = to           \<=\
+    not equal to                   \<>\
+    square root                    \sqrt\
+    10^                            \10^\^  (representation is for 10 only)
+    (-) negation                   \(-)\
+    x Root y                       \xRooty\
+    matrix transpose               \T\
+    squared                        \^2\
+    inverse                        \^-1\
+    r   radian                     \rad\
+    o   degree                     \deg\
+    sinh^-1                        \sinh^-1\
+    sin^-1                         \sin^-1\
+    cosh^-1                        \cosh^-1\
+    cos^-1                         \cos^-1\
+    tanh^-1                        \tanh^-1\
+    tan^-1                         \tan^-1\
+    binary designator (b)          \bin\
+    decimal designator (d)         \dec\
+    hex designator (h)             \hex\
+    octal designator (o)           \oct\
+    hexadecimal A                  \hexA\
+    hexadecimal B                  \hexB\
+    hexadecimal C                  \hexC\
+    hexadecimal D                  \hexD\
+    hexadecimal E                  \hexE\
+    hexadecimal F                  \hexF\
+    to Sph display conversion      \>Sph\
+    to Rec display conversion      \>Rec\
+    to Pol display conversion      \>Pol\
+    to Oct display conversion      \>Oct\
+    to Hex display conversion      \>Hex\
+    to Frac display conversion     \>Frac\
+    to DMS display conversion      \>DMS\
+    to Dec display conversion      \>Dec\
+    to Cyl display conversion      \>Cyl\
+    to Bin display conversion      \>Bin\
+    vc-li  data conversion         \vc>li\
+    St-Eq  data conversion         \St>Eq\
+    li-vc data conversion          \li>vc\
+    Eq-St data conversion          \Eq>St\
+    E  exponent notation           \E\
+    u0  built-in constant          \u0\
+    e0  built-in constant          \e0\
+    zthetamax                      \z-@max\
+    zthetamin                      \z-@min\
+    zthetastep                     \z-@step\
+    delta x  (capital)             \Delta-x\
+    delta y  (capital)             \Delta-y\
+    thetamax                       \@max\
+    thetamin                       \@min\
+    thetastep                      \@step\
+    Sigma x                        \Sigma-x\
+    Sigma x^2                      \Sigma-x^2\
+    Sigma xy                       \Sigma-xy\
+    Sigma y                        \Sigma-y\
+    Sigma y^2                      \Sigma-y^2\
+    standard deviation (pop) x     \Sx\
+    standard deviation (pop) y     \Sy\
+    x bar (mean)                   \x-bar\
+    y bar (mean)                   \y-bar\
+
+Greek Characters
+    alpha (lowercase)              \LC-alpha\
+    beta (lowercase)               \LC-beta\
+    gamma (lowercase)              \LC-gamma\
+    Delta (uppercase)              \UC-Delta\
+    delta (lowercase)              \LC-delta\
+    epsilon (lowercase)            \LC-epsilon\
+    theta (lowercase)              \LC-theta\
+    lambda (lowercase)             \LC-lambda\
+    mu (lowercase)                 \LC-mu\
+    rho (lowercase)                \LC-rho\
+    Sigma (uppercase)              \UC-Sigma\
+    sigma (lowercase)              \LC-sigma\
+    tau (lowercase)                \LC-tau\
+    phi (lowercase)                \LC-phi\
+    Omega (uppercase)              \UC-Omega\
+
+MISC characters
+    N tilde                        \UC-N~\
+    n tilde                        \LC-n~\
+    C cedilla                      \UC-C-cedilla\
+    c cedilla                      \LC-c-cedilla\
+    ? inverted                     \?\
+
+INTL characters
+    A acute                        \UC-A'\
+    a acute                        \LC-a'\
+    A grave                        \UC-A`\
+    a grave                        \LC-a`\
+    A circumflex                   \UC-A^\
+    a circumflex                   \LC-a^\
+    A umlaut                       \UC-A:\
+    a umlaut                       \LC-a:\
+    etc for e, i, o, u
+
+CONV characters (for example, ft^2 to m^2 would be \ft^2\\>\\m^2\
+    >   conversion operator         \>\
+    lt-yr  light year               \lt-yr\
+    ft^2                            \ft^2\
+    m^2                             \m^2\
+    mi^2                            \mi^2\
+    km^2                            \km^2\
+    in^2                            \in^2\
+    cm^2                            \cm^2\
+    yd^2                            \yd^2\
+    cm^3                            \cm^3\
+    in^3                            \in^3\
+    ft^3                            \ft^3\
+    m^3                             \m^3\
+    us  (micro seconds)             \usec\
+    oC   degree C                   \deg C\
+    oF   degree F                   \deg F\
+    oK   degree K                   \deg K\
+    oR   degree R                   \deg R\
+    N/m^2                           \N/m^2\
+    lb/in^2                         \lb/in^2\
+    mmH2O                           \mmH2O\
+    inH2O                           \inH2O\
+    ftlb/s                          \ftlb/s\
+    cal/s                           \cal/s\
+    Btu/mn                          \Btu/mn\
+    ft/s                            \ft/s\
+    m/s                             \m/s\
+    mi/hr                           \mi/hr\
+    km/hr                           \km/hr\
+    kw-hr                           \kw-hr\
+    l-atm                           \l-atm\
+
+\Special
+    continue TI-85 program line     \#\

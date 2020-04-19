@@ -1,0 +1,1 @@
+This is the test release of Net Creeper 1.5.  It will be send to Ben Chase and Jon Goslin for testing.  Help doing this would be appreciated.  Try using the program as hard as you can, ie. try to break it using normal operations.  This program really kicks ass and might be released with no further modifications.  Thanks guys.

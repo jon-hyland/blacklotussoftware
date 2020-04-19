@@ -1,0 +1,96 @@
+
+                 -------------------------------------
+                 |       --==Block Cruncher==--      |
+                 |               v1.2                |
+                 |                                   |
+                 |                                   |
+                 |   (c) 1997 Black Lotus Software   |
+                 |                                   |
+                 |   All programming by Jon Hyland   |
+                 -------------------------------------
+
+
+I. Overview
+
+   Block Cruncher is a simple, color text game in which the player
+ arranges multi-shaped blocks as they fall from the "sky".  It is
+ similar in fashion to another popular game for computers and
+ video game systems, whose name we shall not mention.  Prepare
+ for a game of intense concentration and mind-blowing suspense!
+
+
+II. Warning!!
+
+   Due to the extreme nature of this game, a higher level of
+ mental awareness may result.  Play at own risk.
+
+
+III. How to Play (In Case You Are an Idiot)
+
+   The object of the game, besides to gain points, is to keep your
+ playing area as free of blocks as possible.  The blocks fall from
+ above, one at a time, and you are able to control the block until
+ it meets its final resting place somewhere at the bottom.  Fill
+ an entire horizontal area, and the entire line will disappear as
+ if by magic.  Manage to "crunch" multiple lines in one shot and
+ watch your score skyrocket!  Your game is over when your pile (not
+ excrement) reaches the top.
+
+
+IV. Secret Commands/Options
+
+Preview :
+   One of the options allowed in the game is the preview of your
+ next piece.  This can be toggled ON/OFF with the [T] button.
+ Be warned however, this will cost you half of every point value.
+
+Step/Drop :
+   By default, when you press [DOWN], your block will instantly
+ drop to the bottom.  Pressing [D] will toggle the drop option to OFF
+ allowing you to decend the block down in a slower fashon.
+
+Sound :
+   If you happen to be one of those tight, constrictive, humorless
+ individuals who I happen to dislike, the sound effects may prove
+ a bit to anoying for your finely-tuned ears.  In that case, all
+ that is required by you is to press the [E] button to toggle
+ the sound ON/OFF.
+
+Speed :
+   Although the play speed will increase as you hurtle through the
+ point barriors, advanced players might choose to begin the game
+ at an increased level.  The magic button [S] will prompt you
+ to enter a new speed from 1-10.  Be aware as well that increased
+ play speed means increased points.
+
+Reset High Score List :
+   Sure it happens.  Eventually somebody, somewhere, will play your
+ copy of Block Cruncher and place in your High Score List.  Suppose
+ this person is one lacking status in your local social environment.
+ Deleting the High Score List by pressing [R] will prevent the
+ embarassing possibility that someone else will see that you let this
+ person play games on your computer.
+
+List High Score List :
+   In case you get the urdge to gloat over the High Score List
+ in the middle of game play you can do so by pressing [L].
+
+Pausing :
+   In an attempt to save our countrys precious undergarments, a
+ Pause option has been included to allow for (multiple?) bathroom
+ breaks.
+
+New Game :
+   Losers and weenies can give up by pressing [N] for a new game.
+ Winners will continue to play because their cool.
+
+
+V. Licencing Agreement
+
+   By using this software you are agreeing that the author is
+ the baddest computer genius that ever graced this Green earth and
+ that Black Lotus Software will someday rise above all the rest
+ as the premire gaming source.  You are also agreeing that you
+ will respect the author and not put his work to evil use or
+ modify it in any way.  You understand that this software is
+ freeware and can be distributed freely, even to people that suck.
