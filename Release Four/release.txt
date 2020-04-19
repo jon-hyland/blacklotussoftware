@@ -1,0 +1,47 @@
+BLACK LOTUS SOFTWARE
+COLLECTION PACKAGE
+COMPLETE RELEASE FOUR
+
+
+INDEX OF INCLUDED SOFTWARE PRODUCTS
+
+ALARMCLOCK_11.ZIP - Black Lotus Alarm Clock v1.1.  A simple but decent looking application that shows the current time and allows an alarm to be set.  Alarm consists of alarm tone and flashing screen.  Written in Visual Basic. (c) 1999 Black Lotus Software.
+
+BINCRYPT_121.ZIP - Black Lotus Binary Crypt v1.21.  A very powerful and well-written program that enables you to encrypt binary files.  Incorporates a very impressive scheme and offers optional password protection for encrypted files.  Written in Visual Basic. (c) 2000 Black Lotus Software.
+
+BLOCK_12.ZIP - Block Cruncher v1.2.  A colorful and perfectly written "Tetris-like" game.  Includes every possible option you would want in a game like this.  Written in Turbo Pascal.  Similar Visual C++ version also available (see website for download). (c) 1997 Black Lotus Software.
+
+SLIDER_10B.EXE - Black Lotus Slider 1.0 Beta.  A simple but useful application that allows .JPG, .BMP and .GIF files to be displayed in a slideshow fashion.  Includes sample pictures.  Written in Visual Basic. (c) 1999 Black Lotus Software.
+
+BUGZAPPER_30.ZIP - Deluxe Bug Zapper Screensaver v3.0.  Here is is.  All the stress-relief you could ever need in one tight little package. (c) 1997 Black Lotus Software.
+
+COOLDRAW_22.ZIP - Cool Draw v2.2.  This utility was written for help in designing graphics for ANSI character games and applications.  Very well written, possibly the first piece of software from Black Lotus Software that would really amaze another developer.  Written in Turbo Pascal. (c) 1996 Jon Hyland.
+
+CRAZY8_10.ZIP - Crazy Eights v1.0.  The one that started it all.  A colorful card game that incorporates fun graphics and player style.  Written in Turbo Pascal. (c) 1994 Jon Hyland.
+
+CRYPT_10.ZIP - TextCrypt v1.0, TextDecrypt v1.0, TextCompare v1.0.  Powerful command line utility that encrypts standard text files.  This encryption scheme, while slightly different, was the basis for the encryption schemes found in Secret Messager and Binary Crypt.  Written in Turbo Pascal. (c) 1996 Jon Hyland.
+
+NETCREEPER_15T.ZIP - Black Lotus Net Creeper v1.5 Test Release.  A redesigned web browser based on Microsoft Internet Explorer.  Features cool graphics, simple interface and easy access to search/mail/home sites.  The best damn web browser made.  Written in Visual Basic. (c) 1999 Black Lotus Software.
+
+SECMESS_12.ZIP - Black Lotus Secret Messager v1.2.  Very useful for when you want to send email that you don't want someone else to read, or just for fun.  This program features a text editor that saves the words to an encrypted format that is virtually impossible for someone to crack (if someone can crack it, I'll give them my first million dollars).  Features a cool interface and excellent design.  Written in Visual Basic. (c) 1999 Black Lotus Software.
+
+WORMBOMB_13.ZIP - Worm Bomb v1.3.  Now here's a game for all you Nibbles / Snake fans.  This game is better than both.  That's because this worm craps little bombs out as he moves.  Collect all the coins and avoid bombs and the electric fence.  Written in Turbo Pascal. (c) 1996 Black Lotus Software.
+
+
+NOTICE FOR MS-DOS APPS
+
+If you happen to get a run-time error while running any of the C++ or Pascal programs (native MS-DOS applications) consider three things:  [1] These applications were created on and were intended to run from the C: drive.  [2] Make sure that all files the files are extracted to a place where there are no folder names of over eight characters in the path.  [3] Make sure no files are set as read-only or system after extracting.  In the process of copying these files to and from CD's, some files could be set to read-only preventing the application from functioning correctly.
+
+Take note of this as well:  These applications were intended to be run in full-screen mode.  This means when you run them from Windows they will be displayed in the smaller, command prompt window.  Click on the Full-screen button for proper viewing.
+
+
+ADDITIONAL INFO
+
+Thank you for trying out this collection of Black Lotus Software releases.  While all software included with this package is freeware, certain pieces are not allowed to be used without direct or written permission from Black Lotus Software.  If we gave this package to you, consider yourself blessed.  Otherwise you must respect the particular license agreement for each piece of software.
+
+The original source code is included for some of the MS-DOS applications.  This code is given to you for your own use and enjoyment but all material is still copyrighted.  If modifications are either distributed or credit is taken for this work you will be prosecuted for theft under the applicable copyright laws.
+
+Visit the Black Lotus Software website at www.angelfire.com/wa/blacklotus.  You can contact Black Lotus Software at blotusmail@aol.com or individually as follows:  Jon Hyland (programmer) at jhyland79@aol.com,  Ben Chase (graphics) at benjaminchase@cs.com,  Jon Goslin (testing) at ?.
+
+
+(c) 1999 Black Lotus Software.  All rights reserved.
