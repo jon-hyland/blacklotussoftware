@@ -12,89 +12,56 @@
 
 I. Overview
 
-   Block Cruncher is a simple, color text game in which the player
- arranges multi-shaped blocks as they fall from the "sky".  It is
- similar in fashion to another popular game for computers and
- video game systems, whose name we shall not mention.  Prepare
- for a game of intense concentration and mind-blowing suspense!
+   Block Cruncher is a simple, color text game similar to Tetris.
 
 
 II. Warning!!
 
-   Due to the extreme nature of this game, a higher level of
- mental awareness may result.  Play at own risk.
+   Due to the extreme nature of this game, play at your own risk.
 
 
-III. How to Play (In Case You Are an Idiot)
+III. How to Play
 
-   The object of the game, besides to gain points, is to keep your
+ The object of the game, besides to gain points, is to keep your
  playing area as free of blocks as possible.  The blocks fall from
  above, one at a time, and you are able to control the block until
  it meets its final resting place somewhere at the bottom.  Fill
- an entire horizontal area, and the entire line will disappear as
- if by magic.  Manage to "crunch" multiple lines in one shot and
- watch your score skyrocket!  Your game is over when your pile (not
- your excrement) reaches the top.
+ an entire horizontal area, and the entire line will disappear.  
+ Manage to "crunch" multiple lines in one shot for higher reward.
+ The game is over when the pile reaches the top.
 
 
-IV. Secret Commands/Options
+IV. Secret Commands
 
 Preview :
-   One of the options allowed in the game is the preview of your
+ One of the options allowed in the game is the preview of your
  next piece.  This can be toggled ON/OFF with the [T] button.
- Be warned however, this will cost you half of every point value.
- I know you'll try it, but you can't turn it on and then off again,
- you have to wait for the next piece to see the next piece.
-
+ This will cost you half point value.
+ 
 Step/Drop :
-   By default, when you press [DOWN], your block will instantly
+ By default, when you press [DOWN], your block will instantly
  drop to the bottom.  Pressing [D] will toggle the drop option to OFF
  allowing you to decend the block down in a slower fashion.
 
 Sound :
-   If you happen to be one of those tight, constrictive, humorless
- individuals who I happen to dislike, the sound effects may prove
- a bit to anoying for your finely-tuned ears.  In that case, all
- that is required by you is to press the [E] button to toggle
- the sound ON/OFF.
- ** Sound has been disabled in the limited edition of the game **
+ Sound effects can be enabled/disabled by pressing [E].
+ ** Sound effects disabled in the limited edition **
 
 Speed :
-   Although the play speed will increase as you hurtle through the
- point barriors, advanced players might choose to begin the game
- at an increased level.  The magic button [S] will prompt you
- to enter a new speed from 1-10.  Be aware as well that increased
- play speed means increased points.
+ Pressing [S] will prompt you to enter a new speed from 1-10. 
+ Increased play speed means increased points.
  ** Speed altering has been disabled in the limited edition **
 
 Reset High Score List :
-   Sure it happens.  Eventually somebody, somewhere, will play your
- copy of Block Cruncher and place in your High Score List.  Suppose
- this person is one lacking status in your local social environment.
- Deleting the High Score List by pressing [R] will prevent the
- embarassing possibility that someone else will see that you let 
- him or her play games on your computer.
+ Reset (erase) the High Score List by pressing [R].
 
 List High Score List :
-   In case you get the urdge to gloat over the High Score List
+ In case you get the urdge to gloat over the High Score List
  in the middle of game play you can do so by pressing [L].
 
-Pause :
-   Pooping durring game play is not an option.  In an attempt to
- save your precious undergarment, a Pause option has been included
- to allow for multiple(?) bathroom breaks.
-
 New Game :
-   Losers and weenies can give up by pressing [N] for a new game.
- Winners will continue to play because their cool.
+ Losers and weenies can give up by pressing [N] for a new game.
+ Winners will keep playing because they're cool.
 
 
-V. Licencing Agreement
-
-   By using this software you are agreeing that the author is
- the almighty master of all computer geniuses that crawl this dark
- planet and that Black Lotus Software will someday rise above all
- as the premire gaming source of the world.  You are also agreeing
- that you will respect the author and not put his work to evil use or
- modify it in any way.  You understand that this software is
- freeware and can be distributed freely, except to people that suck.
+(c)1994-1998 Black Lotus Software.  All rights reserved.
